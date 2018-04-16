@@ -1,0 +1,13 @@
+html,
+body,
+#app {
+  height: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  background: #2f3238;
+  font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
+}

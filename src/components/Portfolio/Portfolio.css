@@ -1,0 +1,20 @@
+:local(.root) {
+  background: #26292e;
+  padding: 3rem 0;
+}
+
+:local(.title) {
+  text-align: center;
+}
+
+:local(.inner) {
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+:local(.heading) {
+  font-size: 24px;
+  line-height: 1.5em;
+  font-weight: 300;
+  margin: 0;
+}

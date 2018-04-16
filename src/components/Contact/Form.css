@@ -1,0 +1,48 @@
+:local(.root) p {
+  margin: 0 0 2px;
+}
+
+:local(.root) input,
+:local(.root) textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: #26292e;
+  color: #ffffff;
+  font-size: 16px;
+  height: auto;
+  padding: 15px;
+  margin: 0;
+  resize: none;
+}
+
+:local(.root) :local(.submit) {
+  background: #3c3f45;
+  color: #83868c;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 16px 40px;
+  text-align: center;
+  vertical-align: middle;
+  width: auto;
+  margin-top: 15px;
+  -webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+  -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+  -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
+  transition: background 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+:local(.root) :local(.submit:hover) {
+  background: #de5e60;
+  color: #ffffff;
+}

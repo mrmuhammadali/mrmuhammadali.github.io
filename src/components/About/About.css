@@ -1,0 +1,13 @@
+:local(.root) {
+  text-align: center;
+}
+
+:local(.header) {
+  margin: 2rem 0;
+}
+
+:local(.tagline) {
+  font-size: 24px;
+  font-weight: 200;
+  margin: 0;
+}
