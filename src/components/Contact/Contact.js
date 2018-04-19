@@ -23,13 +23,6 @@ export default () => (
             </a>
           </li>
           <li>+92 343 5311141</li>
-          <li>
-            House No. 677, Sector F/1,
-            <br />
-            Mirpur, Azad Kashmir,
-            <br />
-            Pakistan
-          </li>
         </ul>
       </Grid>
     </Grid>
