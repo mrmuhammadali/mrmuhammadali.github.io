@@ -1,3 +1,4 @@
+// @flow
 // libs
 import React from "react";
 
@@ -5,7 +6,12 @@ import React from "react";
 import { CATEGORIES } from "./data";
 import styles from "./Categories.css";
 
-export default ({ activeCategory, onCategoryClick }) => (
+type Props = {
+  activeCategory: number,
+  onCategoryClick: (number) => void,
+}
+
+export default ({ activeCategory, onCategoryClick }: Props) => (
   <ul className={styles.root}>
     {CATEGORIES.map((category, index) => (
       <li

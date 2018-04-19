@@ -10,6 +10,7 @@ export default ({ projects, onProjectClick }) => (
   <Grid container spacing={24} className={styles.list}>
     {projects.map(({ isHidden, ...project }, index) => (
       <Grid
+        key={index}
         className={[styles.listItem, isHidden && styles.hidden].join(" ")}
         item
         xs={6}
