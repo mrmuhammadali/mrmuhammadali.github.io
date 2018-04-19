@@ -1,7 +1,7 @@
-:local(.root) {
+.root {
   background: #26292e !important;
 }
 
-:local(.logo) {
+.logo {
   flex: 1;
 }

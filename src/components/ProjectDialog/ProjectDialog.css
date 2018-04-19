@@ -1,10 +1,10 @@
-:local(.root) {
+.root {
   padding: 1rem 1rem 0.7rem 1rem;
   max-width: 100% !important;
   width: 100%;
 }
 
-:local(.closeButton) {
+.closeButton {
   align-self: center;
   position: absolute;
   opacity: 0.75;
@@ -13,6 +13,6 @@
   right: 0;
 }
 
-:local(.closeButton) button {
+.closeButton button {
   min-width: 44px;
 }

@@ -1,17 +1,17 @@
-:local(.root) {
+.root {
   padding: 3rem 0;
 }
 
-:local(.title) {
+.title {
   text-align: center;
 }
 
-:local(.inner) {
+.inner {
   justify-content: center;
   padding-top: 2rem;
 }
 
-:local(.heading) {
+.heading {
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
@@ -20,20 +20,20 @@
   text-transform: uppercase;
 }
 
-:local(.list) {
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-:local(.list) li {
+.list li {
   margin: 0 0 20px;
   line-height: 28px;
   padding: 0;
   color: #8f9299;
 }
 
-:local(.link) {
+.link {
   color: #de5e60;
   text-decoration: none;
   -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
@@ -42,6 +42,6 @@
   transition: color 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-:local(.link:hover) {
+.link:hover {
   color: #fff;
 }

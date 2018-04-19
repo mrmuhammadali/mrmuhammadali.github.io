@@ -1,4 +1,4 @@
-:local(.root) {
+.root {
   position: relative;
   width: 100%;
   height: auto;
@@ -6,7 +6,7 @@
   text-align: center;
 }
 
-:local(.inner) {
+.inner {
   color: #ffffff;
   font-size: 13px;
   margin-bottom: 0;
@@ -14,7 +14,7 @@
   text-transform: uppercase;
 }
 
-:local(.link) {
+.link {
   color: #de5e60;
   text-decoration: none;
   -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
@@ -23,6 +23,6 @@
   transition: color 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-:local(.link:hover) {
+.link:hover {
   color: #fff;
 }

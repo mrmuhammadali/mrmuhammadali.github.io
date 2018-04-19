@@ -1,9 +1,9 @@
-:local(.root) p {
+.root p {
   margin: 0 0 2px;
 }
 
-:local(.root) input,
-:local(.root) textarea {
+.root input,
+.root textarea {
   width: 100%;
   box-sizing: border-box;
   border: none;
@@ -24,7 +24,7 @@
   resize: none;
 }
 
-:local(.root) :local(.submit) {
+.root .submit {
   background: #3c3f45;
   color: #83868c;
   cursor: pointer;
@@ -42,7 +42,7 @@
   transition: background 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-:local(.root) :local(.submit:hover) {
+.root .submit:hover {
   background: #de5e60;
   color: #ffffff;
 }

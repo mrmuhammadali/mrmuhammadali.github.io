@@ -1,12 +1,12 @@
-:local(.root) {
+.root {
   text-align: center;
 }
 
-:local(.image) {
+.image {
   width: 100%;
 }
 
-:local(.blankSlate),
-:local(.loadingView) {
+.blankSlate,
+.loadingView {
   color: #8f9299;
 }

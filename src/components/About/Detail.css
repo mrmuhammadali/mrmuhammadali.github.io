@@ -1,39 +1,39 @@
-:local(.root) {
+.root {
   justify-content: center;
   margin: 2rem auto !important;
   padding: 0 2rem;
 }
 
-:local(.sectionIcon) {
+.sectionIcon {
   font-size: 1.5em;
   border: 1px solid;
   padding: 0.5em;
   border-radius: 15px 0;
 }
 
-:local(.sectionTitle) {
+.sectionTitle {
   font-size: 24px;
   font-weight: 300;
   margin: 0 auto 0.8rem;
 }
 
-:local(.itemHeading) {
+.itemHeading {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5em;
   margin: 0 auto 0.4rem;
 }
 
-:local(.itemContent) {
+.itemContent {
   color: #8f9299;
   margin: 0 auto 0.4rem;
 }
 
-:local(.focus) {
+.focus {
   color: #fff;
 }
 
-:local(.link) {
+.link {
   color: #de5e60;
   text-decoration: none;
   -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
@@ -42,6 +42,6 @@
   transition: color 0.1s linear 0s, color 0.1s linear 0s;
 }
 
-:local(.link:hover) {
+.link:hover {
   color: #fff;
 }

@@ -1,16 +1,16 @@
-:local(.list) {
+.list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
-:local(.listItem) {
+.listItem {
   flex: 0 1 31.33%;
   margin: 1%;
   animation: FadeIn 0.3s linear;
   animation-fill-mode: both;
 }
 
-:local(.hidden) {
+.hidden {
   animation: FadeOut 0.3s linear;
   animation-fill-mode: both;
 }

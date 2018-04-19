@@ -1,12 +1,12 @@
-:local(.root) {
+.root {
   text-align: center;
 }
 
-:local(.header) {
+.header {
   margin: 2rem 0;
 }
 
-:local(.tagline) {
+.tagline {
   font-size: 24px;
   font-weight: 200;
   margin: 0;
