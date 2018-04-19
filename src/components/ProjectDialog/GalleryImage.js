@@ -4,10 +4,17 @@ import { CircularProgress } from "material-ui/Progress";
 import Grid from "material-ui/Grid";
 
 // src
+import { hasPropChanged } from "../../utils";
 import styles from "./GalleryImage.css";
 
 export default class GalleryImage extends Component {
   state = { status: "loading" };
+
+  componentWillReceiveProps(nextProps) {
+    if (hasPropChanged('image', this.props, nextProps)) {
+      this.setState({ status: "loading" });
+    }
+  }
 
   handleImageLoaded = () => {
     this.setState({ status: "loaded" });
