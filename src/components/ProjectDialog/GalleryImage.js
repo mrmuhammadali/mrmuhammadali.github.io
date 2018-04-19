@@ -12,16 +12,16 @@ export default class GalleryImage extends Component {
 
   componentWillReceiveProps(nextProps) {
     if (hasPropChanged('image', this.props, nextProps)) {
-      this.setState({ status: "loading" });
+      this.setState(() => ({ status: "loading" }));
     }
   }
 
   handleImageLoaded = () => {
-    this.setState({ status: "loaded" });
+    this.setState(() => ({ status: "loaded" }));
   };
 
   handleImageErrored = () => {
-    this.setState({ status: "failed" });
+    this.setState(() => ({ status: "failed" }));
   };
 
   render() {
