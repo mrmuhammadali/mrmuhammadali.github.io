@@ -1,35 +1,46 @@
 // libs
-import React, { Component } from "react";
-import { CircularProgress } from "material-ui/Progress";
-import Grid from "material-ui/Grid";
+import React, { Component } from 'react'
+import { CircularProgress } from 'material-ui/Progress'
+import getOr from 'lodash/fp/getOr'
+import Grid from 'material-ui/Grid'
 
 // src
-import { hasPropChanged } from "../../utils";
-import styles from "./GalleryImage.css";
+import { hasPropChanged } from '../../utils'
+import styles from './GalleryImage.css'
+
+const INNER_HEIGHT = window.innerHeigh
 
 export default class GalleryImage extends Component {
-  state = { status: "loading" };
+  state = { status: 'loading' }
 
   componentWillReceiveProps(nextProps) {
     if (hasPropChanged('image', this.props, nextProps)) {
-      this.setState(() => ({ status: "loading" }));
+      this.setState(() => ({ status: 'loading' }))
+      const { setImageHeight } = this.props
+      setImageHeight(INNER_HEIGHT / 1.5)
     }
   }
 
   handleImageLoaded = () => {
-    this.setState(() => ({ status: "loaded" }));
-  };
+    this.setState(() => ({ status: 'loaded' }))
+    setTimeout(() => {
+      const { setImageHeight } = this.props
+      setImageHeight(getOr(400, 'imageReference.offsetHeight')(this))
+    }, 100)
+  }
 
   handleImageErrored = () => {
-    this.setState(() => ({ status: "failed" }));
-  };
+    this.setState(() => ({ status: 'failed' }))
+    const { setImageHeight } = this.props
+    setImageHeight(400)
+  }
 
   render() {
-    const { image, title } = this.props;
-    const { status } = this.state;
-    const opacity = status === "loaded" ? 1 : 0;
-    const height = status === "loaded" ? "auto" : "50%";
-    const minHeight = status === "loaded" ? "auto" : window.innerHeight / 1.7;
+    const { image, title } = this.props
+    const { status } = this.state
+    const opacity = status === 'loaded' ? 1 : 0
+    const height = status === 'loaded' ? 'auto' : '50%'
+    const minHeight = status === 'loaded' ? 'auto' : INNER_HEIGHT / 1.7
 
     return (
       <Grid
@@ -41,6 +52,7 @@ export default class GalleryImage extends Component {
         style={{ minHeight }}
       >
         <img
+          ref={ref => (this.imageReference = ref)}
           src={image}
           alt={title}
           className={styles.image}
@@ -48,16 +60,16 @@ export default class GalleryImage extends Component {
           onLoad={this.handleImageLoaded}
           onError={this.handleImageErrored}
         />
-        {status === "loading" ? (
+        {status === 'loading' ? (
           <div className={styles.loadingView}>
             <CircularProgress color="inherit" />
           </div>
-        ) : status === "failed" ? (
+        ) : status === 'failed' ? (
           <div className={styles.blankSlate}>
             Failed to load image resource.
           </div>
         ) : null}
       </Grid>
-    );
+    )
   }
 }

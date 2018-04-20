@@ -1,48 +1,54 @@
 // libs
-import React from "react";
-import Button from "material-ui/Button";
-import Icon from "material-ui/Icon";
-import MobileStepper from "material-ui/MobileStepper";
+import React from 'react'
+import Button from 'material-ui/Button'
+import Icon from 'material-ui/Icon'
+import MobileStepper from 'material-ui/MobileStepper'
 
 // src
-import styles from "./Details.css";
+import styles from './Details.css'
+import { DESCRIPTIONS } from '../Portfolio/data'
 
-export default ({
-  activeIndex,
-  steps,
-  title,
-  onNextClick,
-  onPreviousClick
-}) => (
-  <div className={styles.root}>
-    <h2 className={styles.heading}>{title}</h2>
+export default props => {
+  const {
+    activeIndex,
+    steps,
+    title,
+    imageHeight,
+    onNextClick,
+    onPreviousClick
+  } = props
 
-    <MobileStepper
-      variant="dots"
-      steps={steps}
-      position="static"
-      activeStep={activeIndex}
-      classes={{ root: styles.stepper, dotActive: styles.stepperActiveDot }}
-      nextButton={
-        <Button
-          size="small"
-          onClick={onNextClick}
-          disabled={activeIndex === steps - 1}
-        >
-          Next
-          <Icon>keyboard_arrow_right</Icon>
-        </Button>
-      }
-      backButton={
-        <Button
-          size="small"
-          onClick={onPreviousClick}
-          disabled={activeIndex === 0}
-        >
-          <Icon>keyboard_arrow_left</Icon>
-          Previous
-        </Button>
-      }
-    />
-  </div>
-);
+  return (
+    <div className={styles.root} style={{ maxHeight: imageHeight }}>
+      <h2 className={styles.heading}>{title}</h2>
+      <div className={styles.description}>{DESCRIPTIONS[activeIndex]}</div>
+      <MobileStepper
+        variant="dots"
+        steps={steps}
+        position="static"
+        activeStep={activeIndex}
+        classes={{ root: styles.stepper, dotActive: styles.stepperActiveDot }}
+        nextButton={
+          <Button
+            size="small"
+            onClick={onNextClick}
+            disabled={activeIndex === steps - 1}
+          >
+            Next
+            <Icon>keyboard_arrow_right</Icon>
+          </Button>
+        }
+        backButton={
+          <Button
+            size="small"
+            onClick={onPreviousClick}
+            disabled={activeIndex === 0}
+          >
+            <Icon>keyboard_arrow_left</Icon>
+            Previous
+          </Button>
+        }
+      />
+    </div>
+  )
+}

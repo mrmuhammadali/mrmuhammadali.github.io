@@ -4,6 +4,10 @@
   width: 100%;
 }
 
+.grid {
+  justify-content: center;
+}
+
 .closeButton {
   align-self: center;
   position: absolute;
