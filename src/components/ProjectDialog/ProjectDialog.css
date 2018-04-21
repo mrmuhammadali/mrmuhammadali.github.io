@@ -10,7 +10,7 @@
 
 .closeButton {
   align-self: center;
-  position: sticky;
+  position: absolute;
   opacity: 0.75;
   background: #de5e60;
   top: 0;
