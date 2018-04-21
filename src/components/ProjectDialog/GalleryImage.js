@@ -39,7 +39,7 @@ export default class GalleryImage extends Component {
     const { image, title } = this.props
     const { status } = this.state
     const opacity = status === 'loaded' ? 1 : 0
-    const height = status === 'loaded' ? 'auto' : '50%'
+    const height = status === 'loaded' ? 'auto' : 0
     const minHeight = status === 'loaded' ? 'auto' : INNER_HEIGHT / 1.7
 
     return (
