@@ -1,14 +1,14 @@
 // @flow
 // libs
-import React from "react";
+import React from 'react'
 
 // src
-import { CATEGORIES } from "./data";
-import styles from "./Categories.css";
+import { CATEGORIES } from './data'
+import styles from './Categories.css'
 
 type Props = {
   activeCategory: number,
-  onCategoryClick: (number) => void,
+  onCategoryClick: number => void
 }
 
 export default ({ activeCategory, onCategoryClick }: Props) => (
@@ -19,11 +19,11 @@ export default ({ activeCategory, onCategoryClick }: Props) => (
         className={[
           styles.listItem,
           activeCategory === index && styles.active
-        ].join(" ")}
+        ].join(' ')}
         onClick={onCategoryClick.bind(this, index)}
       >
         {category}
       </li>
     ))}
   </ul>
-);
+)

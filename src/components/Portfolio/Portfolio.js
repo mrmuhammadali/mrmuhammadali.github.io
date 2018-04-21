@@ -1,20 +1,20 @@
 // libs
-import React, { Component } from "react";
-import Grid from "material-ui/Grid";
+import React, { Component } from 'react'
+import Grid from 'material-ui/Grid'
 
 // src
-import { CATEGORIES, PROJECTS } from "./data";
-import Categories from "./Categories";
-import ProjectDialog from "../ProjectDialog";
-import Projects from "./Projects";
-import styles from "./Portfolio.css";
-import Title from "../Title";
+import { CATEGORIES, PROJECTS } from './data'
+import Categories from './Categories'
+import ProjectDialog from '../ProjectDialog'
+import Projects from './Projects'
+import styles from './Portfolio.css'
+import Title from '../Title'
 
 export default class Portfolio extends Component {
-  state = { activeCategory: 0, activeProject: -1, projects: PROJECTS };
+  state = { activeCategory: 0, activeProject: -1, projects: PROJECTS }
 
   handleCategoryClick = index => {
-    const category = CATEGORIES[index];
+    const category = CATEGORIES[index]
     const projects =
       index === 0
         ? PROJECTS
@@ -23,23 +23,24 @@ export default class Portfolio extends Component {
               project.category === category
                 ? { ...project, isHidden: false }
                 : { ...project, isHidden: true }
-          );
-    this.setState({ activeCategory: index, projects });
-  };
+          )
+    this.setState({ activeCategory: index, projects })
+  }
 
   handleProjectClick = index => {
-    this.setState({ activeProject: index });
-  };
+    this.setState({ activeProject: index })
+  }
 
   handleCloseClick = () => {
-    this.setState({ activeProject: -1 });
-  };
+    this.setState({ activeProject: -1 })
+  }
 
   render() {
-    const { activeCategory, activeProject, projects } = this.state;
+    const { activeCategory, activeProject, projects } = this.state
+    const { setSectionRef } = this.props
 
     return (
-      <section className={styles.root}>
+      <section className={styles.root} ref={setSectionRef}>
         <Title className={styles.title} content="My Portfolio" />
         <Grid container spacing={24} className={styles.inner}>
           <Grid item xs={4} sm={2}>
@@ -64,6 +65,6 @@ export default class Portfolio extends Component {
           />
         )}
       </section>
-    );
+    )
   }
 }

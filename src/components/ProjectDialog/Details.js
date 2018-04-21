@@ -5,8 +5,8 @@ import Icon from 'material-ui/Icon'
 import MobileStepper from 'material-ui/MobileStepper'
 
 // src
-import styles from './Details.css'
 import { DESCRIPTIONS } from '../Portfolio/data'
+import styles from './Details.css'
 
 export default props => {
   const {

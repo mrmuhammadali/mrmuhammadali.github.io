@@ -1,8 +1,8 @@
 // libs
-import React from "react";
+import React from 'react'
 
 // src
-import styles from "./Form.css";
+import styles from './Form.css'
 
 export default () => (
   <form
@@ -34,4 +34,4 @@ export default () => (
       <input className={styles.submit} type="submit" value="Send Message" />
     </p>
   </form>
-);
+)

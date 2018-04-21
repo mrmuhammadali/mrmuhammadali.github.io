@@ -1,14 +1,14 @@
 // libs
-import React from "react";
+import React from 'react'
 
 // src
-import Detail from "./Detail";
-import Profile from "./Profile";
-import styles from "./About.css";
-import Title from "../Title";
+import Detail from './Detail'
+import Profile from './Profile'
+import styles from './About.css'
+import Title from '../Title'
 
-export default () => (
-  <section className={styles.root}>
+export default ({ setSectionRef }) => (
+  <section className={styles.root} ref={setSectionRef}>
     <header className={styles.header}>
       <Title content="Muhammad Ali" />
       <h3 className={styles.tagline}>
@@ -18,4 +18,4 @@ export default () => (
     <Profile />
     <Detail />
   </section>
-);
+)

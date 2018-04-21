@@ -1,10 +1,10 @@
 // libs
-import React from "react";
-import Grid from "material-ui/Grid";
-import Icon from "material-ui/Icon";
+import React from 'react'
+import Grid from 'material-ui/Grid'
+import Icon from 'material-ui/Icon'
 
 // src
-import styles from "./Detail.css";
+import styles from './Detail.css'
 
 export default () => (
   <Grid container spacing={24} className={styles.root}>
@@ -24,7 +24,7 @@ export default () => (
       <p className={styles.itemContent}>June 2017 - Present</p>
       <h4 className={styles.itemHeading}>Freelancer</h4>
       <p className={styles.itemContent}>
-        Fiverr.com <br /> Active Time: 6 Months <br />{" "}
+        Fiverr.com <br /> Active Time: 6 Months <br />{' '}
         <a
           className={styles.link}
           href="https://www.fiverr.com/users/ma_webminister/"
@@ -51,4 +51,4 @@ export default () => (
       </p>
     </Grid>
   </Grid>
-);
+)

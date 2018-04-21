@@ -1,3 +1,3 @@
-import ProjectDialog from "./ProjectDialog";
+import ProjectDialog from './ProjectDialog'
 
-export default ProjectDialog;
+export default ProjectDialog

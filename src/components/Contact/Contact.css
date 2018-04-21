@@ -27,10 +27,25 @@
 }
 
 .list li {
-  margin: 0 0 20px;
+  margin: 0 0 5px;
   line-height: 28px;
   padding: 0;
   color: #8f9299;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.social button {
+  width: 40px;
+  height: 40px;
+}
+
+.social .icon {
+  fill: #8f9299;
+  width: 24px;
 }
 
 .link {

@@ -1,9 +1,9 @@
 // libs
-import React from "react";
-import Grid from "material-ui/Grid";
+import React from 'react'
+import Grid from 'material-ui/Grid'
 
 // src
-import styles from "./Profile.css";
+import styles from './Profile.css'
 
 export default () => (
   <Grid container spacing={24} className={styles.root}>
@@ -14,9 +14,9 @@ export default () => (
         src="./images/profile.jpg"
       />
     </Grid>
-    <Grid item xs={12} sm={8} md={7} style={{ padding: "6px" }}>
+    <Grid item xs={12} sm={8} md={7} style={{ padding: '6px' }}>
       <p className={styles.description}>
-        <span className={styles.focus}>I prefer tabs over spaces,</span>{" "}
+        <span className={styles.focus}>I prefer tabs over spaces,</span>{' '}
         camelCase over _underscores, unix over windows, long work sessions over
         short sprints, git over svn, vim over emacs, IntelliJ over eclipse, In
         short, "I am a Programmer and i am proud of it". I believe programmers
@@ -32,4 +32,4 @@ export default () => (
       </p>
     </Grid>
   </Grid>
-);
+)

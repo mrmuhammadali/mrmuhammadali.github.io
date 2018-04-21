@@ -1,6 +1,6 @@
 // @flow
 // libs
-import isEqual from "lodash/isEqual";
+import isEqual from 'lodash/isEqual'
 
 /**
  * @param {string} key
@@ -12,5 +12,5 @@ export const hasPropChanged = (
   thisProps: Object,
   nextProps: Object
 ): boolean => {
-  return !isEqual(thisProps[key], nextProps[key]);
-};
+  return !isEqual(thisProps[key], nextProps[key])
+}

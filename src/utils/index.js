@@ -1,2 +1,2 @@
-export { default as registerServiceWorker } from "./registerServiceWorker";
-export * from "./utils";
+export { default as registerServiceWorker } from './registerServiceWorker'
+export * from './utils'
