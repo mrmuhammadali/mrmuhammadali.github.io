@@ -6,7 +6,7 @@ import Tooltip from 'material-ui/Tooltip'
 
 // src
 import Form from './Form'
-import { Fiverr, Github, LinkedIn, Npm } from '../Icons'
+import { Fiverr, Github, Instagram, LinkedIn, Npm } from '../Icons'
 import styles from './Contact.css'
 import Title from '../Title'
 
@@ -20,6 +20,11 @@ const SOCIAL_LINKS = [
     title: 'Github',
     IconComponent: Github,
     url: 'https://github.com/mrmuhammadali/'
+  },
+  {
+    title: 'Instagram',
+    IconComponent: Instagram,
+    url: 'https://www.instagram.com/muhammadali.io/'
   },
   {
     title: 'LinkedIn',
