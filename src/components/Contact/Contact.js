@@ -60,7 +60,7 @@ export default ({ setSectionRef }) => (
 
               return (
                 <Tooltip title={title}>
-                  <IconButton onClick={() => window.open(url, '_blank')}>
+                  <IconButton href={url} target="_blank">
                     <IconComponent className={styles.icon} />
                   </IconButton>
                 </Tooltip>

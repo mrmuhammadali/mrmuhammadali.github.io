@@ -30,12 +30,14 @@
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
   padding: 16px 40px;
   text-align: center;
   vertical-align: middle;
   width: auto;
   margin-top: 15px;
+  text-transform: none;
+  font-family: "Titillium Web", sans-serif;
   -webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
   -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
   -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;

@@ -1,5 +1,6 @@
 // libs
 import React from 'react'
+import Button from 'material-ui/Button'
 
 // src
 import styles from './Form.css'
@@ -31,7 +32,9 @@ export default () => (
       />
     </p>
     <p>
-      <input className={styles.submit} type="submit" value="Send Message" />
+      <Button className={styles.submit} type="submit">
+        Send Message
+      </Button>
     </p>
   </form>
 )
