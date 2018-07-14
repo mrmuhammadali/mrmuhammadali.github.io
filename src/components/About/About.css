@@ -6,6 +6,10 @@
   margin: 2rem 0;
 }
 
+.logo {
+  width: 5rem;
+}
+
 .tagline {
   font-size: 24px;
   font-weight: 200;

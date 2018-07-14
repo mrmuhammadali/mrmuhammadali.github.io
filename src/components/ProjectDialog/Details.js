@@ -1,8 +1,8 @@
 // libs
 import React from 'react'
-import Button from 'material-ui/Button'
-import Icon from 'material-ui/Icon'
-import MobileStepper from 'material-ui/MobileStepper'
+import Button from '@material-ui/core/Button'
+import Icon from '@material-ui/core/Icon'
+import MobileStepper from '@material-ui/core/MobileStepper'
 
 // src
 import { DESCRIPTIONS } from '../Portfolio/data'

@@ -1,6 +1,6 @@
 // libs
 import React, { Component } from 'react'
-import Grid from 'material-ui/Grid'
+import Grid from '@material-ui/core/Grid'
 
 // src
 import { CATEGORIES, PROJECTS } from './data'
@@ -24,15 +24,15 @@ export default class Portfolio extends Component {
                 ? { ...project, isHidden: false }
                 : { ...project, isHidden: true }
           )
-    this.setState({ activeCategory: index, projects })
+    this.setState(() => ({ activeCategory: index, projects }))
   }
 
   handleProjectClick = index => {
-    this.setState({ activeProject: index })
+    this.setState(() => ({ activeProject: index }))
   }
 
   handleCloseClick = () => {
-    this.setState({ activeProject: -1 })
+    this.setState(() => ({ activeProject: -1 }))
   }
 
   render() {

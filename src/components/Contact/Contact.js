@@ -1,8 +1,8 @@
 // libs
 import React from 'react'
-import Grid from 'material-ui/Grid'
-import IconButton from 'material-ui/IconButton'
-import Tooltip from 'material-ui/Tooltip'
+import Grid from '@material-ui/core/Grid'
+import IconButton from '@material-ui/core/IconButton'
+import Tooltip from '@material-ui/core/Tooltip'
 
 // src
 import Form from './Form'
@@ -59,7 +59,7 @@ export default ({ setSectionRef }) => (
               const { title, IconComponent, url } = socialLink
 
               return (
-                <Tooltip title={title}>
+                <Tooltip title={title} enterDelay={100}>
                   <IconButton href={url} target="_blank">
                     <IconComponent className={styles.icon} />
                   </IconButton>

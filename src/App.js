@@ -1,6 +1,6 @@
 // libs
 import React from 'react'
-import { createMuiTheme, MuiThemeProvider } from 'material-ui/styles'
+import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
 import scrollToComponent from 'react-scroll-to-component'
 
 // src

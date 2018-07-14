@@ -1,19 +1,19 @@
 {
-  "name": "app",
-  "version": "0.1.0",
+  "name": "Muhammad Ali",
+  "version": "1.0.0",
   "private": false,
   "homepage": "https://mrmuhammadali.github.io/",
   "dependencies": {
-    "lodash": "^4.17.5",
-    "material-ui": "^1.0.0-beta.41",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "@material-ui/core": "^1.4.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
     "react-scroll-to-component": "^1.0.2"
   },
   "devDependencies": {
-    "gh-pages": "^1.1.0",
-    "react-app-rewired": "^1.5.0",
-    "react-scripts": "1.1.4"
+    "gh-pages": "^1.2.0",
+    "react-app-rewired": "^1.5.2",
+    "react-scripts": "^1.1.4"
   },
   "scripts": {
     "deploy": "yarn run build && gh-pages -b master -d build",

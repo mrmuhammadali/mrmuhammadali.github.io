@@ -1,79 +1,79 @@
 // libs
-import React from 'react'
+import React from "react"
 
-export const CATEGORIES = ['All Projects', 'Android', 'Web']
+export const CATEGORIES = ["All Projects", "Android", "Bots", "Web"]
 
 export const PROJECTS = [
   {
-    isHidden: false,
-    category: 'Android',
-    title: 'I Need a Partner',
-    thumbnail: './images/thumbs/android-01.jpg',
-    image: './images/full/android-01.jpg',
-    url: '',
-    description: ''
-  },
-  {
-    category: 'Android',
-    title: 'Marketier',
-    thumbnail: './images/thumbs/android-02.jpg',
-    image: './images/full/android-0.jpg',
-    url: '',
-    description: '',
+    category: "Android",
+    title: "I Need a Partner",
+    thumbnail: "./images/thumbs/android-01.jpg",
+    image: "./images/full/android-01.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'Magic Circle',
-    thumbnail: './images/thumbs/image-01.jpg',
-    image: './images/full/image-01.jpg',
-    url: '',
-    description: '',
+    category: "Android",
+    title: "Marketier",
+    thumbnail: "./images/thumbs/android-02.jpg",
+    image: "./images/full/android-0.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'Camden Construction',
-    thumbnail: './images/thumbs/image-02.jpg',
-    image: './images/full/image-02.jpg',
-    url: '',
-    description: '',
+    category: "Web",
+    title: "Magic Circle",
+    thumbnail: "./images/thumbs/image-01.jpg",
+    image: "./images/full/image-01.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'RS Solution LLC',
-    thumbnail: './images/thumbs/image-03.jpg',
-    image: './images/full/image-03.jpg',
-    url: '',
-    description: '',
+    category: "Web",
+    title: "Camden Construction",
+    thumbnail: "./images/thumbs/image-02.jpg",
+    image: "./images/full/image-02.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'Nibble In',
-    thumbnail: './images/thumbs/image-04.jpg',
-    image: './images/full/image-04.jpg',
-    url: '',
-    description: '',
+    category: "Web",
+    title: "RS Solution LLC",
+    thumbnail: "./images/thumbs/image-03.jpg",
+    image: "./images/full/image-03.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'Silver Consultancy',
-    thumbnail: './images/thumbs/image-05.jpg',
-    image: './images/full/image-05.jpg',
-    url: '',
-    description: '',
+    category: "Web",
+    title: "Nibble In",
+    thumbnail: "./images/thumbs/image-04.jpg",
+    image: "./images/full/image-04.jpg",
+    url: "",
+    description: "",
     isHidden: false
   },
   {
-    category: 'Web',
-    title: 'Amazon Product Research',
-    thumbnail: './images/thumbs/image-06.jpg',
-    image: './images/full/image-06.jpg',
-    url: '',
-    description: '',
+    category: "Web",
+    title: "Silver Consultancy",
+    thumbnail: "./images/thumbs/image-05.jpg",
+    image: "./images/full/image-05.jpg",
+    url: "",
+    description: "",
+    isHidden: false
+  },
+  {
+    category: "Web",
+    title: "Amazon Product Research",
+    thumbnail: "./images/thumbs/image-06.jpg",
+    image: "./images/full/image-06.jpg",
+    url: "",
+    description: "",
     isHidden: false
   }
 ]
@@ -102,6 +102,7 @@ export const DESCRIPTIONS = [
       </li>
     </ol>
   </div>,
+
   <div>
     Problem: Employees had to send the pictures and shop name, location, etc
     through whatsapp. Those pictures and data were then compiled in a document
@@ -120,28 +121,34 @@ export const DESCRIPTIONS = [
     </ul>
     Libraries Used: Bootstrap, jQuery, PHP Office, Retrofit, Twitter Digits
   </div>,
+
   <div>
     Created business website for online presence. Users can contact through
     Contact Form. <br />
     Libraries Used: EasingJS, Flex Slider, jCarousel, jQuery, Supersized
   </div>,
+
   <div>
     Created business website for online presence. Customers can call on the
     provided phone number. <br />
     Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
   </div>,
+
   <div>
     Created business website for online presence. Customers can call on the
     provided phone number. <br />
     Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
   </div>,
+
   <div />,
+
   <div>
     Created a consultancy website for Singapore based insurance consultancy
     company. Users can fill up their forms for any insurance policies and their
     data will be sent through email to the company. Contact form is provided for
     any further queries.
   </div>,
+
   <div>
     Consumed Amazon Web Service to fetch products and their related data. This
     website can be used by Sellers to calculate the average sale rank and

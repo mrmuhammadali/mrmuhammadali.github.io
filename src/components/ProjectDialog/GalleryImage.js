@@ -1,8 +1,8 @@
 // libs
 import React, { Component } from 'react'
-import { CircularProgress } from 'material-ui/Progress'
+import CircularProgress from '@material-ui/core/CircularProgress'
 import getOr from 'lodash/fp/getOr'
-import Grid from 'material-ui/Grid'
+import Grid from '@material-ui/core/Grid'
 
 // src
 import { hasPropChanged } from '../../utils'

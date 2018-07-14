@@ -1,8 +1,8 @@
 // libs
 import React from 'react'
-import ButtonBase from 'material-ui/ButtonBase'
-import Typography from 'material-ui/Typography'
-import { withStyles } from 'material-ui/styles'
+import ButtonBase from '@material-ui/core/ButtonBase'
+import Typography from '@material-ui/core/Typography'
+import { withStyles } from '@material-ui/core/styles'
 
 const styles = theme => ({
   image: {

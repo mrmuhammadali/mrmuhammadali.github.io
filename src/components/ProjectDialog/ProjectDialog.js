@@ -1,9 +1,9 @@
 // libs
 import React, { Component } from 'react'
-import Button from 'material-ui/Button'
-import Dialog from 'material-ui/Dialog'
-import Grid from 'material-ui/Grid'
-import Icon from 'material-ui/Icon'
+import Button from '@material-ui/core/Button'
+import Dialog from '@material-ui/core/Dialog'
+import Grid from '@material-ui/core/Grid'
+import Icon from '@material-ui/core/Icon'
 
 // src
 import Details from './Details'
@@ -23,15 +23,15 @@ export default class ProjectDialog extends Component {
     const activeIndex = shownProjects.findIndex(
       project => project === projects[activeProject]
     )
-    this.setState({ shownProjects, activeIndex })
+    this.setState(() => ({ shownProjects, activeIndex }))
   }
 
   handleNextClick = index => {
-    this.setState({ activeIndex: index + 1 })
+    this.setState(() => ({ activeIndex: index + 1 }))
   }
 
   handlePreviousClick = index => {
-    this.setState({ activeIndex: index - 1 })
+    this.setState(() => ({ activeIndex: index - 1 }))
   }
 
   setImageHeight = height => {
