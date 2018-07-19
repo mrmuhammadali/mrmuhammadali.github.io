@@ -1,79 +1,88 @@
 // libs
-import React from "react"
+import React from 'react'
 
-export const CATEGORIES = ["All Projects", "Android", "Bots", "Web"]
+export const CATEGORIES = ['All Projects', 'Android', 'Bots', 'Web']
 
 export const PROJECTS = [
   {
-    category: "Android",
-    title: "I Need a Partner",
-    thumbnail: "./images/thumbs/android-01.jpg",
-    image: "./images/full/android-01.jpg",
-    url: "",
-    description: "",
+    category: 'Android',
+    title: 'I Need a Partner',
+    thumbnail: './images/thumbs/android-01.jpg',
+    image: './images/full/android-01.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Android",
-    title: "Marketier",
-    thumbnail: "./images/thumbs/android-02.jpg",
-    image: "./images/full/android-0.jpg",
-    url: "",
-    description: "",
+    category: 'Android',
+    title: 'Marketier',
+    thumbnail: './images/thumbs/android-02.jpg',
+    image: './images/full/android-02.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "Magic Circle",
-    thumbnail: "./images/thumbs/image-01.jpg",
-    image: "./images/full/image-01.jpg",
-    url: "",
-    description: "",
+    category: 'Bots',
+    title: 'Assembla',
+    thumbnail: './images/thumbs/bot-01.png',
+    image: './images/full/bot-01.png',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "Camden Construction",
-    thumbnail: "./images/thumbs/image-02.jpg",
-    image: "./images/full/image-02.jpg",
-    url: "",
-    description: "",
+    category: 'Web',
+    title: 'Magic Circle',
+    thumbnail: './images/thumbs/image-01.jpg',
+    image: './images/full/image-01.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "RS Solution LLC",
-    thumbnail: "./images/thumbs/image-03.jpg",
-    image: "./images/full/image-03.jpg",
-    url: "",
-    description: "",
+    category: 'Web',
+    title: 'Camden Construction',
+    thumbnail: './images/thumbs/image-02.jpg',
+    image: './images/full/image-02.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "Nibble In",
-    thumbnail: "./images/thumbs/image-04.jpg",
-    image: "./images/full/image-04.jpg",
-    url: "",
-    description: "",
+    category: 'Web',
+    title: 'RS Solution LLC',
+    thumbnail: './images/thumbs/image-03.jpg',
+    image: './images/full/image-03.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "Silver Consultancy",
-    thumbnail: "./images/thumbs/image-05.jpg",
-    image: "./images/full/image-05.jpg",
-    url: "",
-    description: "",
+    category: 'Web',
+    title: 'Nibble In',
+    thumbnail: './images/thumbs/image-04.jpg',
+    image: './images/full/image-04.jpg',
+    url: '',
+    description: '',
     isHidden: false
   },
   {
-    category: "Web",
-    title: "Amazon Product Research",
-    thumbnail: "./images/thumbs/image-06.jpg",
-    image: "./images/full/image-06.jpg",
-    url: "",
-    description: "",
+    category: 'Web',
+    title: 'Silver Consultancy',
+    thumbnail: './images/thumbs/image-05.jpg',
+    image: './images/full/image-05.jpg',
+    url: '',
+    description: '',
+    isHidden: false
+  },
+  {
+    category: 'Web',
+    title: 'Amazon Product Research',
+    thumbnail: './images/thumbs/image-06.jpg',
+    image: './images/full/image-06.jpg',
+    url: '',
+    description: '',
     isHidden: false
   }
 ]
@@ -120,6 +129,23 @@ export const DESCRIPTIONS = [
       </li>
     </ul>
     Libraries Used: Bootstrap, jQuery, PHP Office, Retrofit, Twitter Digits
+  </div>,
+
+  <div>
+    Problem: People in a workplace often have to tell eachother whether they
+    commit a chunk of code, open an issue/ticket or create a merge request.
+    <br />
+    We had this problem in our team which was literally painful. We were using
+    <a href="https://www.assembla.com/home" target="__blank">
+      {' Assembla '}
+    </a>
+    for Version Control when I first saw this problem.
+    <br />
+    <br />
+    Solution: What I did was, created a bot for Skype and Telegram which
+    notifies everyone when anyone do any git operation.
+    <br />
+    PS: Why Telegram? Because I prefer it on any other platform :p
   </div>,
 
   <div>

@@ -3,10 +3,19 @@ body {
   padding: 0;
   background: #2f3238;
   color: #fff;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   overflow-x: hidden;
 }
 
-.root {
-  
+a {
+  color: #de5e60;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
+  -moz-transition: color 0.1s linear 0s, color 0.1s linear 0s;
+  -o-transition: color 0.1s linear 0s, color 0.1s linear 0s;
+  transition: color 0.1s linear 0s, color 0.1s linear 0s;
+}
+
+a:hover {
+  color: #fff;
 }

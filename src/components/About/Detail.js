@@ -40,14 +40,14 @@ export default () => (
       <h2 className={styles.sectionTitle}>Technical Skills</h2>
       <h4 className={styles.itemHeading}>Tools and Technologies</h4>
       <p className={styles.itemContent}>
-        <span className={styles.focus}>Comfortable:</span> AJAX, Alexa Skills
-        Development, Android, Bootstrap, CSS, ExpressJS, Git, HTML, Java,
-        Javascript, jQuery, MongoDB, NodeJS, PHP, ReactJS, React Native, Redux,
+        <span className={styles.focus}>Comfortable:</span> Alexa Skills
+        Development, Android, ExpressJS, Java,
+        Javascript, Jest, jQuery, MongoDB, NodeJS, PHP, ReactJS, React Native, Redux,
         REST APIs, SQL
       </p>
       <p className={styles.itemContent}>
         <span className={styles.focus}>Familiar:</span> Composer, Django,
-        Golang, Illustrator, Photoshop, Python, Shopify, Spring
+        Golang, Photoshop, Python, Shopify, Spring
       </p>
     </Grid>
   </Grid>
