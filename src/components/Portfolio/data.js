@@ -24,9 +24,9 @@ export const PROJECTS = [
   },
   {
     category: 'Bots',
-    title: 'Assembla',
-    thumbnail: './images/thumbs/bot-01.png',
-    image: './images/full/bot-01.png',
+    title: 'Assembla/Gitlab',
+    thumbnail: './images/thumbs/bot-01.jpg',
+    image: './images/full/bot-01.jpg',
     url: '',
     description: '',
     isHidden: false
@@ -139,13 +139,30 @@ export const DESCRIPTIONS = [
     <a href="https://www.assembla.com/home" target="__blank">
       {' Assembla '}
     </a>
-    for Version Control when I first saw this problem.
+    for Version Control at first but switched to
+    <a href="https://www.gitlab.com/" target="__blank">
+      {' Gitlab '}
+    </a>
+    after sometime.
     <br />
     <br />
     Solution: What I did was, created a bot for Skype and Telegram which
     notifies everyone when anyone do any git operation.
     <br />
-    PS: Why Telegram? Because I prefer it on any other platform :p
+    PS: Why Telegram? Because I prefer it on any other platform 😛
+    <br />
+    <br />
+    Assembla:
+    <a href="https://join.skype.com/bot/5452dd9e-b3f2-440f-ad4c-3352296a254f">
+      {' Skype '}
+    </a>
+    <a href="https://t.me/AssemblaBot">{' Telegram '}</a>
+    <br />
+    Gitlab:
+    <a href="https://join.skype.com/bot/8864cf5d-3c38-457f-976f-cfb07dd93c7f">
+      {' Skype '}
+    </a>
+    <a href="https://t.me/MrGitLabBot">{' Telegram '}</a>
   </div>,
 
   <div>
