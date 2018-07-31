@@ -1,6 +1,15 @@
 // libs
 import React from 'react'
 
+const AMAZON_USA = 'https://www.amazon.com/'
+const AMAZON_UK = 'https://www.amazon.co.uk/'
+const AMAZON_CANADA = 'https://www.amazon.ca/'
+const AMAZON_AUSTRALIA = 'https://www.amazon.com.au/'
+const AMAZON_GERMANY = 'https://www.amazon.de/'
+const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
+const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
+const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
+
 export const CATEGORIES = ['All Projects', 'Android', 'Bots', 'Web']
 
 export const PROJECTS = [
@@ -27,6 +36,15 @@ export const PROJECTS = [
     title: 'Assembla/Gitlab',
     thumbnail: './images/thumbs/bot-01.jpg',
     image: './images/full/bot-01.jpg',
+    url: '',
+    description: '',
+    isHidden: false
+  },
+  {
+    category: 'Bots',
+    title: 'Tweet It',
+    thumbnail: './images/thumbs/bot-02.png',
+    image: './images/full/bot-02.png',
     url: '',
     description: '',
     isHidden: false
@@ -163,6 +181,29 @@ export const DESCRIPTIONS = [
       {' Skype '}
     </a>
     <a href="https://t.me/MrGitLabBot">{' Telegram '}</a>
+  </div>,
+
+  <div>
+    {'Alexa Skills Store: '}
+    <a href={`${AMAZON_AUSTRALIA}${TWEET_IT}`} target="__blank">
+      Australia
+    </a>
+    {', '}
+    <a href={`${AMAZON_CANADA}${TWEET_IT}`} target="__blank">
+      Canada
+    </a>
+    {', '}
+    <a href={`${AMAZON_GERMANY}${TWEET_IT}`} target="__blank">
+      Germany
+    </a>
+    {', '}
+    <a href={`${AMAZON_UK}${TWEET_IT}`} target="__blank">
+      UK
+    </a>
+    {', '}
+    <a href={`${AMAZON_USA}${TWEET_IT}`} target="__blank">
+      US
+    </a>
   </div>,
 
   <div>

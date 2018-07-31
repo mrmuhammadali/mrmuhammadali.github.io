@@ -1,43 +1,25 @@
 // libs
 import React from 'react'
+import createHistory from 'history/createBrowserHistory'
 import { createMuiTheme, MuiThemeProvider } from '@material-ui/core/styles'
-import scrollToComponent from 'react-scroll-to-component'
+import { Redirect, Router, Route, Switch } from 'react-router'
 
 // src
-import About from './components/About'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import Header from './components/Header'
-import Portfolio from './components/Portfolio'
-import styles from './App.css'
+import { PageAlexaSkills, PageHome } from './components'
 
 const theme = createMuiTheme({ palette: { type: 'dark' } })
 
 export default class App extends React.Component {
-  handleNavButtonClick = index => {
-    scrollToComponent(this.sectionRefs[index], {
-      offset: -70,
-      align: 'top',
-      duration: 300
-    })
-  }
-
-  setSectionRef = ref => {
-    this.sectionRefs.push(ref)
-  }
-
-  sectionRefs = []
-
   render() {
     return (
       <MuiThemeProvider theme={theme}>
-        <div className={styles.root}>
-          <Header onNavButtonClick={this.handleNavButtonClick} />
-          <About setSectionRef={this.setSectionRef} />
-          <Portfolio setSectionRef={this.setSectionRef} />
-          <Contact setSectionRef={this.setSectionRef} />
-          <Footer />
-        </div>
+        <Router history={createHistory()}>
+          <Switch>
+            <Route exact path="/" component={PageHome} />
+            <Route exact path="/alexa/:skill" component={PageAlexaSkills} />
+            <Redirect to="/" />
+          </Switch>
+        </Router>
       </MuiThemeProvider>
     )
   }

@@ -6,36 +6,45 @@ import Tooltip from '@material-ui/core/Tooltip'
 
 // src
 import Form from './Form'
-import { Fiverr, Github, Instagram, LinkedIn, Npm } from '../Icons'
+import { Fiverr, Github, Instagram, LinkedIn, Npm, Twitter } from '../Icons'
 import styles from './Contact.css'
 import Title from '../Title'
 
 const SOCIAL_LINKS = [
-  {
-    title: 'Fiverr',
-    IconComponent: Fiverr,
-    url: 'https://www.fiverr.com/users/ma_webminister/'
-  },
-  {
-    title: 'Github',
-    IconComponent: Github,
-    url: 'https://github.com/mrmuhammadali/'
-  },
-  {
-    title: 'Instagram',
-    IconComponent: Instagram,
-    url: 'https://www.instagram.com/muhammadali.io/'
-  },
-  {
-    title: 'LinkedIn',
-    IconComponent: LinkedIn,
-    url: 'https://www.linkedin.com/in/muhammad-ali-6648b8119/'
-  },
-  {
-    title: 'NPM',
-    IconComponent: Npm,
-    url: 'https://npmjs.com/~mrmuhammadali'
-  }
+  [
+    {
+      title: 'Fiverr',
+      IconComponent: Fiverr,
+      url: 'https://www.fiverr.com/users/ma_webminister/'
+    },
+    {
+      title: 'Github',
+      IconComponent: Github,
+      url: 'https://github.com/mrmuhammadali/'
+    },
+    {
+      title: 'Instagram',
+      IconComponent: Instagram,
+      url: 'https://www.instagram.com/muhammadali.io/'
+    }
+  ],
+  [
+    {
+      title: 'LinkedIn',
+      IconComponent: LinkedIn,
+      url: 'https://www.linkedin.com/in/muhammad-ali-6648b8119/'
+    },
+    {
+      title: 'NPM',
+      IconComponent: Npm,
+      url: 'https://npmjs.com/~mrmuhammadali'
+    },
+    {
+      title: 'Twitter',
+      IconComponent: Twitter,
+      url: 'https://twitter.com/muhammadali_io'
+    }
+  ]
 ]
 
 export default ({ setSectionRef }) => (
@@ -54,19 +63,21 @@ export default ({ setSectionRef }) => (
             </a>
           </li>
           <li>+92 343 5311141</li>
-          <li className={styles.social}>
-            {SOCIAL_LINKS.map(socialLink => {
-              const { title, IconComponent, url } = socialLink
+          {SOCIAL_LINKS.map((socialLinks, index) => (
+            <li key={index} className={styles.social}>
+              {socialLinks.map(socialLink => {
+                const { title, IconComponent, url } = socialLink
 
-              return (
-                <Tooltip title={title} enterDelay={100}>
-                  <IconButton href={url} target="_blank">
-                    <IconComponent className={styles.icon} />
-                  </IconButton>
-                </Tooltip>
-              )
-            })}
-          </li>
+                return (
+                  <Tooltip key={title} title={title} enterDelay={100}>
+                    <IconButton href={url} target="_blank">
+                      <IconComponent className={styles.icon} />
+                    </IconButton>
+                  </Tooltip>
+                )
+              })}
+            </li>
+          ))}
         </ul>
       </Grid>
     </Grid>
