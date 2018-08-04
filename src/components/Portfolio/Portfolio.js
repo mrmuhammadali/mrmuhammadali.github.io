@@ -18,12 +18,10 @@ export default class Portfolio extends Component {
     const projects =
       index === 0
         ? PROJECTS
-        : PROJECTS.map(
-            project =>
-              project.category === category
-                ? { ...project, isHidden: false }
-                : { ...project, isHidden: true }
-          )
+        : PROJECTS.map(project => ({
+            ...project,
+            isHidden: project.category !== category
+          }))
     this.setState(() => ({ activeCategory: index, projects }))
   }
 

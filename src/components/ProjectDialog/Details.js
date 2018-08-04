@@ -5,7 +5,6 @@ import Icon from '@material-ui/core/Icon'
 import MobileStepper from '@material-ui/core/MobileStepper'
 
 // src
-import { DESCRIPTIONS } from '../Portfolio/data'
 import styles from './Details.css'
 
 export default props => {
@@ -13,6 +12,7 @@ export default props => {
     activeIndex,
     steps,
     title,
+    description,
     imageHeight,
     onNextClick,
     onPreviousClick
@@ -21,7 +21,7 @@ export default props => {
   return (
     <div className={styles.root} style={{ maxHeight: imageHeight }}>
       <h2 className={styles.heading}>{title}</h2>
-      <div className={styles.description}>{DESCRIPTIONS[activeIndex]}</div>
+      <div className={styles.description}>{description}</div>
       <MobileStepper
         variant="dots"
         steps={steps}

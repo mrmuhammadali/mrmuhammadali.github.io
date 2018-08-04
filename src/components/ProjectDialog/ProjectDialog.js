@@ -41,7 +41,7 @@ export default class ProjectDialog extends Component {
   render() {
     const { onCloseClick } = this.props
     const { activeIndex, shownProjects, imageHeight } = this.state
-    const { title, image } = shownProjects[activeIndex] || {}
+    const { title, image, description } = shownProjects[activeIndex] || {}
 
     return (
       <Dialog classes={{ paper: styles.root }} open onClose={onCloseClick}>
@@ -56,9 +56,10 @@ export default class ProjectDialog extends Component {
               activeIndex={activeIndex}
               steps={shownProjects.length}
               title={title}
+              description={description}
               imageHeight={imageHeight}
-              onNextClick={this.handleNextClick.bind(this, activeIndex)}
-              onPreviousClick={this.handlePreviousClick.bind(this, activeIndex)}
+              onNextClick={() => this.handleNextClick(activeIndex)}
+              onPreviousClick={() => this.handlePreviousClick(activeIndex)}
             />
           </Grid>
           <div className={styles.closeButton}>

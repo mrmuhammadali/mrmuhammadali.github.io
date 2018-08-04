@@ -20,7 +20,7 @@ export default ({ activeCategory, onCategoryClick }: Props) => (
           styles.listItem,
           activeCategory === index && styles.active
         ].join(' ')}
-        onClick={onCategoryClick.bind(this, index)}
+        onClick={() => onCategoryClick(index)}
       >
         {category}
       </li>
