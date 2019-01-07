@@ -10,7 +10,13 @@ const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
 const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
 const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
 
-export const CATEGORIES = ['All Projects', 'Android', 'Bots', 'Web']
+export const CATEGORIES = [
+  'All Projects',
+  'Android',
+  'Bots',
+  'React Native',
+  'Web',
+]
 
 export const PROJECTS = [
   {
@@ -33,7 +39,8 @@ export const PROJECTS = [
             Reviews, Interests Endorsement, Meeting Scheduler and Reminders.
           </li>
         </ul>
-        I developed Android Application using Java:<br />
+        I developed Android Application using Java:
+        <br />
         <ol type="a">
           <li>Twitter Digits is used for Phone no. verfication.</li>
           <li>Firebase is used for messaging and notifications.</li>
@@ -44,7 +51,38 @@ export const PROJECTS = [
           </li>
         </ol>
       </div>
-    )
+    ),
+  },
+  {
+    category: 'React Native',
+    title: 'Circular Carousal',
+    thumbnail: './images/thumbs/react-native-01.gif',
+    image: './images/full/react-native-01.gif',
+    url: '',
+    isHidden: false,
+    description: (
+      <div>
+        An Open-source library to create a Circular Carousal in React Native.
+        <ul>
+          <li>
+            <a
+              href="https://www.github.com/mrmuhammadali/react-native-circular-carousal"
+              target="__blank"
+            >
+              {' Github '}
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.npmjs.com/package/react-native-circular-carousal"
+              target="__blank"
+            >
+              {' NPM '}
+            </a>
+          </li>
+        </ul>
+      </div>
+    ),
   },
   {
     category: 'Android',
@@ -73,7 +111,7 @@ export const PROJECTS = [
         </ul>
         Libraries Used: Bootstrap, jQuery, PHP Office, Retrofit, Twitter Digits
       </div>
-    )
+    ),
   },
   {
     category: 'Bots',
@@ -117,7 +155,7 @@ export const PROJECTS = [
         </a>
         <a href="https://t.me/MrGitLabBot">{' Telegram '}</a>
       </div>
-    )
+    ),
   },
   {
     category: 'Bots',
@@ -128,8 +166,7 @@ export const PROJECTS = [
     isHidden: false,
     description: (
       <div>
-        Amazon's Alexa Skill built to tweet on your Twitter timeline
-        handsfree.
+        Amazon's Alexa Skill built to tweet on your Twitter timeline handsfree.
         <br />
         <br />
         {'Skill URLs: '}
@@ -153,7 +190,7 @@ export const PROJECTS = [
           US
         </a>
       </div>
-    )
+    ),
   },
   {
     category: 'Web',
@@ -168,7 +205,7 @@ export const PROJECTS = [
         Contact Form. <br />
         Libraries Used: EasingJS, Flex Slider, jCarousel, jQuery, Supersized
       </div>
-    )
+    ),
   },
   {
     category: 'Web',
@@ -183,7 +220,7 @@ export const PROJECTS = [
         provided phone number. <br />
         Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
       </div>
-    )
+    ),
   },
   {
     category: 'Web',
@@ -198,7 +235,7 @@ export const PROJECTS = [
         provided phone number. <br />
         Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
       </div>
-    )
+    ),
   },
   {
     category: 'Web',
@@ -207,7 +244,7 @@ export const PROJECTS = [
     image: './images/full/image-04.jpg',
     url: '',
     isHidden: false,
-    description: <div>Web presence of iOS app.</div>
+    description: <div>Web presence of iOS app.</div>,
   },
   {
     category: 'Web',
@@ -223,7 +260,7 @@ export const PROJECTS = [
         their data will be sent through email to the company. Contact form is
         provided for any further queries.
       </div>
-    )
+    ),
   },
   {
     category: 'Web',
@@ -240,6 +277,6 @@ export const PROJECTS = [
         that product form whole sale dealer. <br />
         Languages and Libraries: HTML, PHP, Bootstrap, Font Awesome, jQuery
       </div>
-    )
-  }
+    ),
+  },
 ]

@@ -13,7 +13,9 @@ export default () => (
       <h2 className={styles.sectionTitle}>Education</h2>
       <h4 className={styles.itemHeading}>BS in Software Engineering</h4>
       <p className={styles.itemContent}>
-        COMSATS Institute of Information Technology,<br /> Islamabad, Pakistan<br />
+        COMSATS Institute of Information Technology,
+        <br /> Islamabad, Pakistan
+        <br />
         February 2013 - January 2017
       </p>
     </Grid>
@@ -40,14 +42,13 @@ export default () => (
       <h2 className={styles.sectionTitle}>Technical Skills</h2>
       <h4 className={styles.itemHeading}>Tools and Technologies</h4>
       <p className={styles.itemContent}>
-        <span className={styles.focus}>Comfortable:</span> Alexa Skills
-        Development, D3.js, ExpressJS, Java,
-        Javascript, Jest, MongoDB, NodeJS, React, React Native, Redux,
-        REST APIs, SQL
+        <span className={styles.focus}>Comfortable:</span> Alexa Skills, D3.js,
+        ExpressJS, Java, Javascript, Jest, MongoDB, NodeJS, React, React Native,
+        Redux, REST APIs, SQL
       </p>
       <p className={styles.itemContent}>
-        <span className={styles.focus}>Familiar:</span> Django,
-        Golang, Photoshop, Python, Shopify, Spring
+        <span className={styles.focus}>Familiar:</span> Django, Golang,
+        Photoshop, Python, Shopify, Spring
       </p>
     </Grid>
   </Grid>
