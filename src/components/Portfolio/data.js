@@ -209,45 +209,6 @@ export const PROJECTS = [
   },
   {
     category: 'Web',
-    title: 'Camden Construction',
-    thumbnail: './images/thumbs/image-02.jpg',
-    image: './images/full/image-02.jpg',
-    url: '',
-    isHidden: false,
-    description: (
-      <div>
-        Created business website for online presence. Customers can call on the
-        provided phone number. <br />
-        Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
-      </div>
-    ),
-  },
-  {
-    category: 'Web',
-    title: 'RS Solution LLC',
-    thumbnail: './images/thumbs/image-03.jpg',
-    image: './images/full/image-03.jpg',
-    url: '',
-    isHidden: false,
-    description: (
-      <div>
-        Created business website for online presence. Customers can call on the
-        provided phone number. <br />
-        Libraries Used: AnimateJS, Bootstrap, Font Awesome, jQuery
-      </div>
-    ),
-  },
-  {
-    category: 'Web',
-    title: 'Nibble In',
-    thumbnail: './images/thumbs/image-04.jpg',
-    image: './images/full/image-04.jpg',
-    url: '',
-    isHidden: false,
-    description: <div>Web presence of iOS app.</div>,
-  },
-  {
-    category: 'Web',
     title: 'Silver Consultancy',
     thumbnail: './images/thumbs/image-05.jpg',
     image: './images/full/image-05.jpg',
