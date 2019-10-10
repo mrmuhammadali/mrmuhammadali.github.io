@@ -4,7 +4,7 @@ import { render } from 'react-dom'
 
 // src
 import { App } from './App'
-import { registerServiceWorker } from './utils'
+import * as serviceWorker from './utils/serviceWorker'
 
 render(<App />, document.getElementById('root'))
-registerServiceWorker()
+serviceWorker.register()
