@@ -7,15 +7,16 @@ import Toolbar from '@material-ui/core/Toolbar'
 
 // src
 import styles from './Header.module.css'
+import useResize from "../../utils/useResize";
 
 type Props = {
-  windowWidth: number,
   onNavButtonClick: number => void,
 }
 
 const buttons = ['About', 'Portfolio', 'Contact']
 
-export default ({ windowWidth, onNavButtonClick }: Props) => {
+export default ({ onNavButtonClick }: Props) => {
+  const [, windowWidth] = useResize()
   const isMobile = windowWidth < 600
   const size = isMobile ? 'small' : 'medium'
 

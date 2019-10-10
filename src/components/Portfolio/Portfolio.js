@@ -1,5 +1,5 @@
 // libs
-import React, { Component } from 'react'
+import React, { forwardRef, useState } from 'react'
 import Grid from '@material-ui/core/Grid'
 
 // src
@@ -10,10 +10,12 @@ import Projects from './Projects'
 import styles from './Portfolio.module.css'
 import Title from '../Title'
 
-export default class Portfolio extends Component {
-  state = { activeCategory: 0, activeProject: -1, projects: PROJECTS }
+const Portfolio = forwardRef((_, ref) => {
+  const [activeCategory, setActiveCategory] = useState(0)
+  const [activeProject, setActiveProject] = useState(-1)
+  const [projects, setProjects] = useState(PROJECTS)
 
-  handleCategoryClick = index => {
+  const handleCategoryClick = index => {
     const category = CATEGORIES[index]
     const projects =
       index === 0
@@ -22,47 +24,35 @@ export default class Portfolio extends Component {
             ...project,
             isHidden: project.category !== category,
           }))
-    this.setState(() => ({ activeCategory: index, projects }))
+    setActiveCategory(index)
+    setProjects(projects)
   }
 
-  handleProjectClick = index => {
-    this.setState(() => ({ activeProject: index }))
+  const handleProjectClick = index => {
+    setActiveProject(index)
   }
 
-  handleCloseClick = () => {
-    this.setState(() => ({ activeProject: -1 }))
+  const handleCloseClick = () => {
+    setActiveProject(-1)
   }
 
-  render() {
-    const { activeCategory, activeProject, projects } = this.state
-    const { setSectionRef } = this.props
-
-    return (
-      <section className={styles.root} ref={setSectionRef}>
-        <Title className={styles.title} content="My Portfolio" />
-        <Grid container spacing={24} className={styles.inner}>
-          <Grid item xs={4} sm={2}>
-            <h2 className={styles.heading}>Type of Work</h2>
-            <Categories
-              activeCategory={activeCategory}
-              onCategoryClick={this.handleCategoryClick}
-            />
-          </Grid>
-          <Grid item xs={10} sm={8}>
-            <Projects
-              projects={projects}
-              onProjectClick={this.handleProjectClick}
-            />
-          </Grid>
+  return (
+    <section className={styles.root} ref={ref}>
+      <Title className={styles.title} content="My Portfolio" />
+      <Grid container spacing={24} className={styles.inner}>
+        <Grid item xs={4} sm={2}>
+          <h2 className={styles.heading}>Type of Work</h2>
+          <Categories activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
         </Grid>
-        {activeProject > -1 && (
-          <ProjectDialog
-            activeProject={activeProject}
-            projects={projects}
-            onCloseClick={this.handleCloseClick}
-          />
-        )}
-      </section>
-    )
-  }
-}
+        <Grid item xs={10} sm={8}>
+          <Projects projects={projects} onProjectClick={handleProjectClick} />
+        </Grid>
+      </Grid>
+      {activeProject > -1 && (
+        <ProjectDialog activeProject={activeProject} projects={projects} onCloseClick={handleCloseClick} />
+      )}
+    </section>
+  )
+})
+
+export default Portfolio

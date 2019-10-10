@@ -11,20 +11,6 @@ import Portfolio from '../Portfolio'
 import styles from './PageHome.module.css'
 
 export default class PageHome extends React.Component {
-  state = { windowWidth: window.innerWidth }
-
-  componentDidMount() {
-    window.addEventListener('resize', this.handleResize, true)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleResize, true)
-  }
-
-  handleResize = () => {
-    this.setState(() => ({ windowWidth: window.innerWidth }))
-  }
-
   handleNavButtonClick = index => {
     scrollToComponent(this.sectionRefs[index], {
       offset: -70,
@@ -40,17 +26,12 @@ export default class PageHome extends React.Component {
   sectionRefs = []
 
   render() {
-    const { windowWidth } = this.state
-
     return (
       <div className={styles.root}>
-        <Header
-          windowWidth={windowWidth}
-          onNavButtonClick={this.handleNavButtonClick}
-        />
-        <About setSectionRef={this.setSectionRef} />
-        <Portfolio setSectionRef={this.setSectionRef} />
-        <Contact setSectionRef={this.setSectionRef} />
+        <Header onNavButtonClick={this.handleNavButtonClick} />
+        <About ref={this.setSectionRef} />
+        <Portfolio ref={this.setSectionRef} />
+        <Contact ref={this.setSectionRef} />
         <Footer />
       </div>
     )

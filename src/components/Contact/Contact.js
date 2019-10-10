@@ -1,5 +1,5 @@
 // libs
-import React from 'react'
+import React, { forwardRef } from 'react'
 import Grid from '@material-ui/core/Grid'
 import IconButton from '@material-ui/core/IconButton'
 import Tooltip from '@material-ui/core/Tooltip'
@@ -47,8 +47,8 @@ const SOCIAL_LINKS = [
   ]
 ]
 
-export default ({ setSectionRef }) => (
-  <section className={styles.root} ref={setSectionRef}>
+const Contact = forwardRef((_, ref) => (
+  <section className={styles.root} ref={ref}>
     <Title className={styles.title} content="Get in Touch" />
     <Grid container spacing={24} className={styles.inner}>
       <Grid item xs={10} sm={7} md={6}>
@@ -82,4 +82,6 @@ export default ({ setSectionRef }) => (
       </Grid>
     </Grid>
   </section>
-)
+))
+
+export default Contact
