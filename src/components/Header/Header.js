@@ -30,12 +30,12 @@ export default ({ onNavButtonClick }: Props) => {
         >
           Muhammad Ali
         </h2>
-        {buttons.map((title, index) => (
+        {buttons.map((title) => (
           <Button
             key={title}
             size={size}
             color="inherit"
-            onClick={() => onNavButtonClick(index)}
+            onClick={() => onNavButtonClick(title.toLowerCase())}
           >
             {title}
           </Button>

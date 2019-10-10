@@ -1,5 +1,5 @@
 // libs
-import React from 'react'
+import React, { useRef } from 'react'
 import scrollToComponent from 'react-scroll-to-component'
 
 // src
@@ -10,30 +10,32 @@ import Header from '../Header'
 import Portfolio from '../Portfolio'
 import styles from './PageHome.module.css'
 
-export default class PageHome extends React.Component {
-  handleNavButtonClick = index => {
-    scrollToComponent(this.sectionRefs[index], {
-      offset: -70,
-      align: 'top',
-      duration: 300,
-    })
+export default function PageHome() {
+  const about = useRef(null)
+  const contact = useRef(null)
+  const portfolio = useRef(null)
+
+  const handleNavButtonClick = section => {
+    const scroll = ref =>
+      scrollToComponent(ref, { offset: -70, align: 'top', duration: 300 })
+
+    switch (section) {
+      case 'about':
+        return scroll(about.current)
+      case 'contact':
+        return scroll(contact.current)
+      default:
+        return scroll(portfolio.current)
+    }
   }
 
-  setSectionRef = ref => {
-    this.sectionRefs = [...this.sectionRefs, ref]
-  }
-
-  sectionRefs = []
-
-  render() {
-    return (
-      <div className={styles.root}>
-        <Header onNavButtonClick={this.handleNavButtonClick} />
-        <About ref={this.setSectionRef} />
-        <Portfolio ref={this.setSectionRef} />
-        <Contact ref={this.setSectionRef} />
-        <Footer />
-      </div>
-    )
-  }
+  return (
+    <div className={styles.root}>
+      <Header onNavButtonClick={handleNavButtonClick} />
+      <About ref={about} />
+      <Portfolio ref={portfolio} />
+      <Contact ref={contact} />
+      <Footer />
+    </div>
+  )
 }
