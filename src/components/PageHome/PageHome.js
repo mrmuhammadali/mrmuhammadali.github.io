@@ -8,7 +8,7 @@ import Contact from '../Contact'
 import Footer from '../Footer'
 import Header from '../Header'
 import Portfolio from '../Portfolio'
-import styles from './PageHome.css'
+import styles from './PageHome.module.css'
 
 export default class PageHome extends React.Component {
   state = { windowWidth: window.innerWidth }

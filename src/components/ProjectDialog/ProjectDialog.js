@@ -8,20 +8,20 @@ import Icon from '@material-ui/core/Icon'
 // src
 import Details from './Details'
 import GalleryImage from './GalleryImage'
-import styles from './ProjectDialog.css'
+import styles from './ProjectDialog.module.css'
 
 export default class ProjectDialog extends Component {
   state = {
     shownProjects: [],
     activeIndex: -1,
-    imageHeight: window.innerHeight / 1.5
+    imageHeight: window.innerHeight / 1.5,
   }
 
   componentDidMount() {
     const { activeProject, projects } = this.props
     const shownProjects = projects.filter(({ isHidden }) => !isHidden)
     const activeIndex = shownProjects.findIndex(
-      project => project === projects[activeProject]
+      project => project === projects[activeProject],
     )
     this.setState(() => ({ shownProjects, activeIndex }))
   }

@@ -3,7 +3,7 @@ import React from 'react'
 import Grid from '@material-ui/core/Grid'
 
 // src
-import styles from './Profile.css'
+import styles from './Profile.module.css'
 
 export default () => (
   <Grid container spacing={24} className={styles.root}>

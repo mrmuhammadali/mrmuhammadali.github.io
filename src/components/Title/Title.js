@@ -3,11 +3,11 @@
 import React from 'react'
 
 // src
-import styles from './Title.css'
+import styles from './Title.module.css'
 
 type Props = {
   content: string,
-  className: string
+  className: string,
 }
 
 export default ({ content, className }: Props) => (

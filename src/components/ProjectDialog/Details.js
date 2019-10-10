@@ -5,7 +5,7 @@ import Icon from '@material-ui/core/Icon'
 import MobileStepper from '@material-ui/core/MobileStepper'
 
 // src
-import styles from './Details.css'
+import styles from './Details.module.css'
 
 export default props => {
   const {
@@ -15,7 +15,7 @@ export default props => {
     description,
     imageHeight,
     onNextClick,
-    onPreviousClick
+    onPreviousClick,
   } = props
 
   return (

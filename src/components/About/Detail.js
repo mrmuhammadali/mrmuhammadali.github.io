@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Icon from '@material-ui/core/Icon'
 
 // src
-import styles from './Detail.css'
+import styles from './Detail.module.css'
 
 export default () => (
   <Grid container spacing={24} className={styles.root}>

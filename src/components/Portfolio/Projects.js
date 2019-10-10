@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid'
 
 // src
 import Project from './Project'
-import styles from './Projects.css'
+import styles from './Projects.module.css'
 
 export default ({ projects, onProjectClick }) => (
   <Grid container spacing={24} className={styles.list}>

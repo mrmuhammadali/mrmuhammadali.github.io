@@ -7,7 +7,7 @@ import { CATEGORIES, PROJECTS } from './data'
 import Categories from './Categories'
 import ProjectDialog from '../ProjectDialog'
 import Projects from './Projects'
-import styles from './Portfolio.css'
+import styles from './Portfolio.module.css'
 import Title from '../Title'
 
 export default class Portfolio extends Component {
@@ -20,7 +20,7 @@ export default class Portfolio extends Component {
         ? PROJECTS
         : PROJECTS.map(project => ({
             ...project,
-            isHidden: project.category !== category
+            isHidden: project.category !== category,
           }))
     this.setState(() => ({ activeCategory: index, projects }))
   }

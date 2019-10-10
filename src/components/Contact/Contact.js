@@ -7,7 +7,7 @@ import Tooltip from '@material-ui/core/Tooltip'
 // src
 import Form from './Form'
 import { Fiverr, Github, Instagram, LinkedIn, Npm, Twitter } from '../Icons'
-import styles from './Contact.css'
+import styles from './Contact.module.css'
 import Title from '../Title'
 
 const SOCIAL_LINKS = [

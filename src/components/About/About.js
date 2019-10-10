@@ -4,7 +4,7 @@ import React from 'react'
 // src
 import Detail from './Detail'
 import Profile from './Profile'
-import styles from './About.css'
+import styles from './About.module.css'
 
 export default ({ setSectionRef }) => (
   <section className={styles.root} ref={setSectionRef}>

@@ -3,7 +3,7 @@ import React from 'react'
 import Button from '@material-ui/core/Button'
 
 // src
-import styles from './Form.css'
+import styles from './Form.module.css'
 
 export default () => (
   <form

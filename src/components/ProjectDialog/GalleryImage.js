@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid'
 
 // src
 import { hasPropChanged } from '../../utils'
-import styles from './GalleryImage.css'
+import styles from './GalleryImage.module.css'
 
 const INNER_HEIGHT = window.innerHeigh
 

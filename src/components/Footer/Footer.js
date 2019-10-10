@@ -2,7 +2,7 @@
 import React from 'react'
 
 // src
-import styles from './Footer.css'
+import styles from './Footer.module.css'
 
 export default () => (
   <footer className={styles.root}>

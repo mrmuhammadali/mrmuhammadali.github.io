@@ -6,11 +6,11 @@ import Button from '@material-ui/core/Button'
 import Toolbar from '@material-ui/core/Toolbar'
 
 // src
-import styles from './Header.css'
+import styles from './Header.module.css'
 
 type Props = {
   windowWidth: number,
-  onNavButtonClick: number => void
+  onNavButtonClick: number => void,
 }
 
 const buttons = ['About', 'Portfolio', 'Contact']
