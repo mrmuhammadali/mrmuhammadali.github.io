@@ -85,35 +85,6 @@ export const PROJECTS = [
     ),
   },
   {
-    category: 'Android',
-    title: 'Marketier',
-    thumbnail: './images/thumbs/android-02.jpg',
-    image: './images/full/android-02.jpg',
-    url: '',
-    isHidden: false,
-    description: (
-      <div>
-        Problem: Employees had to send the pictures and shop name, location, etc
-        through whatsapp. Those pictures and data were then compiled in a
-        document file which was really hectic given that you had to compile data
-        for hundreds of shops. <br />
-        Solution:
-        <ul>
-          <li>
-            This app lets company employees to upload multiple images and other
-            shop related data on server.
-          </li>
-          <li>
-            Admin Panel automates the generation of document file and lets admin
-            to download that file. Ofcourse User and Data Management is there as
-            well.
-          </li>
-        </ul>
-        Libraries Used: Bootstrap, jQuery, PHP Office, Retrofit, Twitter Digits
-      </div>
-    ),
-  },
-  {
     category: 'Bots',
     title: 'Assembla/Gitlab',
     thumbnail: './images/thumbs/bot-01.jpg',

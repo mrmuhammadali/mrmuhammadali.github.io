@@ -29,7 +29,7 @@ export default class PageHome extends React.Component {
     scrollToComponent(this.sectionRefs[index], {
       offset: -70,
       align: 'top',
-      duration: 300
+      duration: 300,
     })
   }
 
