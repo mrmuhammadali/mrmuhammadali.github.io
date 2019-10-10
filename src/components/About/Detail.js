@@ -26,15 +26,7 @@ export default () => (
       <p className={styles.itemContent}>June 2017 - Present</p>
       <h4 className={styles.itemHeading}>Freelancer</h4>
       <p className={styles.itemContent}>
-        Fiverr.com <br /> Active Time: 6 Months <br />{' '}
-        <a
-          className={styles.link}
-          href="https://www.fiverr.com/users/ma_webminister/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visit Profile
-        </a>
+        Active Time: 6 Months
       </p>
     </Grid>
     <Grid item xs={8} sm={4} md={3}>
@@ -42,13 +34,9 @@ export default () => (
       <h2 className={styles.sectionTitle}>Technical Skills</h2>
       <h4 className={styles.itemHeading}>Tools and Technologies</h4>
       <p className={styles.itemContent}>
-        <span className={styles.focus}>Comfortable:</span> Alexa Skills, D3.js,
-        ExpressJS, Java, Javascript, Jest, MongoDB, NodeJS, React, React Native,
-        Redux, REST APIs, SQL
-      </p>
-      <p className={styles.itemContent}>
-        <span className={styles.focus}>Familiar:</span> Django, Golang,
-        Photoshop, Python, Shopify, Spring
+        Alexa Skills, D3.js,
+        ExpressJS, Javascript, Jest, MongoDB, NodeJS, React, React Native,
+        Redux, REST APIs, SQL, NoSQL
       </p>
     </Grid>
   </Grid>
