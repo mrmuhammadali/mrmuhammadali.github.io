@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #2f3238;
+  color: #fff;
+  font-family: 'Titillium Web', sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  padding: 16px 8px;
+}
+
+a {
+  color: #de5e60;
+  text-decoration: none;
+  transition: color 0.1s linear 0s;
+}
+
+a:hover {
+  color: #fff;
+}

@@ -1,47 +1,35 @@
 .root {
   justify-content: center;
-  margin: 2rem auto !important;
-  padding: 0 2rem;
 }
 
-.sectionIcon {
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon {
   font-size: 1.5em;
   border: 1px solid;
   padding: 0.5em;
   border-radius: 15px 0;
 }
 
-.sectionTitle {
+.title {
   font-size: 24px;
   font-weight: 300;
-  margin: 0 auto 0.8rem;
+  margin: 0;
 }
 
-.itemHeading {
+.subtitle {
   font-size: 16px;
   font-weight: 300;
   line-height: 1.5em;
-  margin: 0 auto 0.4rem;
+  margin: 0;
 }
 
-.itemContent {
+.content {
   color: #8f9299;
-  margin: 0 auto 0.4rem;
-}
-
-.focus {
-  color: #fff;
-}
-
-.link {
-  color: #de5e60;
-  text-decoration: none;
-  -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -moz-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -o-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  transition: color 0.1s linear 0s, color 0.1s linear 0s;
-}
-
-.link:hover {
-  color: #fff;
+  margin: 0;
+  text-align: center;
 }

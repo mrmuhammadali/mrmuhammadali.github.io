@@ -7,8 +7,8 @@ const AMAZON_CANADA = 'https://www.amazon.ca/'
 const AMAZON_AUSTRALIA = 'https://www.amazon.com.au/'
 const AMAZON_GERMANY = 'https://www.amazon.de/'
 const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
-const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
-const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
+// const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
+// const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
 
 export const CATEGORIES = [
   'All Projects',

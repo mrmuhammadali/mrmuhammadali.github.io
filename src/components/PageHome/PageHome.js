@@ -8,7 +8,7 @@ import Contact from '../Contact'
 import Footer from '../Footer'
 import Header from '../Header'
 import Portfolio from '../Portfolio'
-import styles from './PageHome.module.css'
+import './PageHome.css'
 
 export default function PageHome() {
   const about = useRef(null)
@@ -17,25 +17,24 @@ export default function PageHome() {
 
   const handleNavButtonClick = section => {
     const scroll = ref =>
-      scrollToComponent(ref, { offset: -70, align: 'top', duration: 300 })
+      scrollToComponent(ref.current, { offset: -50, align: 'top', duration: 300 })
 
-    switch (section) {
-      case 'about':
-        return scroll(about.current)
-      case 'contact':
-        return scroll(contact.current)
-      default:
-        return scroll(portfolio.current)
+    if (section === 'about') {
+      scroll(about)
+    } else if (section === 'contact') {
+      scroll(contact)
+    } else {
+      scroll(portfolio)
     }
   }
 
   return (
-    <div className={styles.root}>
+    <React.Fragment>
       <Header onNavButtonClick={handleNavButtonClick} />
       <About ref={about} />
       <Portfolio ref={portfolio} />
       <Contact ref={contact} />
       <Footer />
-    </div>
+    </React.Fragment>
   )
 }

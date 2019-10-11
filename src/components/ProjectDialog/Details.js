@@ -13,13 +13,12 @@ export default props => {
     steps,
     title,
     description,
-    imageHeight,
     onNextClick,
     onPreviousClick,
   } = props
 
   return (
-    <div className={styles.root} style={{ maxHeight: imageHeight }}>
+    <div className={styles.root}>
       <h2 className={styles.heading}>{title}</h2>
       <div className={styles.description}>{description}</div>
       <MobileStepper

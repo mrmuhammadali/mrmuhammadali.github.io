@@ -6,7 +6,7 @@ import Grid from '@material-ui/core/Grid'
 import styles from './Profile.module.css'
 
 export default () => (
-  <Grid container spacing={24} className={styles.root}>
+  <Grid container spacing={2} className={styles.root}>
     <Grid item xs={5} sm={4} md={2}>
       <img
         className={styles.profilePic}
@@ -14,7 +14,7 @@ export default () => (
         src="./images/profile.jpg"
       />
     </Grid>
-    <Grid item xs={12} sm={8} md={7} style={{ padding: '6px' }}>
+    <Grid item xs={12} sm={8} md={7}>
       <p className={styles.description}>
         <span className={styles.focus}>I prefer tabs over spaces,</span>{' '}
         camelCase over _underscores, unix over windows, long work sessions over

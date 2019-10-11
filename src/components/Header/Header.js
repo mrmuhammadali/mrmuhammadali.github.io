@@ -22,7 +22,7 @@ export default ({ onNavButtonClick }: Props) => {
 
   return (
     <AppBar className={styles.root} position="sticky" color="default">
-      <Toolbar>
+      <Toolbar variant="dense">
         <h2
           className={[styles.logo, isMobile && styles.mobileLogo].join(' ')}
           variant="title"

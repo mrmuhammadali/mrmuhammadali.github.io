@@ -1,62 +1,45 @@
 .root {
-  padding: 3rem 0;
 }
 
 .title {
   text-align: center;
 }
 
-.inner {
+.content {
   justify-content: center;
-  padding-top: 2rem;
 }
 
-.heading {
-  color: #ffffff;
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactHeading {
+  color: #fff;
   font-size: 24px;
   font-weight: 300;
-  margin-bottom: 30px;
   line-height: 1em;
   text-transform: uppercase;
-}
-
-.list {
   margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
-.list li {
-  margin: 0 0 5px;
+.email {
+  margin: 0.5rem 0;
+}
+
+.phone {
+  margin: 0;
   line-height: 28px;
   padding: 0;
   color: #8f9299;
 }
 
 .social {
-  display: flex;
-  align-items: center;
-}
-
-.social button {
-  width: 40px;
-  height: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
 }
 
 .social .icon {
   fill: #8f9299;
-  width: 24px;
-}
-
-.link {
-  color: #de5e60;
-  text-decoration: none;
-  -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -moz-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -o-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  transition: color 0.1s linear 0s, color 0.1s linear 0s;
-}
-
-.link:hover {
-  color: #fff;
+  width: 20px;
 }

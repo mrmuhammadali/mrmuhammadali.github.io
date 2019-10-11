@@ -1,5 +1,6 @@
-.root p {
-  margin: 0 0 2px;
+.root {
+  display: grid;
+  gap: 2px;
 }
 
 .root input,
@@ -7,41 +8,25 @@
   width: 100%;
   box-sizing: border-box;
   border: none;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   font-weight: 300;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
   background: #26292e;
-  color: #ffffff;
+  color: #fff;
   font-size: 16px;
-  height: auto;
-  padding: 15px;
-  margin: 0;
+  padding: 10px;
   resize: none;
 }
 
 .root .submit {
   background: #3c3f45;
   color: #83868c;
-  cursor: pointer;
-  display: inline-block;
   font-size: 18px;
-  font-weight: 400;
-  padding: 16px 40px;
-  text-align: center;
-  vertical-align: middle;
-  width: auto;
-  margin-top: 15px;
+  margin-top: 10px;
   text-transform: none;
-  font-family: "Titillium Web", sans-serif;
-  -webkit-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-  -moz-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-  -o-transition: background 0.1s linear 0s, color 0.1s linear 0s;
-  transition: background 0.1s linear 0s, color 0.1s linear 0s;
+  font-family: 'Titillium Web', sans-serif;
+  transition: background 0.2s linear, color 0.2s linear;
+  width: 14rem;
+  justify-self: end;
 }
 
 .root .submit:hover {

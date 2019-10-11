@@ -14,7 +14,6 @@ export default class ProjectDialog extends Component {
   state = {
     shownProjects: [],
     activeIndex: -1,
-    imageHeight: window.innerHeight / 1.5,
   }
 
   componentDidMount() {
@@ -34,13 +33,9 @@ export default class ProjectDialog extends Component {
     this.setState(() => ({ activeIndex: index - 1 }))
   }
 
-  setImageHeight = height => {
-    this.setState(() => ({ imageHeight: height }))
-  }
-
   render() {
     const { onCloseClick } = this.props
-    const { activeIndex, shownProjects, imageHeight } = this.state
+    const { activeIndex, shownProjects } = this.state
     const { title, image, description } = shownProjects[activeIndex] || {}
 
     return (
@@ -49,7 +44,6 @@ export default class ProjectDialog extends Component {
           <GalleryImage
             image={image}
             title={title}
-            setImageHeight={this.setImageHeight}
           />
           <Grid item xs={12} sm={12} md={5}>
             <Details
@@ -57,7 +51,6 @@ export default class ProjectDialog extends Component {
               steps={shownProjects.length}
               title={title}
               description={description}
-              imageHeight={imageHeight}
               onNextClick={() => this.handleNextClick(activeIndex)}
               onPreviousClick={() => this.handlePreviousClick(activeIndex)}
             />

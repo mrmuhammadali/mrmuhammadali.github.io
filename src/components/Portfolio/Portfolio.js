@@ -5,14 +5,14 @@ import Grid from '@material-ui/core/Grid'
 // src
 import { CATEGORIES, PROJECTS } from './data'
 import Categories from './Categories'
-import ProjectDialog from '../ProjectDialog'
+// import ProjectDialog from '../ProjectDialog'
 import Projects from './Projects'
 import styles from './Portfolio.module.css'
 import Title from '../Title'
 
 const Portfolio = forwardRef((_, ref) => {
   const [activeCategory, setActiveCategory] = useState(0)
-  const [activeProject, setActiveProject] = useState(-1)
+  // const [activeProject, setActiveProject] = useState(-1)
   const [projects, setProjects] = useState(PROJECTS)
 
   const handleCategoryClick = index => {
@@ -29,12 +29,12 @@ const Portfolio = forwardRef((_, ref) => {
   }
 
   const handleProjectClick = index => {
-    setActiveProject(index)
+    // setActiveProject(index)
   }
 
-  const handleCloseClick = () => {
-    setActiveProject(-1)
-  }
+  // const handleCloseClick = () => {
+  //   setActiveProject(-1)
+  // }
 
   return (
     <section className={styles.root} ref={ref}>
@@ -48,9 +48,9 @@ const Portfolio = forwardRef((_, ref) => {
           <Projects projects={projects} onProjectClick={handleProjectClick} />
         </Grid>
       </Grid>
-      {activeProject > -1 && (
+      {/* {activeProject > -1 && (
         <ProjectDialog activeProject={activeProject} projects={projects} onCloseClick={handleCloseClick} />
-      )}
+      )} */}
     </section>
   )
 })
