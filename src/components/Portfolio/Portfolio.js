@@ -39,12 +39,9 @@ const Portfolio = forwardRef((_, ref) => {
   return (
     <section className={styles.root} ref={ref}>
       <Title className={styles.title} content="My Portfolio" />
-      <Grid container spacing={24} className={styles.inner}>
-        <Grid item xs={4} sm={2}>
-          <h2 className={styles.heading}>Type of Work</h2>
-          <Categories activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
-        </Grid>
-        <Grid item xs={10} sm={8}>
+      <Categories activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
+      <Grid container className={styles.inner}>
+        <Grid item xs={12} sm={12} md={10}>
           <Projects projects={projects} onProjectClick={handleProjectClick} />
         </Grid>
       </Grid>

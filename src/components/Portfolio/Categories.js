@@ -12,9 +12,9 @@ type Props = {
 }
 
 export default ({ activeCategory, onCategoryClick }: Props) => (
-  <ul className={styles.root}>
+  <div className={styles.root}>
     {CATEGORIES.map((category, index) => (
-      <li
+      <span
         key={index}
         className={[
           styles.listItem,
@@ -23,7 +23,7 @@ export default ({ activeCategory, onCategoryClick }: Props) => (
         onClick={() => onCategoryClick(index)}
       >
         {category}
-      </li>
+      </span>
     ))}
-  </ul>
+  </div>
 )

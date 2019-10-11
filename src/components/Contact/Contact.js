@@ -50,7 +50,7 @@ const Contact = forwardRef((_, ref) => (
       <Grid item xs={12} sm={8} md={6}>
         <Form />
       </Grid>
-      <Grid item xs={6} sm={4} md={2} className={styles.contact}>
+      <Grid item xs={12} sm={4} md={2} className={styles.contact}>
         <h2 className={styles.contactHeading}>CONTACT DETAILS</h2>
         <a className={styles.email} href="mailto:mr.muhammad.ali@live.com">
           mr.muhammad.ali@live.com

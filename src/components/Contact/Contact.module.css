@@ -24,7 +24,7 @@
 }
 
 .email {
-  margin: 0.5rem 0;
+  margin: 5px 0;
 }
 
 .phone {
@@ -42,4 +42,22 @@
 .social .icon {
   fill: #8f9299;
   width: 20px;
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  .contact {
+    align-items: center;
+  }
+
+  .contactHeading {
+    display: none;
+  }
+  
+  .social {
+    grid-template-columns: repeat(6, 40px);
+  }
 }
