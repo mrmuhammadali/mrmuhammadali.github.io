@@ -6,8 +6,8 @@ import Button from '@material-ui/core/Button'
 import Toolbar from '@material-ui/core/Toolbar'
 
 // src
-import styles from './Header.module.css'
-import useResize from "../../utils/useResize";
+import { useStyles } from './Header.styles'
+import useResize from '../../utils/useResize'
 
 type Props = {
   onNavButtonClick: number => void,
@@ -16,6 +16,7 @@ type Props = {
 const buttons = ['About', 'Portfolio', 'Contact']
 
 export default ({ onNavButtonClick }: Props) => {
+  const styles = useStyles({})
   const [, windowWidth] = useResize()
   const isMobile = windowWidth < 600
   const size = isMobile ? 'small' : 'medium'
@@ -30,7 +31,7 @@ export default ({ onNavButtonClick }: Props) => {
         >
           Muhammad Ali
         </h2>
-        {buttons.map((title) => (
+        {buttons.map(title => (
           <Button
             key={title}
             size={size}

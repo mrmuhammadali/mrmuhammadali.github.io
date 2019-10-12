@@ -5,8 +5,8 @@ import Grid from '@material-ui/core/Grid'
 // src
 import { CATEGORIES, PROJECTS } from './data'
 import Categories from './Categories'
-// import ProjectDialog from '../ProjectDialog'
-import Projects from './Projects'
+// import Projects from './Projects'
+import { ProjectCard } from '../ProjectCard'
 import styles from './Portfolio.module.css'
 import Title from '../Title'
 
@@ -28,26 +28,32 @@ const Portfolio = forwardRef((_, ref) => {
     setProjects(projects)
   }
 
-  const handleProjectClick = index => {
-    // setActiveProject(index)
-  }
-
-  // const handleCloseClick = () => {
-  //   setActiveProject(-1)
-  // }
-
   return (
     <section className={styles.root} ref={ref}>
       <Title className={styles.title} content="My Portfolio" />
-      <Categories activeCategory={activeCategory} onCategoryClick={handleCategoryClick} />
-      <Grid container className={styles.inner}>
-        <Grid item xs={12} sm={12} md={10}>
-          <Projects projects={projects} onProjectClick={handleProjectClick} />
+      <Categories
+        activeCategory={activeCategory}
+        onCategoryClick={handleCategoryClick}
+      />
+      <Grid container className={styles.content}>
+        <Grid item xs={11} sm={12} md={10} lg={11}>
+          <Grid container className={styles.content} spacing={2}>
+            {projects.map(project => {
+              const { category, description, thumbnail, title } = project
+              return (
+                <Grid key={title} item xs={12} sm={6} md={4} lg={3}>
+                  <ProjectCard
+                    category={category}
+                    description={description}
+                    image={thumbnail}
+                    title={title}
+                  />
+                </Grid>
+              )
+            })}
+          </Grid>
         </Grid>
       </Grid>
-      {/* {activeProject > -1 && (
-        <ProjectDialog activeProject={activeProject} projects={projects} onCloseClick={handleCloseClick} />
-      )} */}
     </section>
   )
 })

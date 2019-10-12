@@ -45,10 +45,6 @@
 }
 
 @media screen and (max-width: 599px) {
-  .content {
-    flex-direction: column-reverse;
-  }
-
   .contact {
     align-items: center;
   }
@@ -56,7 +52,7 @@
   .contactHeading {
     display: none;
   }
-  
+
   .social {
     grid-template-columns: repeat(6, 40px);
   }
