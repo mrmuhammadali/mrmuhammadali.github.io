@@ -13,7 +13,7 @@ type Props = {
   onNavButtonClick: number => void,
 }
 
-const buttons = ['About', 'Portfolio', 'Contact']
+const BUTTONS = ['About', 'Portfolio', 'Contact']
 
 export const Header = ({ onNavButtonClick }: Props) => {
   const styles = useStyles({})
@@ -31,7 +31,7 @@ export const Header = ({ onNavButtonClick }: Props) => {
         >
           Muhammad Ali
         </h2>
-        {buttons.map(title => (
+        {BUTTONS.map(title => (
           <Button
             key={title}
             size={size}

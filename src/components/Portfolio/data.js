@@ -20,81 +20,38 @@ export const CATEGORIES = [
 
 export const PROJECTS = [
   {
-    category: 'Android',
-    title: 'I Need a Partner',
-    thumbnail: './images/thumbs/android-01.jpg',
-    image: './images/full/android-01.jpg',
-    url: '',
-    isHidden: false,
-    description: (
-      <div>
-        <ul>
-          <li>
-            This Application proposes to help its users find nearby people
-            sharing similar interests.
-          </li>
-          <li>
-            Features: Chat(Text, Voice and File sharing), Post(File Sharing),
-            Groups, Friends, People Nearby, Partnerships based on Interests,
-            Reviews, Interests Endorsement, Meeting Scheduler and Reminders.
-          </li>
-        </ul>
-        I developed Android Application using Java:
-        <br />
-        <ol type="a">
-          <li>Twitter Digits is used for Phone no. verfication.</li>
-          <li>Firebase is used for messaging and notifications.</li>
-          <li>Retrofit2 is used for HTTP requests and responses.</li>
-          <li>
-            GSON Converter Factory is used to parse HTTP Response Body directly
-            onto Models.
-          </li>
-        </ol>
-      </div>
-    ),
-  },
-  {
     category: 'React Native',
-    title: 'Circular Carousal',
+    title: 'Circular Carousel',
     thumbnail: './images/thumbs/react-native-01.gif',
     image: './images/full/react-native-01.gif',
-    url: '',
-    isHidden: false,
-    description: (
-      <div>
-        An Open-source library to create a Circular Carousal in React Native.
-        <ul>
-          <li>
-            <a
-              href="https://www.github.com/mrmuhammadali/react-native-circular-carousal"
-              target="__blank"
-            >
-              {' Github '}
-            </a>
-          </li>
-          <li>
-            <a
-              href="https://www.npmjs.com/package/react-native-circular-carousal"
-              target="__blank"
-            >
-              {' NPM '}
-            </a>
-          </li>
-        </ul>
-      </div>
-    ),
+    urls: [
+      {
+        href:
+          'https://www.github.com/mrmuhammadali/react-native-circular-carousel',
+        type: 'Github',
+      },
+      {
+        href: 'https://www.npmjs.com/package/react-native-circular-carousel',
+        type: 'NPM',
+      },
+    ],
+    description:
+      'An Open-source library to create a Circular Carousel in iOS and Android.',
   },
+
   {
-    category: 'Bots',
+    category: 'Bot - NodeJS',
     title: 'Assembla/Gitlab',
     thumbnail: './images/thumbs/bot-01.jpg',
     image: './images/full/bot-01.jpg',
     url: '',
-    isHidden: false,
-    description: (
+    description:
+      'Skype/Telegram bot which notifies right in your chat upon any git operation.',
+    more: (
       <div>
-        Problem: People in a workplace often have to tell eachother whether they
-        commit a chunk of code, open an issue/ticket or create a merge request.
+        Problem: People in a workplace often have to tell each other whether
+        they commit a chunk of code, open an issue/ticket or create a merge
+        request.
         <br />
         We had this problem in our team which was literally painful. We were
         using
@@ -128,14 +85,16 @@ export const PROJECTS = [
       </div>
     ),
   },
+
   {
-    category: 'Bots',
+    category: 'Bot - NodeJS',
     title: 'Tweet It',
     thumbnail: './images/thumbs/bot-02.png',
     image: './images/full/bot-02.png',
     url: '',
-    isHidden: false,
-    description: (
+    description:
+      "Amazon's Alexa Skill which lets you tweet on your Twitter timeline.",
+    more: (
       <div>
         Amazon's Alexa Skill built to tweet on your Twitter timeline handsfree.
         <br />
@@ -163,14 +122,52 @@ export const PROJECTS = [
       </div>
     ),
   },
+
+  {
+    category: 'Android',
+    title: 'I Need a Partner',
+    thumbnail: './images/thumbs/android-01.jpg',
+    image: './images/full/android-01.jpg',
+    url: '',
+    description:
+      'Android application which helps its users find nearby people sharing similar interests.',
+    more: (
+      <div>
+        <ul>
+          <li>
+            This Application proposes to help its users find nearby people
+            sharing similar interests.
+          </li>
+          <li>
+            Features: Chat(Text, Voice and File sharing), Post(File Sharing),
+            Groups, Friends, People Nearby, Partnerships based on Interests,
+            Reviews, Interests Endorsement, Meeting Scheduler and Reminders.
+          </li>
+        </ul>
+        I developed Android Application using Java:
+        <br />
+        <ol type="a">
+          <li>Twitter Digits is used for Phone no. verification.</li>
+          <li>Firebase is used for messaging and notifications.</li>
+          <li>Retrofit2 is used for HTTP requests and responses.</li>
+          <li>
+            GSON Converter Factory is used to parse HTTP Response Body directly
+            onto Models.
+          </li>
+        </ol>
+      </div>
+    ),
+  },
+
   {
     category: 'Web',
     title: 'Magic Circle',
     thumbnail: './images/thumbs/image-01.jpg',
     image: './images/full/image-01.jpg',
     url: '',
-    isHidden: false,
-    description: (
+    description:
+      'Online presence for a business in event planning industry called Magic Circle.',
+    more: (
       <div>
         Created business website for online presence. Users can contact through
         Contact Form. <br />
@@ -178,14 +175,16 @@ export const PROJECTS = [
       </div>
     ),
   },
+
   {
     category: 'Web',
     title: 'Silver Consultancy',
     thumbnail: './images/thumbs/image-05.jpg',
     image: './images/full/image-05.jpg',
     url: '',
-    isHidden: false,
-    description: (
+    description:
+      'A consultancy website for Singapore based insurance consultancy company.',
+    more: (
       <div>
         Created a consultancy website for Singapore based insurance consultancy
         company. Users can fill up their forms for any insurance policies and
@@ -194,14 +193,16 @@ export const PROJECTS = [
       </div>
     ),
   },
+
   {
     category: 'Web',
     title: 'Amazon Product Research',
     thumbnail: './images/thumbs/image-06.jpg',
     image: './images/full/image-06.jpg',
     url: '',
-    isHidden: false,
-    description: (
+    description:
+      'Product research tool which can be used to analyze products based on some metrics.',
+    more: (
       <div>
         Consumed Amazon Web Service to fetch products and their related data.
         This website can be used by Sellers to calculate the average sale rank

@@ -1,17 +1,16 @@
 // libs
 import React, { useState } from 'react'
 import Card from '@material-ui/core/Card'
-import CardHeader from '@material-ui/core/CardHeader'
 import CardContent from '@material-ui/core/CardContent'
+import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia'
-import Avatar from '@material-ui/core/Avatar'
-import Typography from '@material-ui/core/Typography'
 import Skeleton from '@material-ui/lab/Skeleton'
+import Typography from '@material-ui/core/Typography'
 
 // src
 import { useStyles } from './ProjectCard.styles'
 
-export function ProjectCard(props) {
+export const ProjectCard = props => {
   const { category, description, image, title } = props
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(false)
@@ -27,16 +26,7 @@ export function ProjectCard(props) {
 
   return (
     <Card className={classes.root}>
-      <CardHeader
-        title={title}
-        subheader={category}
-        avatar={
-          <Avatar
-            alt={category}
-            // src=""
-          />
-        }
-      />
+      <CardHeader title={title} subheader={category} avatar={<div />} />
       <div className={classes.media}>
         {!error && (
           <CardMedia
@@ -50,16 +40,14 @@ export function ProjectCard(props) {
         )}
         {isLoading && <Skeleton variant="rect" className={classes.loading} />}
         {error && (
-          <Typography variant="body2" color="textSecondary" component="p">
+          <Typography color="textSecondary">
             {'Failed to load image'}
           </Typography>
         )}
       </div>
       <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          {
-            "Why First Minister of Scotland Nicola Sturgeon thinks GDP is the wrong measure of a country's success:"
-          }
+        <Typography variant="body2" color="textSecondary">
+          {description}
         </Typography>
       </CardContent>
     </Card>

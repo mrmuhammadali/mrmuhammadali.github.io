@@ -35,7 +35,7 @@ export default function PageHome() {
 
   return (
     <React.Fragment>
-      <Header onNavButtonClick={handleNavButtonClick} />
+      <Header className={styles.header} onNavButtonClick={handleNavButtonClick} />
       <About ref={about} />
       <Portfolio ref={portfolio} />
       <Contact ref={contact} />
