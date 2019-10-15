@@ -32,7 +32,7 @@ export const App = () => {
             '"Titillium Web", "Roboto", "Helvetica", "Arial", sans-serif',
         },
       }),
-    [prefersDarkMode],
+    [palette],
   )
 
   return (

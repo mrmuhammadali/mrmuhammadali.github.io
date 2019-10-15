@@ -4,13 +4,14 @@ import scrollToComponent from 'react-scroll-to-component'
 
 // src
 import { About } from '../About'
-import Contact from '../Contact'
-import Footer from '../Footer'
+import { Contact } from '../Contact'
+import { Footer } from '../Footer'
 import { Header } from '../Header'
 import { Portfolio } from '../Portfolio'
-import './PageHome.css'
+import { useStyles } from './PageHome.styles'
 
 export default function PageHome() {
+  const styles = useStyles()
   const about = useRef(null)
   const contact = useRef(null)
   const portfolio = useRef(null)

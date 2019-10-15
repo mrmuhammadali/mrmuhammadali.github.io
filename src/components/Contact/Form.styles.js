@@ -21,8 +21,8 @@ export const useStyles = makeStyles(theme => ({
   },
 
   submit: {
-    background: '#3c3f45',
-    color: '#83868c',
+    background: '#de5e60',
+    color: '#fff',
     fontSize: '18px',
     marginTop: '5px',
     textTransform: 'none',
@@ -31,8 +31,8 @@ export const useStyles = makeStyles(theme => ({
     justifySelf: 'end',
 
     '&:hover': {
-      background: '#de5e60',
-      color: '#ffffff',
+      background: theme.palette.primary.main,
+      color: theme.palette.text.primary,
     },
   },
 }))

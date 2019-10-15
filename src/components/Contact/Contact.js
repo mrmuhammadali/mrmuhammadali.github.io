@@ -44,7 +44,7 @@ const SOCIAL_LINKS = [
   },
 ]
 
-const Contact = forwardRef((_, ref) => {
+export const Contact = forwardRef((_, ref) => {
   const styles = useStyles()
 
   return (
@@ -78,5 +78,3 @@ const Contact = forwardRef((_, ref) => {
     </section>
   )
 })
-
-export default Contact
