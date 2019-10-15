@@ -2,14 +2,10 @@
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
 export const useStyles = makeStyles({
-  logo: {
-    flex: 1,
-    fontWeight: 400,
-    margin: 0,
-  },
-
-  mobileLogo: {
+  root: {
+    fontSize: '48px',
     fontWeight: 300,
-    fontSize: '1em',
+    lineHeight: '1.5em',
+    margin: 0,
   },
 })

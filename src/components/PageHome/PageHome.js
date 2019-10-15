@@ -3,11 +3,11 @@ import React, { useRef } from 'react'
 import scrollToComponent from 'react-scroll-to-component'
 
 // src
-import About from '../About'
+import { About } from '../About'
 import Contact from '../Contact'
 import Footer from '../Footer'
-import Header from '../Header'
-import Portfolio from '../Portfolio'
+import { Header } from '../Header'
+import { Portfolio } from '../Portfolio'
 import './PageHome.css'
 
 export default function PageHome() {
@@ -17,7 +17,11 @@ export default function PageHome() {
 
   const handleNavButtonClick = section => {
     const scroll = ref =>
-      scrollToComponent(ref.current, { offset: -50, align: 'top', duration: 300 })
+      scrollToComponent(ref.current, {
+        offset: -50,
+        align: 'top',
+        duration: 300,
+      })
 
     if (section === 'about') {
       scroll(about)

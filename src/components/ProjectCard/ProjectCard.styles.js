@@ -2,9 +2,8 @@
 import makeStyles from '@material-ui/core/styles/makeStyles'
 
 export const useStyles = makeStyles(theme => ({
-  card: {
-    // maxWidth: 345,
-    // margin: theme.spacing(2),
+  root: {
+    background: theme.palette.secondary.main,
   },
   media: {
     position: 'relative',
@@ -12,6 +11,7 @@ export const useStyles = makeStyles(theme => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    background: theme.palette.primary.main,
   },
   loading: {
     position: 'absolute',

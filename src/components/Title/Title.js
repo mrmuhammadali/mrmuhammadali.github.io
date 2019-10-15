@@ -1,15 +1,26 @@
 // @flow
 // libs
 import React from 'react'
+import Typography from '@material-ui/core/Typography'
 
 // src
-import styles from './Title.module.css'
+import { useStyles } from './Title.styles'
 
 type Props = {
   content: string,
   className: string,
 }
 
-export default ({ content, className }: Props) => (
-  <h1 className={[styles.root, className].join(' ')}>{content}</h1>
-)
+export const Title = ({ children, className }: Props) => {
+  const styles = useStyles()
+
+  return (
+    <Typography
+      className={[styles.root, className].join(' ')}
+      component="h1"
+      color="textPrimary"
+    >
+      {children}
+    </Typography>
+  )
+}

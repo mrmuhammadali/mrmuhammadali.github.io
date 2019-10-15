@@ -1,20 +1,23 @@
 // libs
 import React, { forwardRef } from 'react'
+import Typography from '@material-ui/core/Typography'
 
 // src
 import Detail from './Detail'
 import Profile from './Profile'
-import styles from './About.module.css'
+import { useStyles } from './About.styles'
 
-const About = forwardRef((_, ref) => (
-  <section className={styles.root} ref={ref}>
-    <img className={styles.logo} alt="Muhammad Ali" src="./ma.png" />
-    <h3 className={styles.tagline}>
-      Fullstack developer aiming to build a brand.
-    </h3>
-    <Profile />
-    <Detail />
-  </section>
-))
+export const About = forwardRef((_, ref) => {
+  const styles = useStyles()
 
-export default About
+  return (
+    <section className={styles.root} ref={ref}>
+      <img className={styles.logo} alt="Muhammad Ali" src="./ma.png" />
+      <Typography className={styles.tagline} component="h3" color="textPrimary">
+        Fullstack developer aiming to build a brand.
+      </Typography>
+      <Profile />
+      <Detail />
+    </section>
+  )
+})

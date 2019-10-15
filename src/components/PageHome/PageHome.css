@@ -1,14 +1,7 @@
 body {
   margin: 0;
-  padding: 0;
-  background: #2f3238;
-  color: #fff;
   font-family: 'Titillium Web', sans-serif;
-  overflow-x: hidden;
-}
-
-section {
-  padding: 16px 8px;
+  background: #2f3238;
 }
 
 a {

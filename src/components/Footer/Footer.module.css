@@ -13,16 +13,3 @@
   padding: 20px 0;
   text-transform: uppercase;
 }
-
-.link {
-  color: #de5e60;
-  text-decoration: none;
-  -webkit-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -moz-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  -o-transition: color 0.1s linear 0s, color 0.1s linear 0s;
-  transition: color 0.1s linear 0s, color 0.1s linear 0s;
-}
-
-.link:hover {
-  color: #fff;
-}

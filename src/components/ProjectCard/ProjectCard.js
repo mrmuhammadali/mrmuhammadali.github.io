@@ -26,7 +26,7 @@ export function ProjectCard(props) {
   }
 
   return (
-    <Card className={classes.card}>
+    <Card className={classes.root}>
       <CardHeader
         title={title}
         subheader={category}

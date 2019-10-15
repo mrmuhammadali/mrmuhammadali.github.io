@@ -15,14 +15,14 @@ type Props = {
 
 const buttons = ['About', 'Portfolio', 'Contact']
 
-export default ({ onNavButtonClick }: Props) => {
+export const Header = ({ onNavButtonClick }: Props) => {
   const styles = useStyles({})
   const [, windowWidth] = useResize()
   const isMobile = windowWidth < 600
   const size = isMobile ? 'small' : 'medium'
 
   return (
-    <AppBar className={styles.root} position="sticky" color="default">
+    <AppBar className={styles.root} position="sticky">
       <Toolbar variant="dense">
         <h2
           className={[styles.logo, isMobile && styles.mobileLogo].join(' ')}
