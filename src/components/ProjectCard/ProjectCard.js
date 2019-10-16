@@ -66,7 +66,13 @@ export const ProjectCard = props => {
           }
 
           return (
-            <a className={styles.link} href={href} target="_blank">
+            <a
+              key={href}
+              className={styles.link}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {type}
             </a>
           )
