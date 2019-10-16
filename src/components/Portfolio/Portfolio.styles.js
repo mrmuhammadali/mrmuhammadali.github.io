@@ -9,10 +9,6 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
   },
 
-  title: {
-    textAlign: 'center',
-  },
-
   content: {
     justifyContent: 'center',
   },

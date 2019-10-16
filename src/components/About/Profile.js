@@ -6,7 +6,7 @@ import Typography from '@material-ui/core/Typography'
 // src
 import { useStyles } from './Profile.styles'
 
-export default () => {
+export const Profile = () => {
   const styles = useStyles()
 
   return (

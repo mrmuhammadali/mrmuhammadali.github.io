@@ -14,7 +14,7 @@ export const useStyles = makeStyles(theme => ({
     },
 
     a: {
-      color: '#de5e60',
+      color: theme.palette.text.hint,
       textDecoration: 'none',
       transition: 'color 0.1s linear 0s',
 

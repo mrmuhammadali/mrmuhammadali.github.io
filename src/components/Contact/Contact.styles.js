@@ -6,10 +6,6 @@ export const useStyles = makeStyles(theme => ({
     background: theme.palette.secondary.main,
   },
 
-  title: {
-    textAlign: 'center',
-  },
-
   content: {
     justifyContent: 'center',
   },

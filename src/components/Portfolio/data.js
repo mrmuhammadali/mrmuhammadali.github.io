@@ -10,14 +10,6 @@ const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
 // const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
 // const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
 
-export const CATEGORIES = [
-  'All Projects',
-  'Android',
-  'Bots',
-  'React Native',
-  'Web',
-]
-
 export const PROJECTS = [
   {
     category: 'React Native',
@@ -26,13 +18,13 @@ export const PROJECTS = [
     image: './images/full/react-native-01.gif',
     urls: [
       {
+        type: 'Github',
         href:
           'https://www.github.com/mrmuhammadali/react-native-circular-carousel',
-        type: 'Github',
       },
       {
+        type: 'Npm',
         href: 'https://www.npmjs.com/package/react-native-circular-carousel',
-        type: 'NPM',
       },
     ],
     description:
@@ -41,10 +33,19 @@ export const PROJECTS = [
 
   {
     category: 'Bot - NodeJS',
-    title: 'Assembla/Gitlab',
+    title: 'Assembla / Gitlab',
     thumbnail: './images/thumbs/bot-01.jpg',
     image: './images/full/bot-01.jpg',
-    url: '',
+    urls: [
+      {
+        type: 'Skype',
+        href: 'https://join.skype.com/bot/8864cf5d-3c38-457f-976f-cfb07dd93c7f',
+      },
+      {
+        type: 'Telegram',
+        href: 'https://t.me/MrGitLabBot',
+      },
+    ],
     description:
       'Skype/Telegram bot which notifies right in your chat upon any git operation.',
     more: (
@@ -91,7 +92,12 @@ export const PROJECTS = [
     title: 'Tweet It',
     thumbnail: './images/thumbs/bot-02.png',
     image: './images/full/bot-02.png',
-    url: '',
+    urls: [
+      {
+        type: 'Amazon',
+        href: `${AMAZON_USA}${TWEET_IT}`,
+      },
+    ],
     description:
       "Amazon's Alexa Skill which lets you tweet on your Twitter timeline.",
     more: (
@@ -122,7 +128,9 @@ export const PROJECTS = [
       </div>
     ),
   },
+]
 
+export const REST_PROJECTS = [
   {
     category: 'Android',
     title: 'I Need a Partner',

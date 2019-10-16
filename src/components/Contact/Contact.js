@@ -49,7 +49,7 @@ export const Contact = forwardRef((_, ref) => {
 
   return (
     <section className={styles.root} ref={ref}>
-      <Title className={styles.title}>Get in Touch</Title>
+      <Title>Get in Touch</Title>
       <Grid container spacing={2} className={styles.content}>
         <Grid item xs={12} sm={4} md={2} className={styles.contact}>
           <Typography className={styles.contactHeading} component="h2">

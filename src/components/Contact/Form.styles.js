@@ -21,7 +21,7 @@ export const useStyles = makeStyles(theme => ({
   },
 
   submit: {
-    background: '#de5e60',
+    background: theme.palette.text.hint,
     color: '#fff',
     fontSize: '18px',
     marginTop: '5px',

@@ -6,6 +6,7 @@ export const useStyles = makeStyles({
     fontSize: '48px',
     fontWeight: 300,
     lineHeight: '1.5em',
-    margin: 0,
+    margin: '0 0 16px',
+    textAlign: 'center',
   },
 })

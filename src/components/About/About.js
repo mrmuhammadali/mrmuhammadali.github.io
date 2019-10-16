@@ -4,7 +4,7 @@ import Typography from '@material-ui/core/Typography'
 
 // src
 import Detail from './Detail'
-import Profile from './Profile'
+import { Profile } from './Profile'
 import { useStyles } from './About.styles'
 
 export const About = forwardRef((_, ref) => {
