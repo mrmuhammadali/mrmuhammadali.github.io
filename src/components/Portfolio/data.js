@@ -15,7 +15,6 @@ export const PROJECTS = [
     category: 'React Native',
     title: 'Circular Carousel',
     thumbnail: './images/thumbs/react-native-01.gif',
-    image: './images/full/react-native-01.gif',
     urls: [
       {
         type: 'Github',
@@ -28,7 +27,25 @@ export const PROJECTS = [
       },
     ],
     description:
-      'An Open-source library to create a Circular Carousel in iOS and Android.',
+      'An open-source library to create a Circular Carousel in iOS and Android.',
+  },
+
+  {
+    category: 'React / FusionJS',
+    title: 'React Invoicer',
+    thumbnail: './images/thumbs/invoicer.png',
+    urls: [
+      {
+        type: 'Github',
+        href: 'https://www.github.com/mrmuhammadali/invoicer',
+      },
+      {
+        type: 'Visit App',
+        href: 'https://react-invoicer.herokuapp.com/',
+      },
+    ],
+    description:
+      'An open-source app to generate invoice and download them as PDF.',
   },
 
   {

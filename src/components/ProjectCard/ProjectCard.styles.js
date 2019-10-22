@@ -8,7 +8,7 @@ export const useStyles = makeStyles(theme => ({
 
   media: {
     position: 'relative',
-    height: 190,
+    height: 220,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
@@ -37,9 +37,5 @@ export const useStyles = makeStyles(theme => ({
     '&:hover': {
       fill: theme.palette.text.primary,
     },
-  },
-
-  link: {
-    // color: theme.palette.text.hint,
   },
 }))
