@@ -19,7 +19,7 @@ export default function PageHome() {
   const handleNavButtonClick = section => {
     const scroll = ref =>
       scrollToComponent(ref.current, {
-        offset: -50,
+        offset: -40,
         align: 'top',
         duration: 300,
       })

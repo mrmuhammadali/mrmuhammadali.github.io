@@ -13,6 +13,10 @@ export const useStyles = makeStyles(theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     background: theme.palette.primary.main,
+
+    '& p': {
+      fontSize: '1.5rem',
+    },
   },
 
   loading: {
@@ -28,14 +32,7 @@ export const useStyles = makeStyles(theme => ({
 
   actions: {
     padding: '8px 16px',
-  },
-
-  icon: {
-    fill: theme.palette.text.hint,
-    width: '18px',
-
-    '&:hover': {
-      fill: theme.palette.text.primary,
-    },
+    display: 'inline-grid',
+    gridColumnGap: '10px',
   },
 }))

@@ -10,7 +10,7 @@ export const useStyles = makeStyles(theme => ({
     },
 
     section: {
-      padding: '16px 8px',
+      padding: '20px 8px',
     },
 
     a: {

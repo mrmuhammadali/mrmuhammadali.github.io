@@ -12,8 +12,8 @@ const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
 
 export const PROJECTS = [
   {
-    category: 'React Native',
     title: 'Circular Carousel',
+    category: 'React Native',
     thumbnail: './images/thumbs/react-native-01.gif',
     urls: [
       {
@@ -31,8 +31,8 @@ export const PROJECTS = [
   },
 
   {
-    category: 'React / FusionJS',
     title: 'React Invoicer',
+    category: 'React / FusionJS',
     thumbnail: './images/thumbs/invoicer.png',
     urls: [
       {
@@ -49,8 +49,26 @@ export const PROJECTS = [
   },
 
   {
-    category: 'Bot - NodeJS',
+    title: 'HTTP Router',
+    category: 'FusionJS Plugin - NodeJS',
+    thumbnail: '.',
+    urls: [
+      {
+        type: 'Github',
+        href: 'https://www.github.com/mrmuhammadali/fusion-plugin-http-router',
+      },
+      {
+        type: 'Npm',
+        href: 'https://www.npmjs.com/package/fusion-plugin-http-router',
+      },
+    ],
+    description:
+      'An open-source plugin for Fusion apps to register the http routes / endpoints.',
+  },
+
+  {
     title: 'Assembla / Gitlab',
+    category: 'Bot - NodeJS',
     thumbnail: './images/thumbs/bot-01.jpg',
     image: './images/full/bot-01.jpg',
     urls: [
@@ -105,8 +123,8 @@ export const PROJECTS = [
   },
 
   {
-    category: 'Bot - NodeJS',
     title: 'Tweet It',
+    category: 'Bot - NodeJS',
     thumbnail: './images/thumbs/bot-02.png',
     image: './images/full/bot-02.png',
     urls: [
