@@ -10,11 +10,12 @@ import { Header } from '../Header'
 import { Portfolio } from '../Portfolio'
 import { useStyles } from './PageHome.styles'
 
-export default function PageHome() {
+export function PageHome(props) {
   const styles = useStyles()
   const about = useRef(null)
   const contact = useRef(null)
   const portfolio = useRef(null)
+  console.log(props)
 
   const handleNavButtonClick = section => {
     const scroll = ref =>
@@ -35,7 +36,10 @@ export default function PageHome() {
 
   return (
     <React.Fragment>
-      <Header className={styles.header} onNavButtonClick={handleNavButtonClick} />
+      <Header
+        className={styles.header}
+        onNavButtonClick={handleNavButtonClick}
+      />
       <About ref={about} />
       <Portfolio ref={portfolio} />
       <Contact ref={contact} />

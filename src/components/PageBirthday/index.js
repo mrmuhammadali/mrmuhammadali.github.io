@@ -1,0 +1,1 @@
+export { PageBirthday } from './PageBirthday'

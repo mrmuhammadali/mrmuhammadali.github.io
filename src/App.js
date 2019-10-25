@@ -1,41 +1,22 @@
 // libs
-import React, { useMemo } from 'react'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
+import React from 'react'
+import { Router } from '@reach/router'
+import { ThemeProvider } from '@material-ui/core/styles'
 
 // src
-import { PageHome } from './components'
-
-const dark = {
-  primary: { main: '#26292e' },
-  secondary: { main: '#2f3238' },
-  text: { primary: '#fff', secondary: '#8f9299', hint: '#de5e60' },
-}
-const light = {
-  primary: { main: '#fff' },
-  secondary: { main: '#eee' },
-  text: { primary: '#26292e', secondary: '#888', hint: '#de5e60' },
-}
+import { PageBirthday } from './components/PageBirthday'
+import { PageHome } from './components/PageHome'
+import { useTheme } from './utils/useTheme'
 
 export const App = () => {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
-  const palette = prefersDarkMode ? dark : light
-
-  const theme = useMemo(
-    () =>
-      createMuiTheme({
-        palette,
-        typography: {
-          fontFamily:
-            '"Titillium Web", "Roboto", "Helvetica", "Arial", sans-serif',
-        },
-      }),
-    [palette],
-  )
+  const theme = useTheme()
 
   return (
     <ThemeProvider theme={theme}>
-      <PageHome />
+      <Router>
+        <PageHome path="/" />
+        <PageBirthday path="/fizzas-birthday" />
+      </Router>
     </ThemeProvider>
   )
 }
