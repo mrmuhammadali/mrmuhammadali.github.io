@@ -15,7 +15,6 @@ export function PageHome(props) {
   const about = useRef(null)
   const contact = useRef(null)
   const portfolio = useRef(null)
-  console.log(props)
 
   const handleNavButtonClick = section => {
     const scroll = ref =>

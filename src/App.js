@@ -1,10 +1,9 @@
 // libs
 import React from 'react'
-import { Router } from '@reach/router'
+import { HashRouter, Route } from 'react-router-dom'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 // src
-import { PageBirthday } from './components/PageBirthday'
 import { PageHome } from './components/PageHome'
 import { useTheme } from './utils/useTheme'
 
@@ -13,10 +12,11 @@ export const App = () => {
 
   return (
     <ThemeProvider theme={theme}>
-      <Router>
-        <PageHome path="/" />
-        <PageBirthday path="/fizzas-birthday" />
-      </Router>
+      <HashRouter>
+        <Route exact path="/">
+          <PageHome />
+        </Route>
+      </HashRouter>
     </ThemeProvider>
   )
 }
