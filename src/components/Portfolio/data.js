@@ -129,8 +129,12 @@ export const PROJECTS = [
     image: './images/full/bot-02.png',
     urls: [
       {
-        type: 'Amazon',
+        type: 'Amazon US',
         href: `${AMAZON_USA}${TWEET_IT}`,
+      },
+      {
+        type: 'Amazon UK',
+        href: `${AMAZON_UK}${TWEET_IT}`,
       },
     ],
     description:

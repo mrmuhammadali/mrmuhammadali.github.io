@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <HashRouter>
-        <Route exact path="/">
+        <Route path="/">
           <PageHome />
         </Route>
       </HashRouter>
