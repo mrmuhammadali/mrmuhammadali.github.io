@@ -7,11 +7,16 @@ import Typography from '@material-ui/core/Typography'
 
 // src
 import { Form } from './Form'
-import { Fiverr, Github, Instagram, LinkedIn, Npm, Twitter } from '../Icons'
+import { Dev, Fiverr, Github, Instagram, LinkedIn, Twitter } from '../Icons'
 import { useStyles } from './Contact.styles'
 import { Title } from '../Title'
 
 const SOCIAL_LINKS = [
+  {
+    title: 'DEV',
+    IconComponent: Dev,
+    url: 'https://dev.to/mrmuhammadali',
+  },
   {
     title: 'Fiverr',
     IconComponent: Fiverr,
@@ -31,11 +36,6 @@ const SOCIAL_LINKS = [
     title: 'LinkedIn',
     IconComponent: LinkedIn,
     url: 'https://www.linkedin.com/in/muhammad-ali-6648b8119/',
-  },
-  {
-    title: 'NPM',
-    IconComponent: Npm,
-    url: 'https://npmjs.com/~mrmuhammadali',
   },
   {
     title: 'Twitter',

@@ -11,7 +11,7 @@ export const Footer = () => {
   return (
     <footer className={styles.root}>
       <Typography className={styles.text}>
-        ©2019 &diams; All rights reserved.
+        ©2020 &diams; All rights reserved.
       </Typography>
     </footer>
   )

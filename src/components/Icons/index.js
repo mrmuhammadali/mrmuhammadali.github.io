@@ -1,3 +1,4 @@
+export { default as Dev } from './Dev'
 export { default as Fiverr } from './Fiverr'
 export { default as Github } from './Github'
 export { default as Instagram } from './Instagram'
