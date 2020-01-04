@@ -4,17 +4,17 @@
   "private": false,
   "homepage": "https://mrmuhammadali.github.io/",
   "dependencies": {
-    "@material-ui/core": "^4.6.1",
-    "@material-ui/lab": "^4.0.0-alpha.32",
+    "@material-ui/core": "^4.8.2",
+    "@material-ui/lab": "^4.0.0-alpha.38",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0",
+    "react-scripts": "3.3.0",
     "react-scroll-to-component": "^1.0.2"
   },
   "devDependencies": {
-    "flow-bin": "^0.112.0",
-    "gh-pages": "^1.2.0"
+    "flow-bin": "^0.115.0",
+    "gh-pages": "^2.1.1"
   },
   "scripts": {
     "deploy": "yarn run build && gh-pages -b master -d build",
