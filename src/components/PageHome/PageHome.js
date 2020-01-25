@@ -1,6 +1,5 @@
 // libs
 import React, { useRef } from 'react'
-import scrollToComponent from 'react-scroll-to-component'
 
 // src
 import { About } from '../About'
@@ -17,13 +16,9 @@ export function PageHome(props) {
   const portfolio = useRef(null)
 
   const handleNavButtonClick = section => {
-    const scroll = ref =>
-      scrollToComponent(ref.current, {
-        offset: -40,
-        align: 'top',
-        duration: 300,
-      })
-
+    const scroll = ref => {
+      window.scroll({ top: ref.current.offsetTop - 50, behavior: 'smooth' })
+    }
     if (section === 'about') {
       scroll(about)
     } else if (section === 'contact') {

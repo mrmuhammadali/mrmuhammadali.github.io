@@ -8,11 +8,11 @@ import { ProjectCard } from '../ProjectCard'
 import { Title } from '../Title'
 import { useStyles } from './Portfolio.styles'
 
-export const Portfolio = forwardRef((_, ref) => {
+export const Portfolio = forwardRef(({ id }, ref) => {
   const styles = useStyles()
 
   return (
-    <section className={styles.root} ref={ref}>
+    <section id={id} className={styles.root} ref={ref}>
       <Title>My Portfolio</Title>
       <Grid container className={styles.content}>
         <Grid item xs={11} sm={11} md={11} lg={10}>

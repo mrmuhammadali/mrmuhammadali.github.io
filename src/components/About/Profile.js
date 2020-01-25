@@ -15,24 +15,39 @@ export const Profile = () => {
         <img
           className={styles.profilePic}
           alt="Muhammad Ali"
-          src="./images/profile.jpg"
+          src="/images/profile.jpg"
         />
       </Grid>
       <Grid item xs={12} sm={8} md={6}>
         <Typography className={styles.description} color="textSecondary">
-          I believe programmers express themselves with the code they write and
-          the way they write it, you just have to know what to look for. You can
-          distinct 100 people solving same problem with the code they write and
-          that goes for chinese people as well{' '}
+          I was into computers since I was in high school as I used to play
+          video games on it. I thought some day I’ll create one of these cool
+          games myself but it turned out I’m aligning some “Submit” button to
+          the right of a form.{' '}
           <span role="img" aria-label="">
-            😁
+            😔
+          </span>{' '}
+          Still, I think I’m a natural programmer.{' '}
+          <span role="img" aria-label="">
+            😎
           </span>
-          . I love programming because you can wake up everyday with a fresh and
-          unique challenge on your to-do list! To top it off, you can make
-          solution as much creative and elegant as you want. That feeling of
-          distinction and satisfaction you get when you write a unique and
-          elegant solution for a problem, i am lost for words to describe it but
-          you would understand if you are a programmer!
+          I don’t want to brag about it but I think I’m doing a great job in it.
+          Whenever I get some problem, I’m always, literally always, thinking
+          about the solution. Recently I had a dream about merging two arrays
+          without using a third one and I’m not kidding.{' '}
+          <span role="img" aria-label="">
+            🤐
+          </span>{' '}
+          Moreover, I can’t stand code smell. Whenever I write or see some hacks
+          in project which I’m working on I get horrible nightmares.{' '}
+          <span role="img" aria-label="">
+            😢
+          </span>{' '}
+          My motto is that{' '}
+          <Typography color="textPrimary">
+            Always code as if the guy who ends up maintaining your code will be
+            a violent psychopath who knows where you live.
+          </Typography>
         </Typography>
       </Grid>
     </Grid>

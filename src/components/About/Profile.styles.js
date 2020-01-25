@@ -10,6 +10,7 @@ export const useStyles = makeStyles(theme => ({
   profilePic: {
     width: '100%',
     color: theme.palette.text.primary,
+    marginTop: 6,
   },
 
   description: {

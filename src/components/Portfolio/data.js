@@ -14,7 +14,7 @@ export const PROJECTS = [
   {
     title: 'Circular Carousel',
     category: 'React Native',
-    thumbnail: './images/thumbs/react-native-01.gif',
+    thumbnail: '/images/thumbs/react-native-01.gif',
     urls: [
       {
         type: 'Github',
@@ -33,7 +33,7 @@ export const PROJECTS = [
   {
     title: 'React Invoicer',
     category: 'React / FusionJS',
-    thumbnail: './images/thumbs/invoicer.png',
+    thumbnail: '/images/thumbs/invoicer.png',
     urls: [
       {
         type: 'Github',
@@ -69,8 +69,8 @@ export const PROJECTS = [
   {
     title: 'Assembla / Gitlab',
     category: 'Bot - NodeJS',
-    thumbnail: './images/thumbs/bot-01.jpg',
-    image: './images/full/bot-01.jpg',
+    thumbnail: '/images/thumbs/bot-01.jpg',
+    image: '/images/full/bot-01.jpg',
     urls: [
       {
         type: 'Skype',
@@ -125,8 +125,8 @@ export const PROJECTS = [
   {
     title: 'Tweet It',
     category: 'Bot - NodeJS',
-    thumbnail: './images/thumbs/bot-02.png',
-    image: './images/full/bot-02.png',
+    thumbnail: '/images/thumbs/bot-02.png',
+    image: '/images/full/bot-02.png',
     urls: [
       {
         type: 'Amazon US',
@@ -173,8 +173,8 @@ export const REST_PROJECTS = [
   {
     category: 'Android',
     title: 'I Need a Partner',
-    thumbnail: './images/thumbs/android-01.jpg',
-    image: './images/full/android-01.jpg',
+    thumbnail: '/images/thumbs/android-01.jpg',
+    image: '/images/full/android-01.jpg',
     url: '',
     description:
       'Android application which helps its users find nearby people sharing similar interests.',
@@ -209,8 +209,8 @@ export const REST_PROJECTS = [
   {
     category: 'Web',
     title: 'Magic Circle',
-    thumbnail: './images/thumbs/image-01.jpg',
-    image: './images/full/image-01.jpg',
+    thumbnail: '/images/thumbs/image-01.jpg',
+    image: '/images/full/image-01.jpg',
     url: '',
     description:
       'Online presence for a business in event planning industry called Magic Circle.',
@@ -226,8 +226,8 @@ export const REST_PROJECTS = [
   {
     category: 'Web',
     title: 'Silver Consultancy',
-    thumbnail: './images/thumbs/image-05.jpg',
-    image: './images/full/image-05.jpg',
+    thumbnail: '/images/thumbs/image-05.jpg',
+    image: '/images/full/image-05.jpg',
     url: '',
     description:
       'A consultancy website for Singapore based insurance consultancy company.',
@@ -244,8 +244,8 @@ export const REST_PROJECTS = [
   {
     category: 'Web',
     title: 'Amazon Product Research',
-    thumbnail: './images/thumbs/image-06.jpg',
-    image: './images/full/image-06.jpg',
+    thumbnail: '/images/thumbs/image-06.jpg',
+    image: '/images/full/image-06.jpg',
     url: '',
     description:
       'Product research tool which can be used to analyze products based on some metrics.',

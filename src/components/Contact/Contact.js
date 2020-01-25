@@ -44,11 +44,11 @@ const SOCIAL_LINKS = [
   },
 ]
 
-export const Contact = forwardRef((_, ref) => {
+export const Contact = forwardRef(({ id }, ref) => {
   const styles = useStyles()
 
   return (
-    <section className={styles.root} ref={ref}>
+    <section id={id} className={styles.root} ref={ref}>
       <Title>Get in Touch</Title>
       <Grid container spacing={2} className={styles.content}>
         <Grid item xs={12} sm={4} md={2} className={styles.contact}>
