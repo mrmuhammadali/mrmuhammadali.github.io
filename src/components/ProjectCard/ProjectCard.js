@@ -35,6 +35,7 @@ export const ProjectCard = props => {
             src={image}
             title={title}
             component="img"
+            loading="lazy"
             onLoad={onLoad}
             onError={onError}
             onDragStart={e => e.preventDefault()}

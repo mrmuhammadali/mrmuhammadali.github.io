@@ -1,5 +1,5 @@
 // libs
-import makeStyles from '@material-ui/core/styles/makeStyles'
+import makeStyles from '@material-ui/styles/makeStyles'
 
 export const useStyles = makeStyles(theme => ({
   root: {
@@ -8,9 +8,12 @@ export const useStyles = makeStyles(theme => ({
   },
 
   profilePic: {
-    width: '100%',
     color: theme.palette.text.primary,
     marginTop: 6,
+  },
+
+  textPrimary: {
+    color: theme.palette.text.primary,
   },
 
   description: {

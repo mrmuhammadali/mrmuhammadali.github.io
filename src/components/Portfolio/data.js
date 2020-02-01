@@ -51,7 +51,7 @@ export const PROJECTS = [
   {
     title: 'HTTP Router',
     category: 'FusionJS Plugin - NodeJS',
-    thumbnail: '.',
+    thumbnail: '',
     urls: [
       {
         type: 'Github',
