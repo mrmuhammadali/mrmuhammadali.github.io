@@ -41,7 +41,7 @@ export default () => {
           color="textPrimary"
           component="h4"
         >
-          eMumba
+          Emumba
         </Typography>
         <Typography className={styles.content} color="textSecondary">
           June 2017 - Present
@@ -70,8 +70,8 @@ export default () => {
           Tools and Technologies
         </Typography>
         <Typography className={styles.content} color="textSecondary">
-          Alexa Skills, D3.js, ExpressJS, Javascript, Jest, MongoDB, NodeJS,
-          React, React Native, Redux, REST APIs, SQL, NoSQL
+          Alexa Skills, D3, Express, FusionJS, Gatsby, Javascript, Jest, Mongo, NextJS, Node,
+          React, React Native, Redux, SQL/NoSQL
         </Typography>
       </Grid>
     </Grid>

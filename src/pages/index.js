@@ -1,6 +1,6 @@
 // libs
 import React from 'react'
-import Helmet from 'react-helmet'
+import { Helmet } from 'react-helmet'
 import { ThemeProvider } from '@material-ui/core/styles'
 
 // src
@@ -20,7 +20,7 @@ const App = () => {
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        ></link>
+        />
       </Helmet>
       <ThemeProvider theme={theme}>
         <PageHome />

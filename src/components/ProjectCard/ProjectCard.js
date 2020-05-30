@@ -1,48 +1,43 @@
 // libs
-import React, { useState } from 'react'
+import React from 'react'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardHeader from '@material-ui/core/CardHeader'
 import CardMedia from '@material-ui/core/CardMedia'
-import Skeleton from '@material-ui/lab/Skeleton'
+import Img from 'gatsby-image'
 import Typography from '@material-ui/core/Typography'
 
 // src
 import { useStyles } from './ProjectCard.styles'
 
-export const ProjectCard = props => {
+export const ProjectCard = (props) => {
   const { category, description, image, title, urls } = props
-  const [isLoading, setIsLoading] = useState(true)
-  const [error, setError] = useState(false)
   const styles = useStyles()
-  const onLoad = () => {
-    setIsLoading(false)
-    setError(false)
-  }
-  const onError = () => {
-    setIsLoading(false)
-    setError(true)
-  }
 
   return (
     <Card className={styles.root}>
       <CardHeader title={title} subheader={category} avatar={<div />} />
       <div className={styles.media}>
-        {!error && (
+        {typeof image === 'string' ? (
           <CardMedia
             className={styles.media}
             src={image}
             title={title}
             component="img"
             loading="lazy"
-            onLoad={onLoad}
-            onError={onError}
-            onDragStart={e => e.preventDefault()}
           />
+        ) : (
+          image && (
+            <Img
+              className={styles.media}
+              fluid={image.fluid}
+              alt={title}
+              draggable={false}
+            />
+          )
         )}
-        {isLoading && <Skeleton variant="rect" className={styles.loading} />}
-        {error && <Typography color="textSecondary">{title}</Typography>}
+        {!image && <Typography color="textSecondary">{title}</Typography>}
       </div>
       <CardContent className={styles.content}>
         <Typography variant="body2" color="textSecondary">

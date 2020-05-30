@@ -1,7 +1,7 @@
 // libs
 import makeStyles from '@material-ui/styles/makeStyles'
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles((theme) => ({
   root: {
     background: theme.palette.secondary.main,
   },
@@ -9,21 +9,14 @@ export const useStyles = makeStyles(theme => ({
   media: {
     position: 'relative',
     height: 220,
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
+    display: 'grid',
+    alignContent: 'center',
+    textAlign: 'center',
     background: theme.palette.primary.main,
 
     '& p': {
       fontSize: '1.5rem',
     },
-  },
-
-  loading: {
-    position: 'absolute',
-    top: 0,
-    height: '100%',
-    width: '100%',
   },
 
   content: {

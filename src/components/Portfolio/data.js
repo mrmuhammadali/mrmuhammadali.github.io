@@ -14,7 +14,7 @@ export const PROJECTS = [
   {
     title: 'Circular Carousel',
     category: 'React Native',
-    thumbnail: '/images/thumbs/react-native-01.gif',
+    key: '/images/thumbs/react-native-01.gif',
     urls: [
       {
         type: 'Github',
@@ -33,7 +33,7 @@ export const PROJECTS = [
   {
     title: 'React Invoicer',
     category: 'React / FusionJS',
-    thumbnail: '/images/thumbs/invoicer.png',
+    key: 'invoicer',
     urls: [
       {
         type: 'Github',
@@ -69,7 +69,7 @@ export const PROJECTS = [
   {
     title: 'Assembla / Gitlab',
     category: 'Bot - NodeJS',
-    thumbnail: '/images/thumbs/bot-01.jpg',
+    key: 'gitlabBot',
     image: '/images/full/bot-01.jpg',
     urls: [
       {
@@ -125,7 +125,7 @@ export const PROJECTS = [
   {
     title: 'Tweet It',
     category: 'Bot - NodeJS',
-    thumbnail: '/images/thumbs/bot-02.png',
+    key: 'tweetIt',
     image: '/images/full/bot-02.png',
     urls: [
       {
