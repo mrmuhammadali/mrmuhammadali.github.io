@@ -9,6 +9,7 @@ export const useStyles = makeStyles((theme) => ({
   media: {
     position: 'relative',
     height: 220,
+    width: '100%',
     display: 'grid',
     alignContent: 'center',
     textAlign: 'center',

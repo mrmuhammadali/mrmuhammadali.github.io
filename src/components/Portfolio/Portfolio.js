@@ -23,6 +23,10 @@ export const Portfolio = forwardRef(({ id }, ref) => {
   const styles = useStyles()
   const data = useStaticQuery(graphql`
     query {
+      carousel: file(relativePath: { eq: "thumbs/carousel.png" }) {
+        ...imageQuery
+      }
+
       invoicer: file(relativePath: { eq: "thumbs/invoicer.png" }) {
         ...imageQuery
       }
@@ -44,7 +48,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
         <Grid item xs={11} sm={11} md={11} lg={10}>
           <Grid container className={styles.content} spacing={5}>
             {PROJECTS.map((project) => {
-              const { category, description, key, title, urls } = project
+              const { category, description, key, title, urls, video } = project
 
               return (
                 <Grid key={title} item xs={12} sm={6} md={4} lg={4}>
@@ -52,6 +56,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
                     category={category}
                     description={description}
                     image={data[key] ? data[key].childImageSharp : key}
+                    video={video}
                     title={title}
                     urls={urls}
                   />

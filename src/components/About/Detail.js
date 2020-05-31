@@ -1,7 +1,9 @@
 // libs
 import React from 'react'
+import BusinessCenter from '@material-ui/icons/BusinessCenter'
+import ChromeReaderMode from '@material-ui/icons/ChromeReaderMode'
+import EmojiObjects from '@material-ui/icons/EmojiObjectsOutlined'
 import Grid from '@material-ui/core/Grid'
-import Icon from '@material-ui/core/Icon'
 import Typography from '@material-ui/core/Typography'
 
 // src
@@ -13,7 +15,7 @@ export default () => {
   return (
     <Grid container spacing={2} className={styles.root}>
       <Grid item xs={6} sm={4} md={3} className={styles.item}>
-        <Icon className={styles.icon}>chrome_reader_mode</Icon>
+        <ChromeReaderMode className={styles.icon} />
         <Typography className={styles.title} color="textPrimary" component="h3">
           Education
         </Typography>
@@ -32,7 +34,7 @@ export default () => {
         </Typography>
       </Grid>
       <Grid item xs={6} sm={4} md={3} className={styles.item}>
-        <Icon className={styles.icon}>business_center</Icon>
+        <BusinessCenter className={styles.icon} />
         <Typography className={styles.title} color="textPrimary" component="h3">
           Experience
         </Typography>
@@ -58,7 +60,7 @@ export default () => {
         </Typography>
       </Grid>
       <Grid item xs={8} sm={4} md={3} className={styles.item}>
-        <Icon className={styles.icon}>lightbulb_outline</Icon>
+        <EmojiObjects className={styles.icon} />
         <Typography className={styles.title} color="textPrimary" component="h3">
           Technical Skills
         </Typography>
@@ -70,8 +72,8 @@ export default () => {
           Tools and Technologies
         </Typography>
         <Typography className={styles.content} color="textSecondary">
-          Alexa Skills, D3, Express, FusionJS, Gatsby, Javascript, Jest, Mongo, NextJS, Node,
-          React, React Native, Redux, SQL/NoSQL
+          Alexa Skills, D3, Express, FusionJS, Gatsby, Javascript, Jest, Mongo,
+          NextJS, Node, React, React Native, Redux, SQL/NoSQL
         </Typography>
       </Grid>
     </Grid>

@@ -15,11 +15,7 @@ const App = () => {
         <title>Muhammad Ali</title>
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300"
-        />
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          href="https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300&display=swap"
         />
       </Helmet>
       <ThemeProvider theme={theme}>

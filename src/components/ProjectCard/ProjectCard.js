@@ -1,10 +1,9 @@
 // libs
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Card from '@material-ui/core/Card'
 import CardActions from '@material-ui/core/CardActions'
 import CardContent from '@material-ui/core/CardContent'
 import CardHeader from '@material-ui/core/CardHeader'
-import CardMedia from '@material-ui/core/CardMedia'
 import Img from 'gatsby-image'
 import Typography from '@material-ui/core/Typography'
 
@@ -12,20 +11,28 @@ import Typography from '@material-ui/core/Typography'
 import { useStyles } from './ProjectCard.styles'
 
 export const ProjectCard = (props) => {
-  const { category, description, image, title, urls } = props
+  const { category, description, image, title, urls, video } = props
   const styles = useStyles()
+  const videoRef = useRef()
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.play()
+    }
+  }, [])
 
   return (
     <Card className={styles.root}>
       <CardHeader title={title} subheader={category} avatar={<div />} />
       <div className={styles.media}>
-        {typeof image === 'string' ? (
-          <CardMedia
+        {video ? (
+          <video
+            loop
+            muted
+            preload="none"
+            ref={videoRef}
             className={styles.media}
-            src={image}
-            title={title}
-            component="img"
-            loading="lazy"
+            poster={image.fluid.src}
+            src={video}
           />
         ) : (
           image && (

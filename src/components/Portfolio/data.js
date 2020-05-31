@@ -14,7 +14,8 @@ export const PROJECTS = [
   {
     title: 'Circular Carousel',
     category: 'React Native',
-    key: '/images/thumbs/react-native-01.gif',
+    key: 'carousel',
+    video: '/images/thumbs/carousel.mp4',
     urls: [
       {
         type: 'Github',
@@ -49,26 +50,8 @@ export const PROJECTS = [
   },
 
   {
-    title: 'HTTP Router',
-    category: 'FusionJS Plugin - NodeJS',
-    thumbnail: '',
-    urls: [
-      {
-        type: 'Github',
-        href: 'https://www.github.com/mrmuhammadali/fusion-plugin-http-router',
-      },
-      {
-        type: 'Npm',
-        href: 'https://www.npmjs.com/package/fusion-plugin-http-router',
-      },
-    ],
-    description:
-      'An open-source plugin for Fusion apps to register the http routes / endpoints.',
-  },
-
-  {
     title: 'Assembla / Gitlab',
-    category: 'Bot - NodeJS',
+    category: 'Chat Bot - NodeJS',
     key: 'gitlabBot',
     image: '/images/full/bot-01.jpg',
     urls: [
@@ -124,7 +107,7 @@ export const PROJECTS = [
 
   {
     title: 'Tweet It',
-    category: 'Bot - NodeJS',
+    category: 'Alexa Bot - NodeJS',
     key: 'tweetIt',
     image: '/images/full/bot-02.png',
     urls: [
@@ -166,6 +149,43 @@ export const PROJECTS = [
         </a>
       </div>
     ),
+  },
+
+  {
+    title: 'HTTP Router',
+    category: 'FusionJS Plugin - NodeJS',
+    thumbnail: '',
+    urls: [
+      {
+        type: 'Github',
+        href: 'https://www.github.com/mrmuhammadali/fusion-plugin-http-router',
+      },
+      {
+        type: 'Npm',
+        href: 'https://www.npmjs.com/package/fusion-plugin-http-router',
+      },
+    ],
+    description:
+      'An open-source plugin for Fusion apps to register the http routes / endpoints.',
+  },
+
+  {
+    title: 'Material UI',
+    category: 'FusionJS Plugin',
+    thumbnail: '',
+    urls: [
+      {
+        type: 'Github',
+        href:
+          'https://github.com/IcculusC/fusion-plugin-material-ui/graphs/contributors',
+      },
+      {
+        type: 'Npm',
+        href: 'https://www.npmjs.com/package/fusion-plugin-material-ui',
+      },
+    ],
+    description:
+      'Major contributions in plugin of Fusion apps to support SSR for Material-ui.',
   },
 ]
 

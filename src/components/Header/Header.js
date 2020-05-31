@@ -4,37 +4,31 @@ import React from 'react'
 import AppBar from '@material-ui/core/AppBar'
 import Button from '@material-ui/core/Button'
 import Toolbar from '@material-ui/core/Toolbar'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
 
 // src
 import { useStyles } from './Header.styles'
-import useResize from '../../utils/useResize'
 
 type Props = {
-  onNavButtonClick: number => void,
+  onNavButtonClick: (number) => void,
 }
 
 const BUTTONS = ['About', 'Portfolio', 'Contact']
 
 export const Header = ({ onNavButtonClick }: Props) => {
   const styles = useStyles({})
-  const [, windowWidth] = useResize()
-  const isMobile = windowWidth < 600
-  const size = isMobile ? 'small' : 'medium'
+  const matches = useMediaQuery((theme) => theme.breakpoints.down('xs'))
 
   return (
     <AppBar className={styles.root} position="sticky">
       <Toolbar variant="dense">
-        <h2
-          className={[styles.logo, isMobile && styles.mobileLogo].join(' ')}
-          variant="title"
-          color="inherit"
-        >
+        <h2 className={styles.logo} variant="title" color="inherit">
           Muhammad Ali
         </h2>
-        {BUTTONS.map(title => (
+        {BUTTONS.map((title) => (
           <Button
             key={title}
-            size={size}
+            size={matches ? 'small' : 'medium'}
             color="inherit"
             onClick={() => onNavButtonClick(title.toLowerCase())}
           >
