@@ -8,11 +8,11 @@ import Typography from '@material-ui/core/Typography'
 // src
 import { Form } from './Form'
 import DevIcon from '../Icons/Dev'
-import FiverrIcon from '../Icons/Fiverr'
 import GithubIcon from '../Icons/Github'
 import InstagramIcon from '../Icons/Instagram'
 import LinkedInIcon from '../Icons/LinkedIn'
 import TwitterIcon from '../Icons/Twitter'
+import UpworkIcon from '../Icons/Upwork'
 import { Title } from '../Title'
 import { useStyles } from './Contact.styles'
 
@@ -21,11 +21,6 @@ const SOCIAL_LINKS = [
     title: 'DEV',
     IconComponent: DevIcon,
     url: 'https://dev.to/mrmuhammadali',
-  },
-  {
-    title: 'Fiverr',
-    IconComponent: FiverrIcon,
-    url: 'https://www.fiverr.com/users/ma_webminister/',
   },
   {
     title: 'Github',
@@ -46,6 +41,11 @@ const SOCIAL_LINKS = [
     title: 'Twitter',
     IconComponent: TwitterIcon,
     url: 'https://twitter.com/muhammadali_io',
+  },
+  {
+    title: 'Upwork',
+    IconComponent: UpworkIcon,
+    url: 'https://upwork.com/o/profiles/users/~01ed6257c1b4e8228d/',
   },
 ]
 

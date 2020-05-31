@@ -8,17 +8,16 @@ import { dark, light } from '../theme'
 
 export const useTheme = () => {
   const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
-  const palette = prefersDarkMode ? dark : light
 
   return useMemo(
     () =>
       createMuiTheme({
-        palette,
+        palette: prefersDarkMode ? dark : light,
         typography: {
           fontFamily:
             '"Titillium Web", "Roboto", "Helvetica", "Arial", sans-serif',
         },
       }),
-    [palette],
+    [prefersDarkMode],
   )
 }
