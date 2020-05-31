@@ -60,8 +60,8 @@ export const Contact = forwardRef(({ id }, ref) => {
           <Typography className={styles.contactHeading} component="h2">
             CONTACT DETAILS
           </Typography>
-          <a className={styles.email} href="mailto:mr.muhammad.ali@live.com">
-            mr.muhammad.ali@live.com
+          <a className={styles.email} href="mailto:hi@muhammadali.io">
+            hi@muhammadali.io
           </a>
           <p className={styles.phone}>+92 343 5311141</p>
           <div className={styles.social}>
