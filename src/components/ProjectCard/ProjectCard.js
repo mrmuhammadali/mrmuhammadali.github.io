@@ -28,6 +28,7 @@ export const ProjectCard = (props) => {
           <video
             loop
             muted
+            aria-label={title}
             preload="none"
             ref={videoRef}
             className={styles.media}

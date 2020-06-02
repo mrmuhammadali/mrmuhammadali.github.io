@@ -45,6 +45,7 @@ export const Form = () => {
       onSubmit={submitForm}
     >
       <input
+        aria-label="Name"
         type="text"
         placeholder="Full Name"
         name="name"
@@ -52,6 +53,7 @@ export const Form = () => {
         required
       />
       <input
+        aria-label="Email"
         type="email"
         placeholder="Email Address"
         name="_replyto"
@@ -59,6 +61,7 @@ export const Form = () => {
         required
       />
       <textarea
+        aria-label="Message"
         placeholder="Your Message"
         name="message"
         rows="8"

@@ -1,7 +1,7 @@
 // libs
 import makeStyles from '@material-ui/styles/makeStyles'
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles(({ palette }) => ({
   root: {
     justifyContent: 'center',
   },
@@ -10,6 +10,7 @@ export const useStyles = makeStyles(theme => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
+    textAlign: 'center',
   },
 
   icon: {
@@ -17,13 +18,14 @@ export const useStyles = makeStyles(theme => ({
     border: '1px solid',
     padding: '0.5em',
     borderRadius: '15px 0',
-    color: theme.palette.text.primary,
+    color: palette.text.primary,
   },
 
   title: {
     fontSize: '24px',
     fontWeight: 300,
     margin: 0,
+    color: palette.text.primary,
   },
 
   subtitle: {
@@ -31,10 +33,11 @@ export const useStyles = makeStyles(theme => ({
     fontWeight: 300,
     lineHeight: '1.5em',
     margin: 0,
+    color: palette.text.primary,
   },
 
   content: {
     margin: 0,
-    textAlign: 'center',
+    color: palette.text.secondary,
   },
 }))
