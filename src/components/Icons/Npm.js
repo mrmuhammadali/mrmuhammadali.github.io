@@ -4,7 +4,7 @@ import React from 'react'
 export default ({ className }) => (
   <svg
     className={className}
-    aria-labelledby="npm-icon"
+    aria-label="NPM"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >

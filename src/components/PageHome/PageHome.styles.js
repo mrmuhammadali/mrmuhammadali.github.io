@@ -6,6 +6,7 @@ export const useStyles = makeStyles(theme => ({
     body: {
       margin: 0,
       fontFamily: "'Titillium Web', sans-serif",
+      fontDisplay: 'swap',
       background: theme.palette.secondary.main,
     },
 

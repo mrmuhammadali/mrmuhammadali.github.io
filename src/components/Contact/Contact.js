@@ -68,7 +68,11 @@ export const Contact = forwardRef(({ id }, ref) => {
             {SOCIAL_LINKS.map(({ title, IconComponent, url }) => {
               return (
                 <Tooltip key={title} title={title} enterDelay={100}>
-                  <IconButton href={url} target="_blank">
+                  <IconButton
+                    href={url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <IconComponent className={styles.icon} />
                   </IconButton>
                 </Tooltip>
