@@ -1,5 +1,5 @@
 (window.webpackJsonp = window.webpackJsonp || []).push([
-  [1],
+  [2],
   {
     "+ZDr": function (e, t, n) {
       "use strict";
@@ -2704,10 +2704,13 @@
     NsGk: function (e, t, n) {
       t.components = {
         "component---cache-caches-gatsby-plugin-offline-app-shell-js": function () {
-          return n.e(2).then(n.t.bind(null, "zXQ9", 7));
+          return n.e(3).then(n.t.bind(null, "zXQ9", 7));
+        },
+        "component---src-pages-404-js": function () {
+          return Promise.all([n.e(0), n.e(4)]).then(n.bind(null, "w2l6"));
         },
         "component---src-pages-index-js": function () {
-          return n.e(3).then(n.bind(null, "RXBc"));
+          return Promise.all([n.e(0), n.e(5)]).then(n.bind(null, "RXBc"));
         },
       };
     },
@@ -6439,6 +6442,6 @@
       t.a = o;
     },
   },
-  [["UxWs", 0, 4]],
+  [["UxWs", 1, 6]],
 ]);
-//# sourceMappingURL=app-aa08af359b57e67e6996.js.map
+//# sourceMappingURL=app-a2d898ac0bb61c93a5c4.js.map

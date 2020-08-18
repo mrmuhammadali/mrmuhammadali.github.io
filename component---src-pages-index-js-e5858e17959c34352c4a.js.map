@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/index.js"],"names":[],"mappings":"2FAAA","file":"component---src-pages-index-js-e5858e17959c34352c4a.js","sourcesContent":["export { PageHome as default } from \"../components/PageHome\";\n"],"sourceRoot":""}
