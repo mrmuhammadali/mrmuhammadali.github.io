@@ -1,12 +1,12 @@
 // libs
-import React from 'react'
-import Typography from '@material-ui/core/Typography'
+import React from "react";
+import Typography from "@material-ui/core/Typography";
 
 // src
-import { useStyles } from './Footer.styles'
+import { useStyles } from "./Footer.styles";
 
 export const Footer = () => {
-  const styles = useStyles()
+  const styles = useStyles();
 
   return (
     <footer className={styles.root}>
@@ -14,5 +14,5 @@ export const Footer = () => {
         ©2020 &diams; All rights reserved.
       </Typography>
     </footer>
-  )
-}
+  );
+};

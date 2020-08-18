@@ -28,6 +28,7 @@ export const Profile = () => {
         <Img
           alt="Muhammad Ali"
           className={styles.profilePic}
+          draggable={false}
           fluid={data.file.childImageSharp.fluid}
         />
       </Grid>

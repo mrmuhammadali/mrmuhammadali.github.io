@@ -1,16 +1,16 @@
-const path = require('path')
+const path = require("path");
 
 module.exports = {
   siteMetadata: {
-    title: 'Muhammad Ali',
-    siteUrl: 'https://muhammadali.io',
+    title: "Muhammad Ali",
+    siteUrl: "https://muhammadali.io",
   },
   plugins: [
     {
-      resolve: 'gatsby-source-filesystem',
+      resolve: "gatsby-source-filesystem",
       options: {
-        name: 'images',
-        path: path.join(__dirname, 'static', 'images'),
+        name: "images",
+        path: path.join(__dirname, "static", "images"),
       },
     },
     {
@@ -24,11 +24,11 @@ module.exports = {
         display: `standalone`,
       },
     },
-    'gatsby-plugin-flow',
-    'gatsby-plugin-material-ui',
-    'gatsby-plugin-react-helmet',
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-offline',
+    "gatsby-plugin-flow",
+    "gatsby-plugin-material-ui",
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-offline",
   ],
-}
+};

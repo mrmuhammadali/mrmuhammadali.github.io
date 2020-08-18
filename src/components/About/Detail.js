@@ -1,16 +1,16 @@
 // libs
-import React from 'react'
-import BusinessCenter from '@material-ui/icons/BusinessCenter'
-import ChromeReaderMode from '@material-ui/icons/ChromeReaderMode'
-import EmojiObjects from '@material-ui/icons/EmojiObjectsOutlined'
-import Grid from '@material-ui/core/Grid'
-import Typography from '@material-ui/core/Typography'
+import React from "react";
+import BusinessCenter from "@material-ui/icons/BusinessCenter";
+import ChromeReaderMode from "@material-ui/icons/ChromeReaderMode";
+import EmojiObjects from "@material-ui/icons/EmojiObjectsOutlined";
+import Grid from "@material-ui/core/Grid";
+import Typography from "@material-ui/core/Typography";
 
 // src
-import { useStyles } from './Detail.styles'
+import { useStyles } from "./Detail.styles";
 
 export default () => {
-  const styles = useStyles()
+  const styles = useStyles();
 
   return (
     <Grid container spacing={2} className={styles.root}>
@@ -59,5 +59,5 @@ export default () => {
         </Typography>
       </Grid>
     </Grid>
-  )
-}
+  );
+};

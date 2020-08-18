@@ -1,71 +1,71 @@
 // libs
-import React from 'react'
+import React from "react";
 
-const AMAZON_USA = 'https://www.amazon.com/'
-const AMAZON_UK = 'https://www.amazon.co.uk/'
-const AMAZON_CANADA = 'https://www.amazon.ca/'
-const AMAZON_AUSTRALIA = 'https://www.amazon.com.au/'
-const AMAZON_GERMANY = 'https://www.amazon.de/'
-const TWEET_IT = 'Eliment-Tweet-It/dp/B079BSJSH8/'
+const AMAZON_USA = "https://www.amazon.com/";
+const AMAZON_UK = "https://www.amazon.co.uk/";
+const AMAZON_CANADA = "https://www.amazon.ca/";
+const AMAZON_AUSTRALIA = "https://www.amazon.com.au/";
+const AMAZON_GERMANY = "https://www.amazon.de/";
+const TWEET_IT = "Eliment-Tweet-It/dp/B079BSJSH8/";
 // const ONEPAD = 'Eliment-OnePad-Unofficial-OneNote-Client/dp/B079G5TGNH/'
 // const EVERPAD = 'Eliment-EverPad-Unofficial-EverNote-Client/dp/B079KKD6Q1'
 
 export const PROJECTS = [
   {
-    title: 'Circular Carousel',
-    category: 'React Native',
-    key: 'carousel',
-    video: '/images/thumbs/carousel.mp4',
+    title: "Circular Carousel",
+    category: "React Native",
+    key: "carousel",
+    video: "/images/thumbs/carousel.mp4",
     urls: [
       {
-        type: 'Github',
+        type: "Github",
         href:
-          'https://www.github.com/mrmuhammadali/react-native-circular-carousel',
+          "https://www.github.com/mrmuhammadali/react-native-circular-carousel",
       },
       {
-        type: 'Npm',
-        href: 'https://www.npmjs.com/package/react-native-circular-carousel',
+        type: "Npm",
+        href: "https://www.npmjs.com/package/react-native-circular-carousel",
       },
     ],
     description:
-      'An open-source library to create a Circular Carousel in iOS and Android.',
+      "An open-source library to create a Circular Carousel in iOS and Android.",
   },
 
   {
-    title: 'React Invoicer',
-    category: 'React / FusionJS',
-    key: 'invoicer',
+    title: "React Invoicer",
+    category: "React / FusionJS",
+    key: "invoicer",
     urls: [
       {
-        type: 'Github',
-        href: 'https://www.github.com/mrmuhammadali/invoicer',
+        type: "Github",
+        href: "https://www.github.com/mrmuhammadali/invoicer",
       },
       {
-        type: 'Visit App',
-        href: 'https://react-invoicer.herokuapp.com/',
+        type: "Visit App",
+        href: "https://react-invoicer.herokuapp.com/",
       },
     ],
     description:
-      'An open-source app to generate invoice and download them as PDF.',
+      "An open-source app to generate invoice and download them as PDF.",
   },
 
   {
-    title: 'Assembla / Gitlab',
-    category: 'Chat Bot - NodeJS',
-    key: 'gitlabBot',
-    image: '/images/full/bot-01.jpg',
+    title: "Assembla / Gitlab",
+    category: "Chat Bot - NodeJS",
+    key: "gitlabBot",
+    image: "/images/full/bot-01.jpg",
     urls: [
       {
-        type: 'Skype',
-        href: 'https://join.skype.com/bot/8864cf5d-3c38-457f-976f-cfb07dd93c7f',
+        type: "Skype",
+        href: "https://join.skype.com/bot/8864cf5d-3c38-457f-976f-cfb07dd93c7f",
       },
       {
-        type: 'Telegram',
-        href: 'https://t.me/MrGitLabBot',
+        type: "Telegram",
+        href: "https://t.me/MrGitLabBot",
       },
     ],
     description:
-      'Skype/Telegram bot which notifies right in your chat upon any git operation.',
+      "Skype/Telegram bot which notifies right in your chat upon any git operation.",
     more: (
       <div>
         Problem: People in a workplace often have to tell each other whether
@@ -75,11 +75,11 @@ export const PROJECTS = [
         We had this problem in our team which was literally painful. We were
         using
         <a href="https://www.assembla.com/home" target="__blank">
-          {' Assembla '}
+          {" Assembla "}
         </a>
         for Version Control at first but switched to
         <a href="https://www.gitlab.com/" target="__blank">
-          {' Gitlab '}
+          {" Gitlab "}
         </a>
         after sometime.
         <br />
@@ -92,31 +92,31 @@ export const PROJECTS = [
         <br />
         Assembla:
         <a href="https://join.skype.com/bot/5452dd9e-b3f2-440f-ad4c-3352296a254f">
-          {' Skype '}
+          {" Skype "}
         </a>
-        <a href="https://t.me/AssemblaBot">{' Telegram '}</a>
+        <a href="https://t.me/AssemblaBot">{" Telegram "}</a>
         <br />
         Gitlab:
         <a href="https://join.skype.com/bot/8864cf5d-3c38-457f-976f-cfb07dd93c7f">
-          {' Skype '}
+          {" Skype "}
         </a>
-        <a href="https://t.me/MrGitLabBot">{' Telegram '}</a>
+        <a href="https://t.me/MrGitLabBot">{" Telegram "}</a>
       </div>
     ),
   },
 
   {
-    title: 'Tweet It',
-    category: 'Alexa Bot - NodeJS',
-    key: 'tweetIt',
-    image: '/images/full/bot-02.png',
+    title: "Tweet It",
+    category: "Alexa Bot - NodeJS",
+    key: "tweetIt",
+    image: "/images/full/bot-02.png",
     urls: [
       {
-        type: 'Amazon US',
+        type: "Amazon US",
         href: `${AMAZON_USA}${TWEET_IT}`,
       },
       {
-        type: 'Amazon UK',
+        type: "Amazon UK",
         href: `${AMAZON_UK}${TWEET_IT}`,
       },
     ],
@@ -127,23 +127,23 @@ export const PROJECTS = [
         Amazon's Alexa Skill built to tweet on your Twitter timeline handsfree.
         <br />
         <br />
-        {'Skill URLs: '}
+        {"Skill URLs: "}
         <a href={`${AMAZON_AUSTRALIA}${TWEET_IT}`} target="__blank">
           Australia
         </a>
-        {', '}
+        {", "}
         <a href={`${AMAZON_CANADA}${TWEET_IT}`} target="__blank">
           Canada
         </a>
-        {', '}
+        {", "}
         <a href={`${AMAZON_GERMANY}${TWEET_IT}`} target="__blank">
           Germany
         </a>
-        {', '}
+        {", "}
         <a href={`${AMAZON_UK}${TWEET_IT}`} target="__blank">
           UK
         </a>
-        {', '}
+        {", "}
         <a href={`${AMAZON_USA}${TWEET_IT}`} target="__blank">
           US
         </a>
@@ -152,52 +152,52 @@ export const PROJECTS = [
   },
 
   {
-    title: 'HTTP Router',
-    category: 'FusionJS Plugin - NodeJS',
-    thumbnail: '',
+    title: "HTTP Router",
+    category: "FusionJS Plugin - NodeJS",
+    thumbnail: "",
     urls: [
       {
-        type: 'Github',
-        href: 'https://www.github.com/mrmuhammadali/fusion-plugin-http-router',
+        type: "Github",
+        href: "https://www.github.com/mrmuhammadali/fusion-plugin-http-router",
       },
       {
-        type: 'Npm',
-        href: 'https://www.npmjs.com/package/fusion-plugin-http-router',
+        type: "Npm",
+        href: "https://www.npmjs.com/package/fusion-plugin-http-router",
       },
     ],
     description:
-      'An open-source plugin for Fusion apps to register the http routes / endpoints.',
+      "An open-source plugin for Fusion apps to register the http routes / endpoints.",
   },
 
   {
-    title: 'Material UI',
-    category: 'FusionJS Plugin',
-    thumbnail: '',
+    title: "Material UI",
+    category: "FusionJS Plugin",
+    thumbnail: "",
     urls: [
       {
-        type: 'Github',
+        type: "Github",
         href:
-          'https://github.com/IcculusC/fusion-plugin-material-ui/graphs/contributors',
+          "https://github.com/IcculusC/fusion-plugin-material-ui/graphs/contributors",
       },
       {
-        type: 'Npm',
-        href: 'https://www.npmjs.com/package/fusion-plugin-material-ui',
+        type: "Npm",
+        href: "https://www.npmjs.com/package/fusion-plugin-material-ui",
       },
     ],
     description:
-      'Major contributions in plugin of Fusion apps to support SSR for Material-ui.',
+      "Major contributions in plugin of Fusion apps to support SSR for Material-ui.",
   },
-]
+];
 
 export const REST_PROJECTS = [
   {
-    category: 'Android',
-    title: 'I Need a Partner',
-    thumbnail: '/images/thumbs/android-01.jpg',
-    image: '/images/full/android-01.jpg',
-    url: '',
+    category: "Android",
+    title: "I Need a Partner",
+    thumbnail: "/images/thumbs/android-01.jpg",
+    image: "/images/full/android-01.jpg",
+    url: "",
     description:
-      'Android application which helps its users find nearby people sharing similar interests.',
+      "Android application which helps its users find nearby people sharing similar interests.",
     more: (
       <div>
         <ul>
@@ -227,13 +227,13 @@ export const REST_PROJECTS = [
   },
 
   {
-    category: 'Web',
-    title: 'Magic Circle',
-    thumbnail: '/images/thumbs/image-01.jpg',
-    image: '/images/full/image-01.jpg',
-    url: '',
+    category: "Web",
+    title: "Magic Circle",
+    thumbnail: "/images/thumbs/image-01.jpg",
+    image: "/images/full/image-01.jpg",
+    url: "",
     description:
-      'Online presence for a business in event planning industry called Magic Circle.',
+      "Online presence for a business in event planning industry called Magic Circle.",
     more: (
       <div>
         Created business website for online presence. Users can contact through
@@ -244,13 +244,13 @@ export const REST_PROJECTS = [
   },
 
   {
-    category: 'Web',
-    title: 'Silver Consultancy',
-    thumbnail: '/images/thumbs/image-05.jpg',
-    image: '/images/full/image-05.jpg',
-    url: '',
+    category: "Web",
+    title: "Silver Consultancy",
+    thumbnail: "/images/thumbs/image-05.jpg",
+    image: "/images/full/image-05.jpg",
+    url: "",
     description:
-      'A consultancy website for Singapore based insurance consultancy company.',
+      "A consultancy website for Singapore based insurance consultancy company.",
     more: (
       <div>
         Created a consultancy website for Singapore based insurance consultancy
@@ -262,13 +262,13 @@ export const REST_PROJECTS = [
   },
 
   {
-    category: 'Web',
-    title: 'Amazon Product Research',
-    thumbnail: '/images/thumbs/image-06.jpg',
-    image: '/images/full/image-06.jpg',
-    url: '',
+    category: "Web",
+    title: "Amazon Product Research",
+    thumbnail: "/images/thumbs/image-06.jpg",
+    image: "/images/full/image-06.jpg",
+    url: "",
     description:
-      'Product research tool which can be used to analyze products based on some metrics.',
+      "Product research tool which can be used to analyze products based on some metrics.",
     more: (
       <div>
         Consumed Amazon Web Service to fetch products and their related data.
@@ -279,4 +279,4 @@ export const REST_PROJECTS = [
       </div>
     ),
   },
-]
+];

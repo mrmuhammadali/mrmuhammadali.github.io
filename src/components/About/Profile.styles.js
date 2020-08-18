@@ -1,10 +1,10 @@
 // libs
-import makeStyles from '@material-ui/styles/makeStyles'
+import makeStyles from "@material-ui/styles/makeStyles";
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles((theme) => ({
   root: {
-    justifyContent: 'center',
-    padding: '1rem 0',
+    justifyContent: "center",
+    padding: "1rem 0",
   },
 
   profilePic: {
@@ -18,9 +18,9 @@ export const useStyles = makeStyles(theme => ({
 
   description: {
     fontWeight: 300,
-    lineHeight: '28px',
-    fontSize: '1.1em',
+    lineHeight: "28px",
+    fontSize: "1.1em",
     margin: 0,
-    textAlign: 'left',
+    textAlign: "left",
   },
-}))
+}));

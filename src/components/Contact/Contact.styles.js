@@ -1,61 +1,61 @@
 // libs
-import makeStyles from '@material-ui/styles/makeStyles'
+import makeStyles from "@material-ui/styles/makeStyles";
 
-export const useStyles = makeStyles(theme => ({
+export const useStyles = makeStyles((theme) => ({
   root: {
     background: theme.palette.secondary.main,
   },
 
   content: {
-    justifyContent: 'center',
+    justifyContent: "center",
   },
 
   contact: {
-    display: 'flex',
-    flexDirection: 'column',
+    display: "flex",
+    flexDirection: "column",
   },
 
   contactHeading: {
     color: theme.palette.text.primary,
-    fontSize: '24px',
+    fontSize: "24px",
     fontWeight: 300,
-    lineHeight: '1em',
-    textTransform: 'uppercase',
+    lineHeight: "1em",
+    textTransform: "uppercase",
     margin: 0,
   },
 
   email: {
-    margin: '5px 0',
+    margin: "5px 0",
   },
 
   phone: {
     margin: 0,
-    lineHeight: '28px',
+    lineHeight: "28px",
     padding: 0,
     color: theme.palette.text.secondary,
   },
 
   social: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(3, 40px)',
+    display: "grid",
+    gridTemplateColumns: "repeat(3, 40px)",
   },
 
   icon: {
     fill: theme.palette.text.secondary,
-    width: '20px',
+    width: "20px",
   },
 
-  '@media screen and (max-width: 599px)': {
+  "@media screen and (max-width: 599px)": {
     contact: {
-      alignItems: 'center',
+      alignItems: "center",
     },
 
     contactHeading: {
-      display: 'none',
+      display: "none",
     },
 
     social: {
-      gridTemplateColumns: 'repeat(6, 40px)',
+      gridTemplateColumns: "repeat(6, 40px)",
     },
   },
-}))
+}));

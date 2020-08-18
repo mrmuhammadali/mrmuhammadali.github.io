@@ -1,13 +1,13 @@
 // libs
-import { createMuiTheme } from '@material-ui/core/styles'
-import useMediaQuery from '@material-ui/core/useMediaQuery'
-import { useMemo } from 'react'
+import { createMuiTheme } from "@material-ui/core/styles";
+import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { useMemo } from "react";
 
 // src
-import { dark, light } from '../theme'
+import { dark, light } from "../theme";
 
 export const useTheme = () => {
-  const prefersDarkMode = useMediaQuery('(prefers-color-scheme: dark)')
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   return useMemo(
     () =>
@@ -18,6 +18,6 @@ export const useTheme = () => {
             '"Titillium Web", "Roboto", "Helvetica", "Arial", sans-serif',
         },
       }),
-    [prefersDarkMode],
-  )
-}
+    [prefersDarkMode]
+  );
+};

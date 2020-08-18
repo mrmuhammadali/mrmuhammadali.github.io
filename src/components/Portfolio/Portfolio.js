@@ -1,13 +1,13 @@
 // libs
-import React, { forwardRef } from 'react'
-import Grid from '@material-ui/core/Grid'
-import { graphql, useStaticQuery } from 'gatsby'
+import React, { forwardRef } from "react";
+import Grid from "@material-ui/core/Grid";
+import { graphql, useStaticQuery } from "gatsby";
 
 // src
-import { PROJECTS } from './data'
-import { ProjectCard } from '../ProjectCard'
-import { Title } from '../Title'
-import { useStyles } from './Portfolio.styles'
+import { PROJECTS } from "./data";
+import { ProjectCard } from "../ProjectCard";
+import { Title } from "../Title";
+import { useStyles } from "./Portfolio.styles";
 
 export const imageQuery = graphql`
   fragment imageQuery on File {
@@ -17,10 +17,10 @@ export const imageQuery = graphql`
       }
     }
   }
-`
+`;
 
 export const Portfolio = forwardRef(({ id }, ref) => {
-  const styles = useStyles()
+  const styles = useStyles();
   const data = useStaticQuery(graphql`
     query {
       carousel: file(relativePath: { eq: "thumbs/carousel.png" }) {
@@ -39,7 +39,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
         ...imageQuery
       }
     }
-  `)
+  `);
 
   return (
     <section id={id} className={styles.root} ref={ref}>
@@ -48,7 +48,14 @@ export const Portfolio = forwardRef(({ id }, ref) => {
         <Grid item xs={11} sm={11} md={11} lg={10}>
           <Grid container className={styles.content} spacing={5}>
             {PROJECTS.map((project) => {
-              const { category, description, key, title, urls, video } = project
+              const {
+                category,
+                description,
+                key,
+                title,
+                urls,
+                video,
+              } = project;
 
               return (
                 <Grid key={title} item xs={12} sm={6} md={4} lg={4}>
@@ -61,11 +68,11 @@ export const Portfolio = forwardRef(({ id }, ref) => {
                     urls={urls}
                   />
                 </Grid>
-              )
+              );
             })}
           </Grid>
         </Grid>
       </Grid>
     </section>
-  )
-})
+  );
+});

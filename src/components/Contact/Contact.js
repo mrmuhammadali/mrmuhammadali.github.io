@@ -1,56 +1,56 @@
 // libs
-import React, { forwardRef } from 'react'
-import Grid from '@material-ui/core/Grid'
-import IconButton from '@material-ui/core/IconButton'
-import Tooltip from '@material-ui/core/Tooltip'
-import Typography from '@material-ui/core/Typography'
+import React, { forwardRef } from "react";
+import Grid from "@material-ui/core/Grid";
+import IconButton from "@material-ui/core/IconButton";
+import Tooltip from "@material-ui/core/Tooltip";
+import Typography from "@material-ui/core/Typography";
 
 // src
-import { Form } from './Form'
-import DevIcon from '../Icons/Dev'
-import GithubIcon from '../Icons/Github'
-import InstagramIcon from '../Icons/Instagram'
-import LinkedInIcon from '../Icons/LinkedIn'
-import TwitterIcon from '../Icons/Twitter'
-import UpworkIcon from '../Icons/Upwork'
-import { Title } from '../Title'
-import { useStyles } from './Contact.styles'
+import { Form } from "./Form";
+import DevIcon from "../Icons/Dev";
+import GithubIcon from "../Icons/Github";
+import InstagramIcon from "../Icons/Instagram";
+import LinkedInIcon from "../Icons/LinkedIn";
+import TwitterIcon from "../Icons/Twitter";
+import UpworkIcon from "../Icons/Upwork";
+import { Title } from "../Title";
+import { useStyles } from "./Contact.styles";
 
 const SOCIAL_LINKS = [
   {
-    title: 'DEV',
+    title: "DEV",
     IconComponent: DevIcon,
-    url: 'https://dev.to/mrmuhammadali',
+    url: "https://dev.to/mrmuhammadali",
   },
   {
-    title: 'Github',
+    title: "Github",
     IconComponent: GithubIcon,
-    url: 'https://github.com/mrmuhammadali/',
+    url: "https://github.com/mrmuhammadali/",
   },
   {
-    title: 'Instagram',
+    title: "Instagram",
     IconComponent: InstagramIcon,
-    url: 'https://www.instagram.com/muhammadali.io/',
+    url: "https://www.instagram.com/muhammadali.io/",
   },
   {
-    title: 'LinkedIn',
+    title: "LinkedIn",
     IconComponent: LinkedInIcon,
-    url: 'https://www.linkedin.com/in/muhammad-ali-6648b8119/',
+    url: "https://www.linkedin.com/in/muhammad-ali-6648b8119/",
   },
   {
-    title: 'Twitter',
+    title: "Twitter",
     IconComponent: TwitterIcon,
-    url: 'https://twitter.com/muhammadali_io',
+    url: "https://twitter.com/muhammadali_io",
   },
   {
-    title: 'Upwork',
+    title: "Upwork",
     IconComponent: UpworkIcon,
-    url: 'https://upwork.com/o/profiles/users/~01ed6257c1b4e8228d/',
+    url: "https://upwork.com/o/profiles/users/~01ed6257c1b4e8228d/",
   },
-]
+];
 
 export const Contact = forwardRef(({ id }, ref) => {
-  const styles = useStyles()
+  const styles = useStyles();
 
   return (
     <section id={id} className={styles.root} ref={ref}>
@@ -76,7 +76,7 @@ export const Contact = forwardRef(({ id }, ref) => {
                     <IconComponent className={styles.icon} />
                   </IconButton>
                 </Tooltip>
-              )
+              );
             })}
           </div>
         </Grid>
@@ -85,5 +85,5 @@ export const Contact = forwardRef(({ id }, ref) => {
         </Grid>
       </Grid>
     </section>
-  )
-})
+  );
+});

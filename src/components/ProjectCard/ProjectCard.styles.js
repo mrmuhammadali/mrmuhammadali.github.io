@@ -1,5 +1,5 @@
 // libs
-import makeStyles from '@material-ui/styles/makeStyles'
+import makeStyles from "@material-ui/styles/makeStyles";
 
 export const useStyles = makeStyles((theme) => ({
   root: {
@@ -7,16 +7,16 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   media: {
-    position: 'relative',
+    position: "relative",
     height: 220,
-    width: '100%',
-    display: 'grid',
-    alignContent: 'center',
-    textAlign: 'center',
+    width: "100%",
+    display: "grid",
+    alignContent: "center",
+    textAlign: "center",
     background: theme.palette.primary.main,
 
-    '& p': {
-      fontSize: '1.5rem',
+    "& p": {
+      fontSize: "1.5rem",
     },
   },
 
@@ -25,8 +25,8 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   actions: {
-    padding: '8px 16px',
-    display: 'inline-grid',
-    gridColumnGap: '10px',
+    padding: "8px 16px",
+    display: "inline-grid",
+    gridColumnGap: "10px",
   },
-}))
+}));
