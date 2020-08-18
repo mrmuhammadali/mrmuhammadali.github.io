@@ -8,6 +8,7 @@ import { PageHome } from '../components/PageHome'
 import { useTheme } from '../utils/useTheme'
 
 const keywords = [
+  'Muhammad Ali',
   'HTML',
   'CSS',
   'JavaScript',
