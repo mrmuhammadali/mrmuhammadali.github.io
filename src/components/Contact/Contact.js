@@ -20,7 +20,7 @@ const SOCIAL_LINKS = [
   {
     title: "DEV",
     IconComponent: DevIcon,
-    url: "https://dev.to/mrmuhammadali",
+    url: "https://dev.to/muhammadali_dev",
   },
   {
     title: "Github",
@@ -30,7 +30,7 @@ const SOCIAL_LINKS = [
   {
     title: "Instagram",
     IconComponent: InstagramIcon,
-    url: "https://www.instagram.com/muhammadali.io/",
+    url: "https://www.instagram.com/muhammadali.dev/",
   },
   {
     title: "LinkedIn",
@@ -60,8 +60,8 @@ export const Contact = forwardRef(({ id }, ref) => {
           <Typography className={styles.contactHeading} component="h2">
             CONTACT DETAILS
           </Typography>
-          <a className={styles.email} href="mailto:hi@muhammadali.io">
-            hi@muhammadali.io
+          <a className={styles.email} href="mailto:mr.muhammad.ali@live.com">
+            mr.muhammad.ali@live.com
           </a>
           <p className={styles.phone}>+92 343 5311141</p>
           <div className={styles.social}>
