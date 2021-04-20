@@ -30,7 +30,7 @@ const SOCIAL_LINKS = [
   {
     title: "Stackoverflow",
     IconComponent: StackoverflowIcon,
-    url: "https://www.instagram.com/muhammadali.dev/",
+    url: "https://stackoverflow.com/users/3527843/muhammad-ali/",
   },
   {
     title: "LinkedIn",
