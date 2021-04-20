@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import { Form } from "./Form";
 import DevIcon from "../Icons/Dev";
 import GithubIcon from "../Icons/Github";
-import InstagramIcon from "../Icons/Instagram";
+import StackoverflowIcon from "../Icons/Stackoverflow";
 import LinkedInIcon from "../Icons/LinkedIn";
 import TwitterIcon from "../Icons/Twitter";
 import UpworkIcon from "../Icons/Upwork";
@@ -28,8 +28,8 @@ const SOCIAL_LINKS = [
     url: "https://github.com/mrmuhammadali/",
   },
   {
-    title: "Instagram",
-    IconComponent: InstagramIcon,
+    title: "Stackoverflow",
+    IconComponent: StackoverflowIcon,
     url: "https://www.instagram.com/muhammadali.dev/",
   },
   {
