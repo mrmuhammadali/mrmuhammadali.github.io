@@ -32,6 +32,28 @@ export const PROJECTS = [
   },
 
   {
+    title: "Resizable Element",
+    category: "React / Typescript",
+    thumbnail: "",
+    urls: [
+      {
+        type: "Github",
+        href: "https://github.com/mrmuhammadali/react-resizable-element",
+      },
+      {
+        type: "Npm",
+        href: "https://www.npmjs.com/package/react-resizable-element",
+      },
+      {
+        type: "Demo",
+        href: "https://muhammadali.dev/react-resizable-element",
+      },
+    ],
+    description:
+      "An open-source library to resize width/height of a react element.",
+  },
+
+  {
     title: "React Invoicer",
     category: "React / FusionJS",
     key: "invoicer",
