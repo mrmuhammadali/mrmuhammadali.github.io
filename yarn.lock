@@ -3202,39 +3202,15 @@ browserify-zlib@^0.2.0:
   dependencies:
     pako "~1.0.5"
 
-browserslist@^4.0.0:
-  version "4.8.3"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.8.3.tgz#65802fcd77177c878e015f0e3189f2c4f627ba44"
+browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.12.2, browserslist@^4.8.3, browserslist@^4.8.5:
+  version "4.16.6"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.16.6.tgz#d7901277a5a88e554ed305b183ec9b0c08f66fa2"
   dependencies:
-    caniuse-lite "^1.0.30001017"
-    electron-to-chromium "^1.3.322"
-    node-releases "^1.1.44"
-
-browserslist@^4.12.0:
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.12.0.tgz#06c6d5715a1ede6c51fc39ff67fd647f740b656d"
-  dependencies:
-    caniuse-lite "^1.0.30001043"
-    electron-to-chromium "^1.3.413"
-    node-releases "^1.1.53"
-    pkg-up "^2.0.0"
-
-browserslist@^4.12.2, browserslist@^4.8.5:
-  version "4.14.0"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.14.0.tgz#2908951abfe4ec98737b72f34c3bcedc8d43b000"
-  dependencies:
-    caniuse-lite "^1.0.30001111"
-    electron-to-chromium "^1.3.523"
-    escalade "^3.0.2"
-    node-releases "^1.1.60"
-
-browserslist@^4.8.3:
-  version "4.8.5"
-  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-4.8.5.tgz#691af4e327ac877b25e7a3f7ee869c4ef36cdea3"
-  dependencies:
-    caniuse-lite "^1.0.30001022"
-    electron-to-chromium "^1.3.338"
-    node-releases "^1.1.46"
+    caniuse-lite "^1.0.30001219"
+    colorette "^1.2.2"
+    electron-to-chromium "^1.3.723"
+    escalade "^3.1.1"
+    node-releases "^1.1.71"
 
 buble-jsx-only@^0.19.8:
   version "0.19.8"
@@ -3456,21 +3432,9 @@ caniuse-api@^3.0.0:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001017:
-  version "1.0.30001018"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001018.tgz#dd5cd57e77980db03e4fb7a4e9b4a96e32e1d733"
-
-caniuse-lite@^1.0.30001020, caniuse-lite@^1.0.30001022:
-  version "1.0.30001023"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001023.tgz#b82155827f3f5009077bdd2df3d8968bcbcc6fc4"
-
-caniuse-lite@^1.0.30001043:
-  version "1.0.30001066"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001066.tgz#0a8a58a10108f2b9bf38e7b65c237b12fd9c5f04"
-
-caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001111:
-  version "1.0.30001115"
-  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001115.tgz#c04cd828883ba47f6f776312e0817bcc9040cfa4"
+caniuse-lite@^1.0.0, caniuse-lite@^1.0.30001020, caniuse-lite@^1.0.30001109, caniuse-lite@^1.0.30001219:
+  version "1.0.30001228"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30001228.tgz#bfdc5942cd3326fa51ee0b42fbef4da9d492a7fa"
 
 case@^1.6.2:
   version "1.6.3"
@@ -3760,9 +3724,9 @@ color@^3.0.0, color@^3.1.2:
     color-convert "^1.9.1"
     color-string "^1.5.2"
 
-colorette@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.1.tgz#4d0b921325c14faf92633086a536db6e89564b1b"
+colorette@^1.2.1, colorette@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/colorette/-/colorette-1.2.2.tgz#cbcc79d5e99caea2dbf10eb3a26fd8b3e6acfa94"
 
 colors@^1.1.2:
   version "1.4.0"
@@ -4817,21 +4781,9 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
-electron-to-chromium@^1.3.322:
-  version "1.3.323"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.323.tgz#05fde422376ef28de718261b2acc7fb33f94a391"
-
-electron-to-chromium@^1.3.338:
-  version "1.3.340"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.340.tgz#5d4fe78e984d4211194cf5a52e08069543da146f"
-
-electron-to-chromium@^1.3.413:
-  version "1.3.455"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.455.tgz#fd65a3f5db6ffa83eb7c84f16ea9b1b7396f537d"
-
-electron-to-chromium@^1.3.523:
-  version "1.3.534"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.534.tgz#fc7af8518dd00a5b22a24aed3f116b5d097e2330"
+electron-to-chromium@^1.3.723:
+  version "1.3.737"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.737.tgz#196f2e9656f4f3c31930750e1899c091b72d36b5"
 
 elliptic@^6.0.0:
   version "6.5.2"
@@ -5020,9 +4972,9 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-escalade@^3.0.2:
-  version "3.0.2"
-  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.0.2.tgz#6a580d70edb87880f22b4c91d0d56078df6962c4"
+escalade@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/escalade/-/escalade-3.1.1.tgz#d8cfdc7000965c5a0174b4a82eaa5c0552742e40"
 
 escape-goat@^2.0.0:
   version "2.1.1"
@@ -9014,25 +8966,9 @@ node-object-hash@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/node-object-hash/-/node-object-hash-2.0.0.tgz#9971fcdb7d254f05016bd9ccf508352bee11116b"
 
-node-releases@^1.1.44:
-  version "1.1.44"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.44.tgz#cd66438a6eb875e3eb012b6a12e48d9f4326ffd7"
-  dependencies:
-    semver "^6.3.0"
-
-node-releases@^1.1.46:
-  version "1.1.47"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.47.tgz#c59ef739a1fd7ecbd9f0b7cf5b7871e8a8b591e4"
-  dependencies:
-    semver "^6.3.0"
-
-node-releases@^1.1.53:
-  version "1.1.57"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.57.tgz#f6754ce225fad0611e61228df3e09232e017ea19"
-
-node-releases@^1.1.60:
-  version "1.1.60"
-  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.60.tgz#6948bdfce8286f0b5d0e5a88e8384e954dfe7084"
+node-releases@^1.1.71:
+  version "1.1.72"
+  resolved "https://registry.yarnpkg.com/node-releases/-/node-releases-1.1.72.tgz#14802ab6b1039a79a0c7d662b610a5bbd76eacbe"
 
 noms@0.0.0:
   version "0.0.0"
@@ -9790,12 +9726,6 @@ pkg-dir@^4.1.0, pkg-dir@^4.2.0:
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-4.2.0.tgz#f099133df7ede422e81d1d8448270eeb3e4261f3"
   dependencies:
     find-up "^4.0.0"
-
-pkg-up@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/pkg-up/-/pkg-up-2.0.0.tgz#c819ac728059a461cab1c3889a2be3c49a004d7f"
-  dependencies:
-    find-up "^2.1.0"
 
 pngjs@^3.0.0, pngjs@^3.3.3:
   version "3.4.0"
