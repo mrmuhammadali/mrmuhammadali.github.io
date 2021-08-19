@@ -4,7 +4,7 @@ import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import CardHeader from "@material-ui/core/CardHeader";
-import Img from "gatsby-image";
+import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
 import Typography from "@material-ui/core/Typography";
 
 // src
@@ -32,14 +32,14 @@ export const ProjectCard = (props) => {
             preload="none"
             ref={videoRef}
             className={styles.media}
-            poster={image.fluid.src}
+            poster={getSrc(image)}
             src={video}
           />
         ) : (
           image && (
-            <Img
+            <GatsbyImage
               className={styles.media}
-              fluid={image.fluid}
+              image={getImage(image)}
               alt={title}
               draggable={false}
             />
