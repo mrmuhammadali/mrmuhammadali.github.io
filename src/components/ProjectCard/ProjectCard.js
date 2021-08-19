@@ -42,6 +42,7 @@ export const ProjectCard = (props) => {
               image={getImage(image)}
               alt={title}
               draggable={false}
+              objectFit="initial"
             />
           )
         )}

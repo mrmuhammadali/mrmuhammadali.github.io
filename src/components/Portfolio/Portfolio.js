@@ -12,7 +12,7 @@ import { useStyles } from "./Portfolio.styles";
 export const imageQuery = graphql`
   fragment imageQuery on File {
     childImageSharp {
-      gatsbyImageData(height: 220)
+      gatsbyImageData(height: 240)
     }
   }
 `;
@@ -50,7 +50,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
                 project;
 
               return (
-                <Grid key={title} item xs={12} sm={6} md={4} lg={4}>
+                <Grid key={title} item xs={12} sm={6} md={4}>
                   <ProjectCard
                     category={category}
                     description={description}
