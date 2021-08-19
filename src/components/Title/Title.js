@@ -1,4 +1,3 @@
-// @flow
 // libs
 import React from "react";
 import Typography from "@material-ui/core/Typography";
@@ -6,12 +5,7 @@ import Typography from "@material-ui/core/Typography";
 // src
 import { useStyles } from "./Title.styles";
 
-type Props = {
-  content: string,
-  className: string,
-};
-
-export const Title = ({ children, className }: Props) => {
+export const Title = ({ children, className }) => {
   const styles = useStyles();
 
   return (

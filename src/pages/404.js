@@ -1,1 +1,3 @@
-export { PageHome as default } from "../components/PageHome";
+import { PageHome } from "../components/PageHome";
+
+export default PageHome;

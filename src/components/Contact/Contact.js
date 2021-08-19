@@ -18,9 +18,9 @@ import { useStyles } from "./Contact.styles";
 
 const SOCIAL_LINKS = [
   {
-    title: "DEV",
-    IconComponent: DevIcon,
-    url: "https://dev.to/muhammadali_dev",
+    title: "LinkedIn",
+    IconComponent: LinkedInIcon,
+    url: "https://www.linkedin.com/in/muhammad-ali-6648b8119/",
   },
   {
     title: "Github",
@@ -33,9 +33,9 @@ const SOCIAL_LINKS = [
     url: "https://stackoverflow.com/users/3527843/muhammad-ali/",
   },
   {
-    title: "LinkedIn",
-    IconComponent: LinkedInIcon,
-    url: "https://www.linkedin.com/in/muhammad-ali-6648b8119/",
+    title: "DEV",
+    IconComponent: DevIcon,
+    url: "https://dev.to/muhammadali_dev",
   },
   {
     title: "Twitter",

@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 
-export default ({ className }) => (
+const Npm = ({ className }) => (
   <svg
     className={className}
     aria-label="NPM"
@@ -12,3 +12,5 @@ export default ({ className }) => (
     <path d="M10.665 10H12v2.667h-1.335V10z" />
   </svg>
 );
+
+export default Npm;

@@ -1,4 +1,3 @@
-// @flow
 // libs
 import React from "react";
 import AppBar from "@material-ui/core/AppBar";
@@ -9,13 +8,9 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 // src
 import { useStyles } from "./Header.styles";
 
-type Props = {
-  onNavButtonClick: (number) => void,
-};
-
 const BUTTONS = ["About", "Portfolio", "Contact"];
 
-export const Header = ({ onNavButtonClick }: Props) => {
+export const Header = ({ onNavButtonClick }) => {
   const styles = useStyles({});
   const matches = useMediaQuery((theme) => theme.breakpoints.down("xs"));
 

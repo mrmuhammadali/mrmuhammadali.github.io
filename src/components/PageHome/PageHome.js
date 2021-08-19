@@ -46,7 +46,7 @@ function PageHomeInner(props) {
   };
 
   return (
-    <React.Fragment>
+    <div>
       <Helmet
         htmlAttributes={{ lang: "en" }}
         title="Muhammad Ali"
@@ -76,7 +76,7 @@ function PageHomeInner(props) {
       <Portfolio ref={portfolio} />
       <Contact ref={contact} />
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
 

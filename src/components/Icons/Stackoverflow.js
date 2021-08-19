@@ -1,7 +1,7 @@
 // libs
 import React from "react";
 
-export default ({ className }) => (
+const Stackoverflow = ({ className }) => (
   <svg
     className={className}
     aria-label="Stackoverflow"
@@ -18,3 +18,5 @@ export default ({ className }) => (
     <path d="m22 8.587-6.302-8.587-1.691 1.286 6.302 8.587z" />
   </svg>
 );
+
+export default Stackoverflow;

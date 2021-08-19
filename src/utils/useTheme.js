@@ -1,5 +1,5 @@
 // libs
-import { createMuiTheme } from "@material-ui/core/styles";
+import { createTheme } from "@material-ui/core/styles";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { useMemo } from "react";
 
@@ -11,13 +11,13 @@ export const useTheme = () => {
 
   return useMemo(
     () =>
-      createMuiTheme({
+      createTheme({
         palette: prefersDarkMode ? dark : light,
         typography: {
           fontFamily:
             '"Titillium Web", "Roboto", "Helvetica", "Arial", sans-serif',
         },
       }),
-    [prefersDarkMode]
+    [prefersDarkMode],
   );
 };

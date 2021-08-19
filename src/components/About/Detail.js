@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 // src
 import { useStyles } from "./Detail.styles";
 
-export default () => {
+const Detail = () => {
   const styles = useStyles();
 
   return (
@@ -61,3 +61,5 @@ export default () => {
     </Grid>
   );
 };
+
+export default Detail;
