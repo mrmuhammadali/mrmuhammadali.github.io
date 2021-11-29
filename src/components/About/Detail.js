@@ -54,7 +54,7 @@ const Detail = () => {
           Tools and Technologies
         </Typography>
         <Typography className={styles.content}>
-          Alexa Skills, D3, Express, FusionJS, Gatsby, Javascript, Jest, Mongo,
+          Alexa Skills, D3, Express, Gatsby, Javascript, Jest, Mongo,
           NextJS, Node, React, React Native, Redux, SQL/NoSQL
         </Typography>
       </Grid>

@@ -1,13 +1,11 @@
 // libs
-import React, { useRef } from "react";
+import React from "react";
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@material-ui/core/styles";
 
 // src
 import { About } from "../About";
-import { Contact } from "../Contact";
 import { Footer } from "../Footer";
-import { Header } from "../Header";
 import { Portfolio } from "../Portfolio";
 import { useStyles } from "./PageHome.styles";
 import { useTheme } from "../../utils/useTheme";
@@ -28,22 +26,6 @@ const keywords = [
 
 function PageHomeInner(props) {
   const styles = useStyles();
-  const about = useRef(null);
-  const contact = useRef(null);
-  const portfolio = useRef(null);
-
-  const handleNavButtonClick = (section) => {
-    const scroll = (ref) => {
-      window.scroll({ top: ref.current.offsetTop - 50, behavior: "smooth" });
-    };
-    if (section === "about") {
-      scroll(about);
-    } else if (section === "contact") {
-      scroll(contact);
-    } else {
-      scroll(portfolio);
-    }
-  };
 
   return (
     <div>
@@ -63,18 +45,12 @@ function PageHomeInner(props) {
         link={[
           {
             rel: "stylesheet",
-            href:
-              "https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300&display=swap",
+            href: "https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300&display=swap",
           },
         ]}
       />
-      <Header
-        className={styles.header}
-        onNavButtonClick={handleNavButtonClick}
-      />
-      <About ref={about} />
-      <Portfolio ref={portfolio} />
-      <Contact ref={contact} />
+      <About />
+      <Portfolio />
       <Footer />
     </div>
   );

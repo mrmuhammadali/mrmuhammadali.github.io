@@ -2,11 +2,11 @@
 import React, { forwardRef } from "react";
 import Grid from "@material-ui/core/Grid";
 import { graphql, useStaticQuery } from "gatsby";
+import Typography from "@material-ui/core/Typography";
 
 // src
 import { PROJECTS } from "./data";
 import { ProjectCard } from "../ProjectCard";
-import { Title } from "../Title";
 import { useStyles } from "./Portfolio.styles";
 
 export const imageQuery = graphql`
@@ -41,7 +41,9 @@ export const Portfolio = forwardRef(({ id }, ref) => {
 
   return (
     <section id={id} className={styles.root} ref={ref}>
-      <Title>My Portfolio</Title>
+      <Typography className={styles.title} component="h1" color="textPrimary">
+        My Portfolio
+      </Typography>
       <Grid container className={styles.content}>
         <Grid item xs={11} sm={11} md={11} lg={10}>
           <Grid container className={styles.content} spacing={5}>

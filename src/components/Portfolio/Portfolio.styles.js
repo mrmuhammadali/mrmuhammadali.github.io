@@ -13,10 +13,11 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
 
-  heading: {
-    fontSize: "24px",
-    lineHeight: "1.5em",
+  title: {
+    fontSize: "48px",
     fontWeight: 300,
-    margin: 0,
+    lineHeight: "1.5em",
+    margin: "0 0 16px",
+    textAlign: "center",
   },
 }));

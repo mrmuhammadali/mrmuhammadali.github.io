@@ -5,7 +5,7 @@ export const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
     height: "auto",
-    background: theme.palette.primary.main,
+    background: theme.palette.secondary.main,
     textAlign: "center",
   },
 
