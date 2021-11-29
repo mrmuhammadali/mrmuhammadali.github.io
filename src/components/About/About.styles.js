@@ -10,7 +10,7 @@ export const useStyles = makeStyles(({ palette }) => ({
   },
 
   title: {
-    fontSize: "32px",
+    fontSize: "36px",
     fontWeight: 300,
     margin: 0,
   },

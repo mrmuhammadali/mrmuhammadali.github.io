@@ -28,7 +28,7 @@ function PageHomeInner(props) {
   const styles = useStyles();
 
   return (
-    <div>
+    <div className={styles.root}>
       <Helmet
         htmlAttributes={{ lang: "en" }}
         title="Muhammad Ali"

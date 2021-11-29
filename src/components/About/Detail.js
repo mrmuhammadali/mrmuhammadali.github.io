@@ -25,8 +25,6 @@ const Detail = () => {
         <Typography className={styles.content}>
           COMSATS Institute of Information Technology,
           <br /> Islamabad, Pakistan
-          <br />
-          February 2013 - January 2017
         </Typography>
       </Grid>
       <Grid item xs={6} sm={4} md={3} className={styles.item}>
@@ -38,12 +36,6 @@ const Detail = () => {
           Sr. Software Engineer - Emumba
         </Typography>
         <Typography className={styles.content}>June 2017 - Present</Typography>
-        <Typography className={styles.subtitle} component="h4">
-          Freelancer
-        </Typography>
-        <Typography className={styles.content}>
-          Active Time: 6 Months
-        </Typography>
       </Grid>
       <Grid item xs={8} sm={4} md={3} className={styles.item}>
         <EmojiObjects className={styles.icon} />
@@ -51,11 +43,11 @@ const Detail = () => {
           Technical Skills
         </Typography>
         <Typography className={styles.subtitle} component="h4">
-          Tools and Technologies
+          Javascript / Typescript
         </Typography>
         <Typography className={styles.content}>
-          Alexa Skills, D3, Express, Gatsby, Javascript, Jest, Mongo,
-          NextJS, Node, React, React Native, Redux, SQL/NoSQL
+          React, React Native, Redux Toolkit, Jest, NextJS, Gatsby, Express,
+          NodeJS
         </Typography>
       </Grid>
     </Grid>

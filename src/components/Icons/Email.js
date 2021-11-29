@@ -5,9 +5,7 @@ const Email = ({ className }) => (
     xmlns="http://www.w3.org/2000/svg"
     className={className}
     aria-label="Email"
-    height="24px"
     viewBox="0 0 24 24"
-    // width="24px"
     role="img"
   >
     <path d="M0 0h24v24H0V0z" fill="none" />

@@ -5,6 +5,7 @@ const Fiverr = ({ className }) => (
   <svg
     className={className}
     aria-label="Fiverr"
+    role="img"
     viewBox="0 0 24 24"
     xmlns="http://www.w3.org/2000/svg"
   >

@@ -41,7 +41,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
 
   return (
     <section id={id} className={styles.root} ref={ref}>
-      <Typography className={styles.title} component="h1" color="textPrimary">
+      <Typography className={styles.title} component="h2" color="textPrimary">
         My Portfolio
       </Typography>
       <Grid container className={styles.content}>

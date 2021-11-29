@@ -19,8 +19,7 @@ export const PROJECTS = [
     urls: [
       {
         type: "Github",
-        href:
-          "https://www.github.com/mrmuhammadali/react-native-circular-carousel",
+        href: "https://www.github.com/mrmuhammadali/react-native-circular-carousel",
       },
       {
         type: "Npm",
@@ -134,12 +133,8 @@ export const PROJECTS = [
     image: "/images/full/bot-02.png",
     urls: [
       {
-        type: "Amazon US",
+        type: "Amazon",
         href: `${AMAZON_USA}${TWEET_IT}`,
-      },
-      {
-        type: "Amazon UK",
-        href: `${AMAZON_UK}${TWEET_IT}`,
       },
     ],
     description:
@@ -198,8 +193,7 @@ export const PROJECTS = [
     urls: [
       {
         type: "Github",
-        href:
-          "https://github.com/IcculusC/fusion-plugin-material-ui/graphs/contributors",
+        href: "https://github.com/IcculusC/fusion-plugin-material-ui/graphs/contributors",
       },
       {
         type: "Npm",

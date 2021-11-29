@@ -14,7 +14,7 @@ export const useStyles = makeStyles((theme) => ({
   },
 
   title: {
-    fontSize: "48px",
+    fontSize: "32px",
     fontWeight: 300,
     lineHeight: "1.5em",
     margin: "0 0 16px",
