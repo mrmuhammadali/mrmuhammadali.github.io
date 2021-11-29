@@ -12,25 +12,6 @@ const TWEET_IT = "Eliment-Tweet-It/dp/B079BSJSH8/";
 
 export const PROJECTS = [
   {
-    title: "Circular Carousel",
-    category: "React Native",
-    key: "carousel",
-    video: "/images/thumbs/carousel.mp4",
-    urls: [
-      {
-        type: "Github",
-        href: "https://www.github.com/mrmuhammadali/react-native-circular-carousel",
-      },
-      {
-        type: "Npm",
-        href: "https://www.npmjs.com/package/react-native-circular-carousel",
-      },
-    ],
-    description:
-      "An open-source library to create a Circular Carousel in iOS and Android.",
-  },
-
-  {
     title: "Resizable Element",
     category: "React / Typescript",
     thumbnail: "",
@@ -53,21 +34,36 @@ export const PROJECTS = [
   },
 
   {
-    title: "React Invoicer",
-    category: "React / FusionJS",
-    key: "invoicer",
+    title: "Circular Carousel",
+    category: "React Native",
+    key: "carousel",
+    video: "/images/thumbs/carousel.mp4",
     urls: [
       {
         type: "Github",
-        href: "https://www.github.com/mrmuhammadali/invoicer",
+        href: "https://www.github.com/mrmuhammadali/react-native-circular-carousel",
       },
       {
-        type: "Visit App",
-        href: "https://react-invoicer.herokuapp.com/",
+        type: "Npm",
+        href: "https://www.npmjs.com/package/react-native-circular-carousel",
       },
     ],
     description:
-      "An open-source app to generate invoice and download them as PDF.",
+      "An open-source library to create a Circular Carousel in iOS and Android.",
+  },
+
+  {
+    title: "Riyadh Movers",
+    category: "NextJS + Strapi",
+    thumbnail: "",
+    urls: [
+      {
+        type: "Visit Website",
+        href: "https://alriyadhmovers.com",
+      },
+    ],
+    description:
+      "Strapi, a headless CMS serves the content for multiple languages which is served statically using NextJS.",
   },
 
   {
@@ -202,6 +198,24 @@ export const PROJECTS = [
     ],
     description:
       "Major contributions in plugin of Fusion apps to support SSR for Material-ui.",
+  },
+
+  {
+    title: "React Invoicer",
+    category: "React / FusionJS",
+    key: "invoicer",
+    urls: [
+      {
+        type: "Github",
+        href: "https://www.github.com/mrmuhammadali/invoicer",
+      },
+      {
+        type: "Visit App",
+        href: "https://react-invoicer.herokuapp.com/",
+      },
+    ],
+    description:
+      "An open-source app to generate invoice and download them as PDF.",
   },
 ];
 

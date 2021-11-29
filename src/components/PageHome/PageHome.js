@@ -5,7 +5,6 @@ import { ThemeProvider } from "@material-ui/core/styles";
 
 // src
 import { About } from "../About";
-import { Footer } from "../Footer";
 import { Portfolio } from "../Portfolio";
 import { useStyles } from "./PageHome.styles";
 import { useTheme } from "../../utils/useTheme";
@@ -51,7 +50,6 @@ function PageHomeInner(props) {
       />
       <About />
       <Portfolio />
-      <Footer />
     </div>
   );
 }

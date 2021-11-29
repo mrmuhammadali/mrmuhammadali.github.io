@@ -46,8 +46,8 @@ const Detail = () => {
           Javascript / Typescript
         </Typography>
         <Typography className={styles.content}>
-          React, React Native, Redux Toolkit, Jest, NextJS, Gatsby, Express,
-          NodeJS
+          React, React Native, Redux Toolkit, Jest, NextJS, Gatsby, NodeJS,
+          Formik, AgGrid, Webpack, Micro FEs
         </Typography>
       </Grid>
     </Grid>
