@@ -1,5 +1,6 @@
 // libs
 import React, { forwardRef } from "react";
+import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { graphql, useStaticQuery } from "gatsby";
 import Typography from "@material-ui/core/Typography";
@@ -67,6 +68,9 @@ export const Portfolio = forwardRef(({ id }, ref) => {
           </Grid>
         </Grid>
       </Grid>
+      <Box mt={3}>
+        <Typography color="textPrimary">and more...</Typography>
+      </Box>
     </section>
   );
 });

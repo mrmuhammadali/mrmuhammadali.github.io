@@ -1,13 +1,17 @@
 // libs
 import makeStyles from "@material-ui/styles/makeStyles";
 
-export const useStyles = makeStyles((theme) => ({
+export const useStyles = makeStyles(({ palette }) => ({
   "@global": {
+    html: {
+      "scroll-behavior": "smooth",
+    },
+
     body: {
       margin: 0,
       fontFamily: "'Titillium Web', sans-serif",
       fontDisplay: "swap",
-      background: theme.palette.secondary.main,
+      background: palette.secondary.main,
     },
 
     section: {
@@ -15,12 +19,12 @@ export const useStyles = makeStyles((theme) => ({
     },
 
     a: {
-      color: theme.palette.text.hint,
+      color: palette.text.hint,
       textDecoration: "none",
       transition: "color 0.1s linear 0s",
 
       "&:hover": {
-        color: theme.palette.text.primary,
+        color: palette.text.primary,
       },
     },
   },

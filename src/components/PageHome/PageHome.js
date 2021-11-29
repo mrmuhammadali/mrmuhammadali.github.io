@@ -6,6 +6,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 // src
 import { About } from "../About";
 import { Portfolio } from "../Portfolio";
+import { ScrollTop } from "../ScrollTop";
 import { useStyles } from "./PageHome.styles";
 import { useTheme } from "../../utils/useTheme";
 
@@ -50,6 +51,7 @@ function PageHomeInner(props) {
       />
       <About />
       <Portfolio />
+      <ScrollTop />
     </div>
   );
 }
