@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 300;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: 200;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.social {
+  display: flex;
+}
+
+.socialIcon {
+  fill: var(--text-secondary);
+  width: 20px;
+}

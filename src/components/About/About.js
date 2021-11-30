@@ -1,10 +1,7 @@
-// libs
 import React, { forwardRef } from "react";
 import IconButton from "@material-ui/core/IconButton";
 import Tooltip from "@material-ui/core/Tooltip";
-import Typography from "@material-ui/core/Typography";
 
-// src
 import DevIcon from "../Icons/Dev";
 import EmailIcon from "../Icons/Email";
 import GithubIcon from "../Icons/Github";
@@ -13,7 +10,7 @@ import LinkedInIcon from "../Icons/LinkedIn";
 import TwitterIcon from "../Icons/Twitter";
 import Detail from "./Detail";
 import { Profile } from "./Profile";
-import { useStyles } from "./About.styles";
+import * as styles from "./About.module.css";
 
 const SOCIAL_LINKS = [
   {
@@ -49,16 +46,14 @@ const SOCIAL_LINKS = [
 ];
 
 export const About = forwardRef(({ id }, ref) => {
-  const styles = useStyles();
+  // const styles = useStyles();
 
   return (
     <section id={id} className={styles.root} ref={ref}>
-      <Typography className={styles.title} component="h1" color="textPrimary">
-        Muhammad Ali
-      </Typography>
-      <Typography className={styles.tagline} component="h2" color="textPrimary">
+      <h1 className={styles.title}>Muhammad Ali</h1>
+      <h2 className={styles.tagline}>
         Software Engineer aiming to build a brand.
-      </Typography>
+      </h2>
       <div className={styles.social}>
         {SOCIAL_LINKS.map(({ title, IconComponent, url }) => {
           return (

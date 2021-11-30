@@ -1,13 +1,11 @@
-// libs
 import React from "react";
 import { Helmet } from "react-helmet";
 import { ThemeProvider } from "@material-ui/core/styles";
+import { useMediaQuery } from "@react-hook/media-query";
 
-// src
 import { About } from "../About";
 import { Portfolio } from "../Portfolio";
 import { ScrollTop } from "../ScrollTop";
-import { useStyles } from "./PageHome.styles";
 import { useTheme } from "../../utils/useTheme";
 
 const keywords = [
@@ -24,11 +22,12 @@ const keywords = [
   "Software Engineer",
 ].join(", ");
 
-function PageHomeInner(props) {
-  const styles = useStyles();
+export const PageHome = () => {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
+  const theme = useTheme();
 
   return (
-    <div className={styles.root}>
+    <ThemeProvider theme={theme}>
       <Helmet
         htmlAttributes={{ lang: "en" }}
         title="Muhammad Ali"
@@ -48,19 +47,12 @@ function PageHomeInner(props) {
             href: "https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300&display=swap",
           },
         ]}
-      />
+      >
+        <body className={prefersDarkMode ? "dark" : "light"} />
+      </Helmet>
       <About />
       <Portfolio />
       <ScrollTop />
-    </div>
-  );
-}
-
-export const PageHome = () => {
-  const theme = useTheme();
-  return (
-    <ThemeProvider theme={theme}>
-      <PageHomeInner />
     </ThemeProvider>
   );
 };
