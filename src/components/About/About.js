@@ -57,7 +57,7 @@ export const About = forwardRef(({ id }, ref) => {
         Muhammad Ali
       </Typography>
       <Typography className={styles.tagline} component="h2" color="textPrimary">
-        Fullstack developer aiming to build a brand.
+        Software Engineer aiming to build a brand.
       </Typography>
       <div className={styles.social}>
         {SOCIAL_LINKS.map(({ title, IconComponent, url }) => {
