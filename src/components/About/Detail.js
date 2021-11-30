@@ -14,7 +14,7 @@ const Detail = () => {
 
   return (
     <Grid container spacing={2} className={styles.root}>
-      <Grid item xs={6} sm={4} md={3} className={styles.item}>
+      <Grid item xs={12} sm={4} md={3} className={styles.item}>
         <ChromeReaderMode className={styles.icon} />
         <Typography className={styles.title} component="h3">
           Education
@@ -27,7 +27,7 @@ const Detail = () => {
           <br /> Islamabad, Pakistan
         </Typography>
       </Grid>
-      <Grid item xs={6} sm={4} md={3} className={styles.item}>
+      <Grid item xs={12} sm={4} md={3} className={styles.item}>
         <BusinessCenter className={styles.icon} />
         <Typography className={styles.title} component="h3">
           Experience
@@ -37,7 +37,7 @@ const Detail = () => {
         </Typography>
         <Typography className={styles.content}>June 2017 - Present</Typography>
       </Grid>
-      <Grid item xs={8} sm={4} md={3} className={styles.item}>
+      <Grid item xs={12} sm={4} md={3} className={styles.item}>
         <EmojiObjects className={styles.icon} />
         <Typography className={styles.title} component="h3">
           Technical Skills

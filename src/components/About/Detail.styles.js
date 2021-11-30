@@ -40,4 +40,25 @@ export const useStyles = makeStyles(({ palette }) => ({
     margin: 0,
     color: palette.text.secondary,
   },
+
+  "@media screen and (max-width: 599px)": {
+    item: {
+      textAlign: "left",
+      display: "grid",
+      gridTemplateColumns: "40px auto",
+      gap: "0 15px",
+
+      "& :first-child": {
+        gridRow: "span 2",
+      },
+
+      "& :last-child": {
+        gridColumn: "span 2",
+      },
+    },
+
+    icon: {
+      fontSize: "1.3em",
+    },
+  },
 }));
