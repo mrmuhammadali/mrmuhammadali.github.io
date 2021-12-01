@@ -6,5 +6,8 @@ import "@fontsource/titillium-web/400.css";
 import "./src/styles/global.css";
 
 export const onClientEntry = () => {
+  if (window.location.pathname !== "/") {
+    window.location.replace("/");
+  }
   smoothscroll.polyfill();
 };
