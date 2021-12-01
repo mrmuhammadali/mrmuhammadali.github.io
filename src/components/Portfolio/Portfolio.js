@@ -1,9 +1,6 @@
-// libs
 import React, { forwardRef } from "react";
-import Grid from "@material-ui/core/Grid";
 import { graphql, useStaticQuery } from "gatsby";
 
-// src
 import { PROJECTS } from "./data";
 import { ProjectCard } from "../ProjectCard";
 import * as styles from "./Portfolio.module.css";
@@ -40,29 +37,25 @@ export const Portfolio = forwardRef(({ id }, ref) => {
   return (
     <section id={id} className={styles.root} ref={ref}>
       <h2 className={styles.title}>My Portfolio</h2>
-      <Grid container className={styles.content}>
-        <Grid item xs={11} sm={11} md={11} lg={10}>
-          <Grid container className={styles.content} spacing={5}>
-            {PROJECTS.map((project) => {
-              const { category, description, key, title, urls, video } =
-                project;
 
-              return (
-                <Grid key={title} item xs={12} sm={6} md={4}>
-                  <ProjectCard
-                    category={category}
-                    description={description}
-                    image={data[key] ? data[key] : key}
-                    video={video}
-                    title={title}
-                    urls={urls}
-                  />
-                </Grid>
-              );
-            })}
-          </Grid>
-        </Grid>
-      </Grid>
+      <div className={["marginSm", styles.content].join(" ")}>
+        {PROJECTS.map((project) => {
+          const { category, description, key, title, urls, video } = project;
+
+          return (
+            <ProjectCard
+              key={title}
+              category={category}
+              description={description}
+              image={data[key] ? data[key] : key}
+              video={video}
+              title={title}
+              urls={urls}
+            />
+          );
+        })}
+      </div>
+
       <p className={styles.footer}>and more...</p>
     </section>
   );

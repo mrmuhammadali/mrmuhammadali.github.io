@@ -1,13 +1,12 @@
 import React from "react";
-import BusinessCenter from "@material-ui/icons/BusinessCenter";
-import ChromeReaderMode from "@material-ui/icons/ChromeReaderMode";
-import EmojiObjects from "@material-ui/icons/EmojiObjectsOutlined";
-import Grid from "@material-ui/core/Grid";
 import { StaticImage } from "gatsby-plugin-image";
 import Tooltip from "@reach/tooltip";
 
+import BusinessCenter from "../Icons/BusinessCenter";
+import ChromeReader from "../Icons/ChromeReader";
 import DevIcon from "../Icons/Dev";
 import EmailIcon from "../Icons/Email";
+import EmojiObjects from "../Icons/EmojiObjects";
 import GithubIcon from "../Icons/Github";
 import StackoverflowIcon from "../Icons/Stackoverflow";
 import LinkedInIcon from "../Icons/LinkedIn";
@@ -69,54 +68,46 @@ export const About = () => (
         );
       })}
     </div>
-    <Grid container spacing={2} className={styles.justifyCenter}>
-      <Grid item xs={4} sm={3} md={2}>
-        <StaticImage
-          alt="Muhammad Ali"
-          className={styles.profilePic}
-          draggable={false}
-          src="../../../static/images/profile.jpg"
-        />
-      </Grid>
-      <Grid item xs={12} sm={8} md={6}>
-        <p className={styles.bio}>
-          I was into computers since I was in high school. I thought some day
-          I’ll create one of these cool games myself but it turned out I’m
-          aligning some “Submit” button to the right of a form. Still, I think
-          I’m a natural programmer. I don’t want to brag about it but I think
-          I’m doing a great job in it. Whenever I face some problem, I’m always
-          thinking about the solution. Recently I had a dream about merging two
-          arrays without using a third one and I’m not kidding. I can’t stand
-          code smell. Whenever I write or see some hacks in project which I’m
-          working on I get horrible nightmares. My motto is:{" "}
-          <span className={styles.textPrimary}>
-            Always code as if the guy who ends up maintaining your code will be
-            a violent psychopath who knows where you live.
-          </span>
-        </p>
-      </Grid>
-    </Grid>
-    <Grid
-      container
-      spacing={2}
-      className={[styles.justifyCenter, styles.spacing].join(" ")}
-    >
-      <Grid item xs={12} sm={4} md={3} className={styles.item}>
-        <ChromeReaderMode className={styles.itemIcon} />
+    <div className={["marginLg", styles.profile].join(" ")}>
+      <StaticImage
+        alt="Muhammad Ali"
+        className={styles.profilePic}
+        draggable={false}
+        src="../../../static/images/profile.jpg"
+      />
+      <p className={styles.bio}>
+        I was into computers since I was in high school. I thought some day I’ll
+        create one of these cool games myself but it turned out I’m aligning
+        some “Submit” button to the right of a form. Still, I think I’m a
+        natural programmer. I don’t want to brag about it but I think I’m doing
+        a great job in it. Whenever I face some problem, I’m always thinking
+        about the solution. Recently I had a dream about merging two arrays
+        without using a third one and I’m not kidding. I can’t stand code smell.
+        Whenever I write or see some hacks in project which I’m working on I get
+        horrible nightmares. My motto is:{" "}
+        <span className={styles.textPrimary}>
+          Always code as if the guy who ends up maintaining your code will be a
+          violent psychopath who knows where you live.
+        </span>
+      </p>
+    </div>
+    <div className={["marginBase", styles.details].join(" ")}>
+      <div className={styles.item}>
+        <ChromeReader className={styles.itemIcon} />
         <h3 className={styles.itemTitle}>Education</h3>
         <h4 className={styles.itemSubtitle}>BS in Software Engineering</h4>
         <p className={styles.itemContent}>
           COMSATS Institute of Information Technology,
           <br /> Islamabad, Pakistan
         </p>
-      </Grid>
-      <Grid item xs={12} sm={4} md={3} className={styles.item}>
+      </div>
+      <div className={styles.item}>
         <BusinessCenter className={styles.itemIcon} />
         <h3 className={styles.itemTitle}>Experience</h3>
         <h4 className={styles.itemSubtitle}>Sr. Software Engineer - Emumba</h4>
         <p className={styles.itemContent}>June 2017 - Present</p>
-      </Grid>
-      <Grid item xs={12} sm={4} md={3} className={styles.item}>
+      </div>
+      <div className={styles.item}>
         <EmojiObjects className={styles.itemIcon} />
         <h3 className={styles.itemTitle}>Technical Skills</h3>
         <h4 className={styles.itemSubtitle}>Javascript / Typescript</h4>
@@ -124,7 +115,7 @@ export const About = () => (
           React, React Native, Redux Toolkit, Jest, NextJS, Gatsby, NodeJS,
           Formik, AgGrid, Webpack, Micro FEs
         </p>
-      </Grid>
-    </Grid>
+      </div>
+    </div>
   </section>
 );

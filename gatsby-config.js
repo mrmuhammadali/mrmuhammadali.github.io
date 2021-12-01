@@ -35,7 +35,6 @@ module.exports = {
         icon: "static/images/ma.png",
       },
     },
-    "gatsby-plugin-material-ui",
     "gatsby-plugin-offline",
   ],
 };

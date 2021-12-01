@@ -1,7 +1,8 @@
 import React from "react";
-import ArrowUpward from "@material-ui/icons/ArrowUpward";
+
 import useScrollPosition from "@react-hook/window-scroll";
 
+import ArrowUp from "../Icons/ArrowUp";
 import * as styles from "./ScrollTop.module.css";
 
 export const ScrollTop = () => {
@@ -16,7 +17,7 @@ export const ScrollTop = () => {
         window.scrollTo({ top: 0 });
       }}
     >
-      <ArrowUpward className={styles.icon} />
+      <ArrowUp className={styles.icon} />
     </button>
   );
 };

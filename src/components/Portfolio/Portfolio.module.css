@@ -14,11 +14,27 @@
 }
 
 .content {
-  justify-content: center;
-  margin-top: 5px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .footer {
   color: var(--text-primary);
   margin: 10px 0 0;
+}
+
+@media screen and (max-width: 880px) {
+  .content {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

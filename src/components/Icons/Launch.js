@@ -1,4 +1,3 @@
-// libs
 import React from "react";
 
 const Launch = ({ className }) => (

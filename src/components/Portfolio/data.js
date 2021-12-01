@@ -1,4 +1,4 @@
-// libs
+
 import React from "react";
 
 const AMAZON_USA = "https://www.amazon.com/";

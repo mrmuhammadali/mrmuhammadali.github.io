@@ -5,16 +5,8 @@
   background: var(--secondary);
 }
 
-.justifyCenter {
-  justify-content: center;
-}
-
 .textPrimary {
   color: var(--text-primary);
-}
-
-.spacing {
-  margin-top: 1rem !important;
 }
 
 .title {
@@ -41,6 +33,13 @@
   width: 20px;
 }
 
+.profile {
+  display: grid;
+  grid-template-columns: 200px auto;
+  gap: 15px;
+  justify-items: center;
+}
+
 .profilePic {
   color: var(--text-primary);
   margin-top: 6;
@@ -54,19 +53,28 @@
   color: var(--text-secondary);
 }
 
+.details {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 20px;
+}
+
 .item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  justify-items: center;
   text-align: center;
+  align-content: baseline;
 }
 
 .itemIcon {
-  font-size: 1.5em;
   border: 1px solid;
   padding: 0.5em;
+  border: 1px solid var(--text-primary);
   border-radius: 15px 0;
-  color: var(--text-primary);
+  fill: var(--text-primary);
+  width: 25px;
 }
 
 .itemTitle {
@@ -86,12 +94,27 @@
   color: var(--text-secondary);
 }
 
+@media screen and (max-width: 768px) {
+  .profile {
+    grid-template-columns: 1fr;
+    grid-template-rows: 150px auto;
+  }
+
+  .profilePic {
+    width: 150px;
+  }
+}
+
 @media screen and (max-width: 599px) {
+  .details {
+    grid-template-columns: 1fr;
+  }
+
   .item {
     text-align: left;
-    display: grid;
     grid-template-columns: 40px auto;
-    gap: 0 15px;
+    justify-items: baseline;
+    gap: 0 20px;
   }
 
   .itemIcon {

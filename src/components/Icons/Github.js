@@ -1,4 +1,3 @@
-// libs
 import React from "react";
 
 const Github = ({ className }) => (
