@@ -7,6 +7,7 @@ import ChromeReader from "../Icons/ChromeReader";
 import DevIcon from "../Icons/Dev";
 import EmailIcon from "../Icons/Email";
 import EmojiObjects from "../Icons/EmojiObjects";
+import FileDownload from "../Icons/FileDownload";
 import GithubIcon from "../Icons/Github";
 import StackoverflowIcon from "../Icons/Stackoverflow";
 import LinkedInIcon from "../Icons/LinkedIn";
@@ -14,6 +15,11 @@ import TwitterIcon from "../Icons/Twitter";
 import * as styles from "./About.module.css";
 
 const SOCIAL_LINKS = [
+  {
+    title: "Download CV",
+    IconComponent: FileDownload,
+    url: "https://docs.google.com/document/d/1dURtEWjSkFTf7jcjg0MDSI734D35ElFJCNKt-a1nQY4/",
+  },
   {
     title: "mr.muhammad.ali@live.com",
     IconComponent: EmailIcon,

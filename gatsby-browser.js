@@ -1,6 +1,10 @@
-const smoothscroll = require("smoothscroll-polyfill");
-require("./src/styles/global.css");
+import smoothscroll from "smoothscroll-polyfill";
+import "@fontsource/titillium-web/200.css";
+import "@fontsource/titillium-web/300.css";
+import "@fontsource/titillium-web/400.css";
 
-exports.onClientEntry = function () {
+import "./src/styles/global.css";
+
+export const onClientEntry = () => {
   smoothscroll.polyfill();
 };

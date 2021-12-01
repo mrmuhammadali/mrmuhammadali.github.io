@@ -2,9 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { useMediaQuery } from "@react-hook/media-query";
 
-import { About } from "../About";
-import { Portfolio } from "../Portfolio";
-import { ScrollTop } from "../ScrollTop";
+import { About } from "../components/About";
+import { Portfolio } from "../components/Portfolio";
+import { ScrollTop } from "../components/ScrollTop";
 
 const keywords = [
   "Muhammad Ali",
@@ -20,7 +20,7 @@ const keywords = [
   "Software Engineer",
 ].join(", ");
 
-export const PageHome = () => {
+const PageHome = () => {
   const shouldPreferDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   return (
@@ -38,12 +38,6 @@ export const PageHome = () => {
             content: "width=device-width, initial-scale=1.0",
           },
         ]}
-        link={[
-          {
-            rel: "stylesheet",
-            href: "https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300&display=swap",
-          },
-        ]}
       >
         <body className={shouldPreferDarkMode ? "dark" : "light"} />
       </Helmet>
@@ -53,3 +47,5 @@ export const PageHome = () => {
     </>
   );
 };
+
+export default PageHome;
