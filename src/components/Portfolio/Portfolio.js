@@ -1,4 +1,4 @@
-import React, { forwardRef } from "react";
+import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 
 import { PROJECTS } from "./data";
@@ -13,7 +13,7 @@ export const imageQuery = graphql`
   }
 `;
 
-export const Portfolio = forwardRef(({ id }, ref) => {
+export const Portfolio = () => {
   const data = useStaticQuery(graphql`
     query {
       carousel: file(relativePath: { eq: "thumbs/carousel.png" }) {
@@ -35,7 +35,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
   `);
 
   return (
-    <section id={id} className={styles.root} ref={ref}>
+    <section className={styles.root}>
       <h2 className={styles.title}>My Portfolio</h2>
 
       <div className={["marginSm", styles.content].join(" ")}>
@@ -59,4 +59,4 @@ export const Portfolio = forwardRef(({ id }, ref) => {
       <p className={styles.footer}>and more...</p>
     </section>
   );
-});
+};
