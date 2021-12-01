@@ -1,0 +1,24 @@
+.root {
+  background: var(--primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.5em;
+  text-align: center;
+  color: var(--text-primary);
+}
+
+.content {
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.footer {
+  color: var(--text-primary);
+  margin: 10px 0 0;
+}

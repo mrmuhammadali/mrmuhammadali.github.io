@@ -1,20 +1,12 @@
-// libs
 import React, { useEffect, useRef } from "react";
-import Card from "@material-ui/core/Card";
-import CardContent from "@material-ui/core/CardContent";
-import CardHeader from "@material-ui/core/CardHeader";
 import { GatsbyImage, getImage, getSrc } from "gatsby-plugin-image";
-import IconButton from "@material-ui/core/IconButton";
-import Tooltip from "@material-ui/core/Tooltip";
-import Typography from "@material-ui/core/Typography";
+import Tooltip from "@reach/tooltip";
 
-// src
 import * as Icons from "../Icons";
-import { useStyles } from "./ProjectCard.styles";
+import * as styles from "./ProjectCard.module.css";
 
 export const ProjectCard = (props) => {
   const { category, description, image, title, urls, video } = props;
-  const styles = useStyles();
   const videoRef = useRef();
   useEffect(() => {
     if (videoRef.current) {
@@ -23,22 +15,25 @@ export const ProjectCard = (props) => {
   }, []);
 
   return (
-    <Card className={styles.root}>
-      <CardHeader
-        title={title}
-        subheader={category}
-        avatar={<div />}
-        action={urls.map(({ href, type }) => {
-          const IconComponent = Icons[type] || Icons.Launch;
-          return (
-            <Tooltip key={`${title}_${type}`} title={type} enterDelay={100}>
-              <IconButton href={href} target="_blank" rel="noopener noreferrer">
-                <IconComponent className={styles.icon} />
-              </IconButton>
-            </Tooltip>
-          );
-        })}
-      />
+    <div className={styles.root}>
+      <div className={styles.header}>
+        <p className={[styles.defaultFont, styles.title].join(" ")}>{title}</p>
+        <p className={[styles.defaultFont, styles.subtitle].join(" ")}>
+          {category}
+        </p>
+        <div className={styles.actions}>
+          {urls.map(({ href, type }) => {
+            const IconComponent = Icons[type] || Icons.Launch;
+            return (
+              <Tooltip key={`${title}_${type}`} label={type}>
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  <IconComponent className={styles.icon} />
+                </a>
+              </Tooltip>
+            );
+          })}
+        </div>
+      </div>
       <div className={styles.media}>
         {video ? (
           <video
@@ -62,13 +57,11 @@ export const ProjectCard = (props) => {
             />
           )
         )}
-        {!image && <Typography color="textSecondary">{title}</Typography>}
+        {!image && <p className={styles.mediaTitle}>{title}</p>}
       </div>
-      <CardContent className={styles.content}>
-        <Typography variant="body2" color="textSecondary">
-          {description}
-        </Typography>
-      </CardContent>
-    </Card>
+      <p className={[styles.defaultFont, styles.description].join(" ")}>
+        {description}
+      </p>
+    </div>
   );
 };

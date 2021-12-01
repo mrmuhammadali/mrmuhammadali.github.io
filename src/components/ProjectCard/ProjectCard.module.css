@@ -1,0 +1,59 @@
+.root {
+  background: var(--secondary);
+  box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.defaultFont {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.title {
+  color: var(--text-primary);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+}
+
+.actions {
+  grid-row: 1;
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 8px;
+}
+
+.media {
+  position: relative;
+  height: 220px;
+  width: 100%;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  background: var(--primary);
+}
+
+.mediaTitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}
+
+.description {
+  padding: 1rem;
+  color: var(--text-secondary);
+}
+
+.icon {
+  fill: var(--text-secondary);
+  width: 18px;
+}

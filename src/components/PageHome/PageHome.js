@@ -1,12 +1,10 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import { ThemeProvider } from "@material-ui/core/styles";
 import { useMediaQuery } from "@react-hook/media-query";
 
 import { About } from "../About";
 import { Portfolio } from "../Portfolio";
 import { ScrollTop } from "../ScrollTop";
-import { useTheme } from "../../utils/useTheme";
 
 const keywords = [
   "Muhammad Ali",
@@ -23,11 +21,10 @@ const keywords = [
 ].join(", ");
 
 export const PageHome = () => {
-  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
-  const theme = useTheme();
+  const shouldPreferDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
 
   return (
-    <ThemeProvider theme={theme}>
+    <>
       <Helmet
         htmlAttributes={{ lang: "en" }}
         title="Muhammad Ali"
@@ -48,11 +45,11 @@ export const PageHome = () => {
           },
         ]}
       >
-        <body className={prefersDarkMode ? "dark" : "light"} />
+        <body className={shouldPreferDarkMode ? "dark" : "light"} />
       </Helmet>
       <About />
       <Portfolio />
       <ScrollTop />
-    </ThemeProvider>
+    </>
   );
 };

@@ -1,14 +1,12 @@
 // libs
 import React, { forwardRef } from "react";
-import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import { graphql, useStaticQuery } from "gatsby";
-import Typography from "@material-ui/core/Typography";
 
 // src
 import { PROJECTS } from "./data";
 import { ProjectCard } from "../ProjectCard";
-import { useStyles } from "./Portfolio.styles";
+import * as styles from "./Portfolio.module.css";
 
 export const imageQuery = graphql`
   fragment imageQuery on File {
@@ -19,7 +17,6 @@ export const imageQuery = graphql`
 `;
 
 export const Portfolio = forwardRef(({ id }, ref) => {
-  const styles = useStyles();
   const data = useStaticQuery(graphql`
     query {
       carousel: file(relativePath: { eq: "thumbs/carousel.png" }) {
@@ -42,9 +39,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
 
   return (
     <section id={id} className={styles.root} ref={ref}>
-      <Typography className={styles.title} component="h2" color="textPrimary">
-        My Portfolio
-      </Typography>
+      <h2 className={styles.title}>My Portfolio</h2>
       <Grid container className={styles.content}>
         <Grid item xs={11} sm={11} md={11} lg={10}>
           <Grid container className={styles.content} spacing={5}>
@@ -68,9 +63,7 @@ export const Portfolio = forwardRef(({ id }, ref) => {
           </Grid>
         </Grid>
       </Grid>
-      <Box mt={3}>
-        <Typography color="textPrimary">and more...</Typography>
-      </Box>
+      <p className={styles.footer}>and more...</p>
     </section>
   );
 });

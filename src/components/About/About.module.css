@@ -5,25 +5,101 @@
   background: var(--secondary);
 }
 
+.justifyCenter {
+  justify-content: center;
+}
+
+.textPrimary {
+  color: var(--text-primary);
+}
+
+.spacing {
+  margin-top: 1rem !important;
+}
+
 .title {
   font-size: 36px;
   font-weight: 300;
-  margin: 0;
   color: var(--text-primary);
 }
 
 .tagline {
   font-size: 20px;
   font-weight: 200;
-  margin: 0;
   color: var(--text-primary);
 }
 
 .social {
-  display: flex;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 1rem;
+  margin: 0.5rem 0;
 }
 
 .socialIcon {
   fill: var(--text-secondary);
   width: 20px;
+}
+
+.profilePic {
+  color: var(--text-primary);
+  margin-top: 6;
+}
+
+.bio {
+  font-weight: 300;
+  line-height: 28px;
+  font-size: 1.1em;
+  text-align: left;
+  color: var(--text-secondary);
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.itemIcon {
+  font-size: 1.5em;
+  border: 1px solid;
+  padding: 0.5em;
+  border-radius: 15px 0;
+  color: var(--text-primary);
+}
+
+.itemTitle {
+  font-size: 24px;
+  font-weight: 300;
+  color: var(--text-primary);
+}
+
+.itemSubtitle {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5em;
+  color: var(--text-primary);
+}
+
+.itemContent {
+  color: var(--text-secondary);
+}
+
+@media screen and (max-width: 599px) {
+  .item {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 40px auto;
+    gap: 0 15px;
+  }
+
+  .itemIcon {
+    font-size: 1.3em;
+    grid-row: span 2;
+  }
+
+  .itemContent {
+    grid-column: span 2;
+  }
 }

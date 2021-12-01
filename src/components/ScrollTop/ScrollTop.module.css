@@ -1,0 +1,10 @@
+.root {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+.icon {
+  color: var(--text-secondary);
+  width: 24px;
+}
