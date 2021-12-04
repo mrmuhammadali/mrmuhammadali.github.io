@@ -18,7 +18,7 @@ const SOCIAL_LINKS = [
   {
     title: "Download CV",
     IconComponent: FileDownload,
-    url: "https://docs.google.com/document/d/1dURtEWjSkFTf7jcjg0MDSI734D35ElFJCNKt-a1nQY4/",
+    url: "https://docs.google.com/document/d/1ltIaavChCu7YgzbLswfaoIFg9_RNRa64B3yY7xoeVTM/",
   },
   {
     title: "mr.muhammad.ali@live.com",
