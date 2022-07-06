@@ -111,7 +111,7 @@ export const About = () => (
         <BusinessCenter className={styles.itemIcon} />
         <h3 className={styles.itemTitle}>Experience</h3>
         <h4 className={styles.itemSubtitle}>Sr. Software Engineer - Emumba</h4>
-        <p className={styles.itemContent}>June 2017 - Present</p>
+        <p className={styles.itemContent}>June 2017 - May 2022</p>
       </div>
       <div className={styles.item}>
         <EmojiObjects className={styles.itemIcon} />
